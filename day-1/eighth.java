@@ -13,16 +13,12 @@ public class eighth {
             for (int j = 1; j <= rows; j++) {
                 System.out.print(num);
                 num = (num + 2) % (2 * rows);
-                if (num == 0) {
-                    num = 2 * rows - 1;
-            }
+           
         }
             System.out.println();
            
             start = (start + 2) % (2 * rows);
-            if (start == 0) {
-                start = 2 * rows - 1;
-            }
+
             scanner.close();
         }
     }
