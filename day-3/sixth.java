@@ -18,8 +18,8 @@ public class sixth {
         }
         System.out.println("Enter array2 elements");
         for(int i = 0; i < m;++i){
-            array1[i] = scanner.nextInt();
-            sum2 = sum1*10+array2[i];
+            array2[i] = scanner.nextInt();
+            sum2 = sum2*10+array2[i];
         }
         int sum3 = sum1 + sum2;
         System.out.println("sum is " + sum3);
