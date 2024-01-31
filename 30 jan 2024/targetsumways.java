@@ -25,7 +25,7 @@ class targetsumways {
         if(index == nums.length && target != sum)
             return 0;
         
-        // using immutability property of string to add sum index pair to map
+        
         // using string to store a pair as map key
         String key = sum + "$" + index;
         if(map.containsKey(key))
