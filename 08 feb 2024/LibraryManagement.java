@@ -195,10 +195,12 @@ class LibraryMember {
         return name;
     }
 
+    //method to checkout an item
     public void checkOut(Item item) {
         System.out.println(name + " checks out " + item.getTitle());
     }
-
+    
+    //mehtod to return an item
     public void returnItem(Item item) {
         System.out.println(name + " returns " + item.getTitle());
     }
