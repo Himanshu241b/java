@@ -27,6 +27,7 @@ public class OnlineShoppingSystem {
         guestUser.addToCart(shirt);
         guestUser.placeOrder();
 
+        //register a new user with username and password
         RegisteredUser newUser = RegisteredUser.registerNewUser();
         System.out.println("New user registered with username: " + newUser.getUsername());
 
