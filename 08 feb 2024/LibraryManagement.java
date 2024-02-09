@@ -205,9 +205,13 @@ class LibraryMember {
         System.out.println(name + " returns " + item.getTitle());
     }
 }
+interface Checkoutable {
+    public void checkOutItem(String item, LibraryMember member);
+    public void returnItem(String itemId, LibraryMember member); 
+}
 
 // Class representing the library
-class Library {
+class Library implements Checkoutable{
     private Map<String, Item> inventory; // stores id of item against the item  <Id, item>
     private List<LibraryMember> members; // stores the objects of library members class
     static Scanner sc = new Scanner(System.in);
@@ -235,39 +239,41 @@ class Library {
     }
 
     // method to checkout an item (it calls checkout method in LibraryMember class to checkout)
-public void checkOutItem(String itemId, LibraryMember member) {
-    if (inventory.containsKey(itemId) && inventory.get(itemId).getQuantity() > 0) {
-        System.out.print("Enter the quantity of '" + inventory.get(itemId).getTitle() + "' to check out: ");
-        int quantityToCheckout = sc.nextInt();
-        
-        if (quantityToCheckout > inventory.get(itemId).getQuantity()) {
-            System.out.println("Not enough '" + inventory.get(itemId).getTitle() + "' available.");
+    @Override
+    public void checkOutItem(String itemId, LibraryMember member) {
+        if (inventory.containsKey(itemId) && inventory.get(itemId).getQuantity() > 0) {
+            System.out.print("Enter the quantity of '" + inventory.get(itemId).getTitle() + "' to check out: ");
+            int quantityToCheckout = sc.nextInt();
+            
+            if (quantityToCheckout > inventory.get(itemId).getQuantity()) {
+                System.out.println("Not enough '" + inventory.get(itemId).getTitle() + "' available.");
+            } else {
+                inventory.get(itemId).quantityAvailable -= quantityToCheckout;
+                member.checkOut(inventory.get(itemId));
+                System.out.println("Checked out " + quantityToCheckout + " " + inventory.get(itemId).getTitle() + "(s) successfully.");
+            }
         } else {
-            inventory.get(itemId).quantityAvailable -= quantityToCheckout;
-            member.checkOut(inventory.get(itemId));
-            System.out.println("Checked out " + quantityToCheckout + " " + inventory.get(itemId).getTitle() + "(s) successfully.");
+            System.out.println("Item with ID " + itemId + " not found or is out of stock.");
         }
-    } else {
-        System.out.println("Item with ID " + itemId + " not found or is out of stock.");
     }
-}
 
-// method to return item by calling returnItem method of LibraryMember class
-public void returnItem(String itemId, LibraryMember member) {
-    if (inventory.containsKey(itemId)) {
-        System.out.print("Enter the quantity of '" + inventory.get(itemId).getTitle() + "' to return: ");
-        int quantityToReturn = sc.nextInt();
-        if (quantityToReturn > 0) {
-            inventory.get(itemId).quantityAvailable += quantityToReturn;
-            member.returnItem(inventory.get(itemId));
-            System.out.println("Returned " + quantityToReturn + " " + inventory.get(itemId).getTitle() + "(s) successfully.");
+    // method to return item by calling returnItem method of LibraryMember class
+    @Override
+    public void returnItem(String itemId, LibraryMember member) {
+        if (inventory.containsKey(itemId)) {
+            System.out.print("Enter the quantity of '" + inventory.get(itemId).getTitle() + "' to return: ");
+            int quantityToReturn = sc.nextInt();
+            if (quantityToReturn > 0) {
+                inventory.get(itemId).quantityAvailable += quantityToReturn;
+                member.returnItem(inventory.get(itemId));
+                System.out.println("Returned " + quantityToReturn + " " + inventory.get(itemId).getTitle() + "(s) successfully.");
+            } else {
+                System.out.println("Invalid quantity to return.");
+            }
         } else {
-            System.out.println("Invalid quantity to return.");
+            System.out.println("Item with ID " + itemId + " not found.");
         }
-    } else {
-        System.out.println("Item with ID " + itemId + " not found.");
     }
-}
 
     // method to get member from members list called in main method for checkout and return of item
     public LibraryMember getMember(String memberId){

@@ -92,8 +92,7 @@ class studentrecord {
         ArrayList<Integer> topperList = topper(students);
 
         
-        boolean repeat = true;
-        char choice;
+        char choice='0';
         do {
             System.out.println("To see first 5 toppers: press 1\nTo see above threshold students: press 2\nTo see below threshold students: press 3\nTo see the middle students: press 4\nTo see the failing: press 5\nTo Terminate: press 0");
             choice = sc.next().charAt(0);
@@ -153,7 +152,7 @@ class studentrecord {
                     System.out.println("Enter a valid choice");
                     System.out.println("****************************************");
             }
-        } while (repeat);
+        } while (true);
              
      }
     //method to calculate above threshold students
