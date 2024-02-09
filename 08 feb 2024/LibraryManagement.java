@@ -205,6 +205,8 @@ class LibraryMember {
         System.out.println(name + " returns " + item.getTitle());
     }
 }
+
+//checkoutable interface implemeted by Library class
 interface Checkoutable {
     public void checkOutItem(String item, LibraryMember member);
     public void returnItem(String itemId, LibraryMember member); 
