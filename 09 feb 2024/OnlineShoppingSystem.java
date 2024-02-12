@@ -1,4 +1,7 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
 
 // online shopping system class containing main method
 public class OnlineShoppingSystem {
@@ -182,7 +185,6 @@ class Clothing extends Product {
         return finalPrice;
     }
 }
-
 
 // User interface
 interface User {
@@ -368,7 +370,7 @@ class RegisteredUser extends Stock implements User {
     public void placeOrder() {
         orderHistory.add(new Order(cart, new Date(), priceOfCart(cart)));
         System.out.println("Order placed successfully");
-        cart.clear();
+        cart.clear();  // clears the cart elements
     }
     // displays the order history of the registered user
     public void viewOrderHistory() {
