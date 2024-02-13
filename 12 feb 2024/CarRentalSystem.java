@@ -4,7 +4,6 @@ import java.util.Scanner;
 //Main class emplementation
 public class CarRentalSystem {
     
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
@@ -171,6 +170,7 @@ abstract class Vehicle {
 
      // Abstract method to calculate the rental cost
      public abstract double calculateRentalCost(int days);
+
      // Abstract method to get type of vehicle
      public abstract String getType();
 }
@@ -209,15 +209,15 @@ class Car extends Vehicle {
     public String getType(){
         return type;
     }
-    
+    // method to set numbet of seats 
     public void setNumSeats(int numSeats) {
         this.numSeats = numSeats;
     }
-
+    // get the fuel type of vehicle
     public String getFuelType() {
         return fuelType;
     }
-
+    // to set fueltype of vehicle
     public void setFuelType(String fuelType) {
         this.fuelType = fuelType;
     }
@@ -259,10 +259,11 @@ class Bike extends Vehicle {
     public String getBikeType() {
         return bikeType;
     }
-
+    //to get type of vehicle
     public String getType(){
         return type;
     }
+    // to set the type of bike
     public void setBikeType(String bikeType) {
         this.bikeType = bikeType;
     }
@@ -279,13 +280,14 @@ class Bike extends Vehicle {
 class Customers {
     static private List<Customer> customers = new ArrayList<Customer>();
 
+    // adding customer to list of customers
     public void addCustomer(Customer customer) {
         customers.add(customer);
     }
-
+    // method to retur nthe customer from list of customers by searching with email
     public  Customer getCustomer(String email){
         for(Customer customer : customers)
-            if(customer.getEmail() == email)
+            if(customer.getEmail().equals(email))
                 return customer;
         System.out.println("Customer not fount");
         return null;
@@ -318,6 +320,7 @@ class Customer {
         return name;
     }
 
+    // returns the vehicle search with model number
     public Vehicle getVehicleByModel(String model) {
         for (Vehicle vehicle: rentedVehicles)
             if(vehicle.getModel().equals(model))
@@ -325,19 +328,20 @@ class Customer {
         System.out.println("vehicle not found to return");
         return null;
     }
-
+    //sets name of customer
     public void setName(String name) {
         this.name = name;
     }
-
+    //gets email of customer
     public String getEmail() {
         return email;
     }
-
+    // returns list of rented vehicles
     public List<Vehicle> getRentedVehicles() { 
         return rentedVehicles;
     }
 
+    //sets the email
     public void setEmail(String email) {
         this.email = email;
     }
@@ -385,7 +389,7 @@ class RentalAgency {
             customer.rentVehicle(vehicle);
             double rentalCost = calculateRentalCost(vehicle, days);
             System.out.println(customer.getName() + " rented " + vehicle.getMake() + " " + vehicle.getModel() +
-                    " for " + days + " days. Rental cost: $" + rentalCost);
+                    " for " + days + " days. Rental cost: ₹" + rentalCost);
         } else {
             System.out.println("Vehicle is not available for rent.");
         }
