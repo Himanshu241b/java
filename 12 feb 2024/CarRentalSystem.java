@@ -180,7 +180,7 @@ class Car extends Vehicle {
     // Specific attributes for Car
     private int numSeats;
     private String fuelType;
-    private String type = "car";
+    private static String type = "car";
     // Constructor
     public Car(String make, String model, int year, double rentalPrice, int numSeats, String fuelType) {
         super(make, model, year, rentalPrice);
@@ -237,7 +237,7 @@ class Car extends Vehicle {
 class Bike extends Vehicle {
     // Specific attributes for Bike
     private String bikeType; // Example: Sport, Cruiser, Touring
-    private String type = "bike";
+    private static String type = "bike";
     // Constructor
     public Bike(String make, String model, int year, double rentalPrice, String bikeType) {
         super(make, model, year, rentalPrice);
