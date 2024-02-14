@@ -10,7 +10,7 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
         char choice;
-
+        try{
         do {
             // Display menu options
             System.out.println("\nUniversity Management System:");
@@ -46,28 +46,35 @@ public class Main {
                     }
                     break;
                 case '6':
+                try{
                     System.out.println("Enter employee id of teacher:");
-                    Faculty employee = null;
+                    Faculty employee = null; // initialize with null 
                     int employeeId = scanner.nextInt();
                     for(Faculty faculty : university.getFacultyList())
                         if(faculty.getEmployeeId() == employeeId)
-                            employee = faculty;
-                    if(employee == null)
-                        System.out.println("Faculty not found");
+                            employee = faculty;     //assign employee if found
+                    if(employee == null){
+                        throw new IllegalArgumentException("Employee not found"); // throw exception if employee not found in list
+                    }
                     System.out.println("Enter course code to assign a course:");
                     Course courseToAssign = null;   
                     String courseCode = scanner.nextLine();
                     for(Course course : university.getCourseList())
                         if(course.getCourseCode() == courseCode)
                             courseToAssign = course;
-                    if(courseToAssign == null)
-                        System.out.println("Course not found");
+                    if(courseToAssign == null){
+                        throw new IllegalArgumentException("Course  was not fount");    //throw exception if course to assign is not in courses list
+                    }
                     try{
                     addCourseToFaculty(employee, courseToAssign);
                     }
                     catch(IllegalArgumentException e){
                         System.out.println(e.getMessage());
                     }
+                }
+                catch(IllegalArgumentException e){
+                    System.out.println(e.getMessage());
+                }
                     break;
                 case '7':
                     try{
@@ -86,6 +93,10 @@ public class Main {
         } while (choice != '0');
 
         scanner.close();
+    }
+    catch(InputMismatchException e){
+        System.out.println(e.getMessage());
+    }
     }
 
     //method to remove a student from university
