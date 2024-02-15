@@ -1,7 +1,8 @@
 package ATMSimulator;
 
-
-public abstract class Account {
+//imports
+import java.util.*;
+public  class Account {
 
     private String accountNumber;
     private String pin;
@@ -9,6 +10,7 @@ public abstract class Account {
     private double balance;
     private String cardNumber;
     private String ifsc;
+    private boolean blocked = false;
     
     
     public Account(String accountNumber,String pin,String cardNumber, String name, double balance, String ifsc) {
@@ -20,9 +22,14 @@ public abstract class Account {
         this.ifsc = ifsc;
     }
 
-    public abstract void deposit(double amount);
 
-
+    //method to set account status (blocked or not)
+    public void setBlocked(){
+        blocked = true;
+    }
+    public boolean getBlocked(){
+        return blocked;
+    }
     public String getName(){
         return name;
     }
@@ -41,68 +48,27 @@ public abstract class Account {
     public String getIfsc(){
         return ifsc;
     }
-    //abstract method to return bankname
-    abstract public String getBankName();
+    public void setBalance(double remaining){
+        balance = remaining;
+    }
+    
+     
+    
+    void addBalance(double amount){
+        balance += amount;
+        System.out.println("Amount: " + amount+" added to account"+ getName());
+    }
+     public void deduct(double amount, double charges) throws InsufficientFundsException{
         
-}
+        double accountBalance = getBalance();
+        if(accountBalance < (amount + amount*charges))
+            throw new InsufficientFundsException(getName()+" --->Insufficient funds in your account ");
+        accountBalance -= amount;   
+        accountBalance -= (amount*charges);
+        System.out.println("Your account is deducted "+(amount*charges+amount));
+        setBalance(accountBalance);
+        System.out.println("remaining balance"+ balance);
 
-//HDFC account
-class HDFCAccount extends Account {
-    final private String bankName = "hdfc";
-
-    public HDFCAccount(String accountNumber,String pin,String cardNumber, String name, double balance, String ifsc) {
-        super(accountNumber, pin,cardNumber, name, balance, ifsc);
-    }
-
-    @Override
-    public void deposit(double amount) {
-        // Implement specific deposit logic
-    }
-    @Override
-    public String getBankName(){
-        return bankName;
-    }
-
-   
-}
-
-//SBIAccount 
-class SBIAccount extends Account {
-    final private String bankName = "sbi";
-    public SBIAccount(String accountNumber, String pin, String cardNumber, String name, double balance, String ifsc) {
-        super(accountNumber,pin,cardNumber, name, balance,ifsc);
-    }
-
-    @Override
-    public void deposit(double amount) {
-        // Implement specific deposit logic
-    }
-
-    @Override
-    public String getBankName(){
-        return bankName;
-    }
-   
-}
-
-//ICICIAccount
-class ICICIAccount extends Account {
-    final private String bankName = "icici";
-    public ICICIAccount(String accountNumber, String pin,String cardNumber ,String name,double balance, String ifsc) {
-        super(accountNumber, pin,cardNumber, name, balance, ifsc);
-    }
-
-    @Override
-    public void deposit(double amount) {
-        // Implement specific deposit logic
-    }
-
-    @Override
-    public String getBankName(){
-        return bankName;
-    }
-
-   
-}
-
-
+     }
+    
+}   
