@@ -146,6 +146,15 @@ public class Main {
                     }
                         break;
                     case '3':
+                        try{
+                        if(account == null){
+                            throw new AccountNotFoundException("Please Login first...");
+                        }
+                        account.withdraw(sc);
+                        }
+                        catch(InsufficientFundsException |AccountNotFoundException e){ 
+                            System.out.println(e.getMessage());
+                        }
                         break;
                     case '4':
                         account = null;

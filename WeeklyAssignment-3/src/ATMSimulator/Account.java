@@ -54,7 +54,7 @@ public  class Account {
     
      
     
-    void addBalance(double amount){
+    public void addBalance(double amount){
         balance += amount;
         System.out.println("Amount: " + amount+" added to account"+ getName());
     }
@@ -71,4 +71,15 @@ public  class Account {
 
      }
     
+    public void withdraw(Scanner sc) throws InsufficientFundsException{    
+        System.out.println("Enter amount you want to withdraw:");
+        double amount = sc.nextDouble();
+        if(amount > balance) 
+            throw new InsufficientFundsException("Account does not have enough funds");
+        balance = getBalance();
+        balance -= amount;
+        setBalance(balance);
+        System.out.println("your account is deducted "+amount);
+        System.out.println("Remaining Balance:"+balance);
+    }
 }   
