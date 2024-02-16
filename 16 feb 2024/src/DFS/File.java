@@ -6,12 +6,14 @@ class File {
     private double fileSize;
     private boolean isReplicated;
 
+    //constructor
     public File(String fileName, double fileSize) {
         this.fileName = fileName;
         this.fileSize = fileSize;
         this.isReplicated = false;
     }
-
+    
+    //getters
     public String getFileName() {
         return fileName;
     }
@@ -20,10 +22,11 @@ class File {
         return fileSize;
     }
 
-    public boolean isReplicated() {
+    public boolean getisReplicated() {
         return isReplicated;
     }
 
+    //setters
     public void setFileReplicated(){
         isReplicated = true;
     }
