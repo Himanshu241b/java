@@ -66,7 +66,7 @@ public class Main {
                 System.out.println("press 4: To Log Out or end session");
                 choice = sc.next().charAt(0);
                 switch (choice) {
-                    case '1':
+                    case '1'://login with card number and pin
                         try{
                         
                         boolean loop = true;
@@ -101,7 +101,7 @@ public class Main {
                             System.err.println(e.getMessage());
                         }
                         break;
-                    case '2':
+                    case '2': // to perform a transaction
                         // if user not logged in 
                         if(account == null){
                             System.out.println("Login first...");
@@ -145,7 +145,7 @@ public class Main {
                         System.err.println(e.getMessage());
                     }
                         break;
-                    case '3':
+                    case '3': // to withdraw money from logged in account
                         try{
                         if(account == null){
                             throw new AccountNotFoundException("Please Login first...");
@@ -182,7 +182,7 @@ public class Main {
 
         return sb.toString();
     }
-
+    //generates a group of 4 random numbers
     public static String generateRandomGroup() {
         Random random = new Random();
         StringBuilder group = new StringBuilder();

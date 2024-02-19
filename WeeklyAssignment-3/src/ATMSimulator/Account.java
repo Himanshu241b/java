@@ -53,13 +53,13 @@ public  class Account {
     }
     
      
-    
+    // method to add balance to recipient account while transferring money
     public void addBalance(double amount){
         balance += amount;
         System.out.println("Amount: " + amount+" added to account"+ getName());
     }
+    // 
      public void deduct(double amount, double charges) throws InsufficientFundsException{
-        
         double accountBalance = getBalance();
         if(accountBalance < (amount + amount*charges))
             throw new InsufficientFundsException(getName()+" --->Insufficient funds in your account ");
@@ -70,7 +70,7 @@ public  class Account {
         System.out.println("remaining balance"+ balance);
 
      }
-    
+    // method to withdraw money from account 
     public void withdraw(Scanner sc) throws InsufficientFundsException{    
         System.out.println("Enter amount you want to withdraw:");
         double amount = sc.nextDouble();

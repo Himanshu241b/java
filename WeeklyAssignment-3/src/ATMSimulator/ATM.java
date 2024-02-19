@@ -32,8 +32,8 @@ public class ATM {
         if(loginAccount.getBlocked()){
             throw new AccountNotFoundException("Account already blocked");
         }
-        int count = 3;
-        while(count > 0){
+        int count = 3;  // gives three attempts to user to enter the pin
+        while(count > 0){ // blocks the account if all attempts go invalid
             System.out.println("Enter your Pin:");
             System.out.println(count+"attempts left");
             --count;

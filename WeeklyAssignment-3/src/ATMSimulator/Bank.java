@@ -41,7 +41,7 @@ class HDFC extends Bank {
     public double getInterestRate() {
         return 6.5; // Example specific interest rate
     }
-
+    //method to deduct money from sender's account while transfer
     @Override  
     public void deduct(Account userAccount, double amount) throws AccountNotFoundException, InsufficientFundsException{
         Account senderAccount = null;
@@ -50,7 +50,7 @@ class HDFC extends Bank {
                 senderAccount = account; 
         if(senderAccount == null)
             throw new AccountNotFoundException("Account of recipient does not exist");
-        senderAccount.deduct(amount, 0.01);
+        senderAccount.deduct(amount, 0.01);//calls account class method to deduct with specific charges
     }
     
 }
@@ -84,6 +84,7 @@ class SBI extends Bank {
     public double getInterestRate() {
         return 6.5; // Example specific interest rate
     }
+    // method to deduct money from sender's account while transfer
     @Override  
     public void deduct(Account userAccount, double amount) throws AccountNotFoundException, InsufficientFundsException, AccountException{
         Account senderAccount = null;
@@ -92,7 +93,7 @@ class SBI extends Bank {
                 senderAccount = account; 
         if(senderAccount == null)
             throw new AccountNotFoundException("Account of recipient does not exist");
-        senderAccount.deduct(amount, 0.03);
+        senderAccount.deduct(amount, 0.03);//calls account class method to deduct with specific charges
     }
     
 }
@@ -125,6 +126,7 @@ class ICICI extends Bank {
     public List<Account> getAccounts(){
         return iciciAccounts;
     }
+    //method to deduct money from sender's account while transfer
     @Override  
     public void deduct(Account userAccount, double amount) throws AccountNotFoundException, InsufficientFundsException{
         Account senderAccount = null;
@@ -133,7 +135,7 @@ class ICICI extends Bank {
                 senderAccount = account; 
         if(senderAccount == null)
             throw new AccountNotFoundException("Account of recipient does not exist");
-        senderAccount.deduct(amount, 0.02);
+        senderAccount.deduct(amount, 0.02);  //calls account class method to deduct with specific charges
     }
     
 }
