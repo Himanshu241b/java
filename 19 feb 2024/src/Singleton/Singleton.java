@@ -9,11 +9,13 @@ class Singleton {
         // constructor code
     }
 
-    //private static method to get instance of this class
-    public static synchronized Singleton getInstance() {
+    //private static method to get instance of this class 
+    public static Singleton getInstance() {
+        synchronized(Singleton.class) { /* Block level synchronization(synchronizes the critical section to ensure thread safety)*/
         if(singletonInstance == null)
             return singletonInstance = new Singleton();
-        else 
+        }
             return singletonInstance;
+        
     }
 }
