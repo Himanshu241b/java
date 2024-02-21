@@ -8,7 +8,10 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.List;
 
-public class FileSerializer implements Serializable {
+/**
+ *  Class representing the serializer that serializes the objects
+ */
+public class FileSerializer{
 
     
     /**

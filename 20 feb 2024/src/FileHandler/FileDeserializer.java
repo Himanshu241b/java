@@ -9,7 +9,10 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class FileDeserializer implements Serializable {
+/**
+ *  Class representing the deserializer that deserializes the serialized text file
+ */
+public class FileDeserializer{
 
     
     List<Student> deserializedList;

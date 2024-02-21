@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"FileHandler","l":"FileDeserializer"},{"p":"FileHandler","l":"FileSerializer"},{"p":"FileHandler","l":"Main"},{"p":"FileHandler","l":"Student"}];updateSearchResults();
