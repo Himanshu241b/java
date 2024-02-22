@@ -1,0 +1,28 @@
+[
+    {
+      "name": "Alice",
+      "age": 18,
+      "class": "12th"
+    },
+    {
+      "name": "Bob",
+      "age": 17,
+      "class": "11th"
+    },
+    {
+      "name": "Charlie",
+      "age": 16,
+      "class": "10th"
+    },
+    {
+      "name": "David",
+      "age": 19,
+      "class": "12th"
+    },
+    {
+      "name": "Eve",
+      "age": 18,
+      "class": "12th"
+    }
+  ]
+  

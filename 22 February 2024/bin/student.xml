@@ -1,0 +1,32 @@
+<students>
+    <student>
+        <name>Donald</name>
+        <age>21</age>
+        <class>12th</class>
+    </student>
+    <student>
+        <name>Douglas</name>
+        <age>22</age>
+        <class>11th</class>
+    </student>
+    <student>
+        <name>Jennifer</name>
+        <age>20</age>
+        <class>12th</class>
+    </student>
+    <student>
+        <name>Michael</name>
+        <age>19</age>
+        <class>10th</class>
+    </student>
+    <student>
+        <name>Susan</name>
+        <age>23</age>
+        <class>12th</class>
+    </student>
+    <student>
+        <name>Pat</name>
+        <age>18</age>
+        <class>11th</class>
+    </student>
+</students>

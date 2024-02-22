@@ -31,7 +31,7 @@ public class Main {
     }
         // writing the csv file with name,salary above averagethreshold
 
-        reader.writeCSVFilteredBySalary("csvread/output.csv", thresholdPercent);
+        reader.writeCSVFilteredBySalary("output.csv", thresholdPercent);
         
         }
     }
