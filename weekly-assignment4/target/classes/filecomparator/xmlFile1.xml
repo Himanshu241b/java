@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <element1>
+        <subelement1>null</subelement1>
+        <subelement2>Value2</subelement2>
+    </element1>
+    <element2>
+        <subelement3>Value4</subelement3>
+    </element2>
+</root>
