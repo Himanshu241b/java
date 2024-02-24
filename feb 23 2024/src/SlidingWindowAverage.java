@@ -3,24 +3,29 @@ import java.util.*;
 
 class SlidingWindowAverage{
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter size of array: " );
-        int size = sc.nextInt();
-        System.out.println("Enter size of window: ");
-        int windowSize = sc.nextInt();
-        int[] array = new int[size];
-        System.out.println("Enter "+size+" elements of array: ");
-        for(int i = 0; i < size; ++i)
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter size of array: ");
+            int size = sc.nextInt();
+            System.out.println("Enter size of window: ");
+            int windowSize = sc.nextInt();
+            int[] array = new int[size];
+            System.out.println("Enter " + size + " elements of array: ");
+            for (int i = 0; i < size; ++i)
                 array[i] = sc.nextInt();
-        // call the function that returns result
-        List res = calc_mov_avg(array, windowSize, size);
+            // call the function that returns result
+            List res = calc_mov_avg(array, windowSize, size);
 
-        Vector v = (Vector) res.get(0);
-        int vectorSize = (Integer)res.get(1);
-        Iterator<Integer> iterator = v.iterator();
-        while(iterator.hasNext())
-            System.out.println( " "+ iterator.next());
-        System.out.println("Size of vector: "+v.size());
+            Vector v = (Vector) res.get(0);
+            int vectorSize = (Integer) res.get(1);
+            Iterator<Integer> iterator = v.iterator();
+            while (iterator.hasNext())
+                System.out.println(" " + iterator.next());
+            System.out.println("Size of vector: " + v.size());
+        }
+        catch (InputMismatchException e){
+            e.printStackTrace();
+        }
     }
 
     /**

@@ -1,31 +1,32 @@
 
 L
-java:S3740"/Provide the parametrized type for this generic.(´ÄŒ—8¸—­İ1
+java:S3740"/Provide the parametrized type for this generic.(´ÄŒ—8¯áôÍİ1
 L
-java:S3740"/Provide the parametrized type for this generic.(´şÒ·8¸—­İ1
+java:S3740"/Provide the parametrized type for this generic.(´şÒ·8°áôÍİ1
 K
-java:S3740!"/Provide the parametrized type for this generic.(È»§t8¸—­İ1
+java:S3740&"/Provide the parametrized type for this generic.(È»§t8°áôÍİ1
 Q
-java:S3740""/Provide the parametrized type for this generic.(ÛË»¿ùÿÿÿÿ8¸—­İ1
+java:S3740'"/Provide the parametrized type for this generic.(ÛË»¿ùÿÿÿÿ8°áôÍİ1
 Q
-java:S3740,"/Provide the parametrized type for this generic.(‹¥”Ñüÿÿÿÿ8¸—­İ1
+java:S37401"/Provide the parametrized type for this generic.(‹¥”Ñüÿÿÿÿ8°áôÍİ1
 Q
-java:S3740,"/Provide the parametrized type for this generic.(‹¥”Ñüÿÿÿÿ8¸—­İ1
+java:S37401"/Provide the parametrized type for this generic.(‹¥”Ñüÿÿÿÿ8°áôÍİ1
 7
-java:S1220""Move this file to a named package.8¹—­İ1
+java:S1220""Move this file to a named package.8²áôÍİ1
 ‚
-java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(´şÒ·8Ç—­İ1
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(´şÒ·8ÑáôÍİ1
 ‡
-java:S1149""eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÛË»¿ùÿÿÿÿ8Ç—­İ1
+java:S1149'"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÛË»¿ùÿÿÿÿ8ÒáôÍİ1
 [
-java:S1854">Remove this useless assignment to local variable "vectorSize".(÷Ì¾¾8Ç—­İ1
-L	java:S106"+Replace this use of System.out by a logger.(·å¯³øÿÿÿÿ8Ê—­İ1
-L	java:S106	"+Replace this use of System.out by a logger.(¥²÷Œúÿÿÿÿ8Ê—­İ1
-G	java:S106"+Replace this use of System.out by a logger.(¼¬Ê‘8Ë—­İ1
+java:S1854">Remove this useless assignment to local variable "vectorSize".(÷Ì¾¾8ÓáôÍİ1
+L	java:S106"+Replace this use of System.out by a logger.(·å¯³øÿÿÿÿ8ØáôÍİ1
+L	java:S106
+"+Replace this use of System.out by a logger.(¥²÷Œúÿÿÿÿ8ÙáôÍİ1
+G	java:S106"+Replace this use of System.out by a logger.(¼¬Ê‘8ÙáôÍİ1
 L
-java:S1481"/Remove this unused "vectorSize" local variable.(÷Ì¾¾8Ë—­İ1
-L	java:S106"+Replace this use of System.out by a logger.(àõáœùÿÿÿÿ8Ë—­İ1
-G	java:S106"+Replace this use of System.out by a logger.(Ä¢Æ¿8¦¿’­İ1
-i	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È»§t8Ë—­İ1
+java:S1481"/Remove this unused "vectorSize" local variable.(÷Ì¾¾8ÜáôÍİ1
+L	java:S106"+Replace this use of System.out by a logger.(àõáœùÿÿÿÿ8İáôÍİ1
+G	java:S106"+Replace this use of System.out by a logger.(Ä¢Æ¿8İáôÍİ1
+i	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È»§t8ŞáôÍİ1
 G
-java:S1905)"*Remove this unnecessary cast to "Integer".(ÚÓìµ8Í—­İ1
+java:S1905."*Remove this unnecessary cast to "Integer".(ÚÓìµ8ááôÍİ1

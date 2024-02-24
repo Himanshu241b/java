@@ -17,7 +17,7 @@ class CharMaxFrequency{
     /**
      * returns character that occurs maximum times
      * @param str string to count maximum frequency
-     * @return character that occurs maximum number of times in string
+     * @return result character that occurs maximum number of times in string
      */
     public static char findMaxFrequencyChar(String str){
         Map<Character, Integer> map = new HashMap<Character, Integer>();
