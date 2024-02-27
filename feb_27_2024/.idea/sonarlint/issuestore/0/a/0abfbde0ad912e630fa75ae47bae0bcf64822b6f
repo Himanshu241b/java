@@ -1,0 +1,8 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(íîÒìıÿÿÿÿ8¸ü‚ÈŞ1
+L	java:S106	"+Replace this use of System.out by a logger.(÷×½Êøÿÿÿÿ8Äü‚ÈŞ1
+{	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(“ì’Ãşÿÿÿÿ8Åü‚ÈŞ1
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Õ•–ß8Åü‚ÈŞ1
+v	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(•ãòè8Åü‚ÈŞ1
+r
+java:S1201"UEither override Object.equals(Object), or rename the method to prevent any confusion.(ìáÀÎ8Çü‚ÈŞ1
