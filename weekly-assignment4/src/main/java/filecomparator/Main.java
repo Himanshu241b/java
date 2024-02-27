@@ -24,7 +24,7 @@ public class Main {
 
         //compare xml files 
         String xmlPath1 = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/xmlFile1.xml";
-        String xmlPath2 = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/xmlFile1.xml";
+        String xmlPath2 = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/xmlFile2.xml";
         comparator.compareXml(xmlPath1, xmlPath2);
 
     }

@@ -54,7 +54,7 @@ public class FileComparator {
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
             Document doc1 = builder.parse(new File(xmlPath1));
-
+            System.out.println("**********"+doc1.toString());
             // Parse the second XML file
             Document doc2 = builder.parse(new File(xmlPath2));
 

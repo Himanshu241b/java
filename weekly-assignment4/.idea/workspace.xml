@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3111dba-40a2-4ef6-8494-59812b80a605" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/4/c/4ccf94166f7e66a7417800eb5b5aefb54fb1793d" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/4/c/4ccf94166f7e66a7417800eb5b5aefb54fb1793d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/8/d/8df377323a76da51a99c90f6f1eee674f7d1b857" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/8/d/8df377323a76da51a99c90f6f1eee674f7d1b857" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/e/7/e75a16b7a9ecde175b9e7ed33ecfea445a1f1085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/securityhotspotstore/e/7/e75a16b7a9ecde175b9e7ed33ecfea445a1f1085" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/FactoryDesignPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/FactoryDesignPattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/Truck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/VehicleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../FactoryDesignPattern.java/src/vehiclefactory/VehicleFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/47d1d799ddeff210f44bf079d89b4c7064bd0bcb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/9/89d796e0ff67326c7739bfe5def778b65d7e7ed8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e39d456cb38b5930184f8ad248e44fb27a9621d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/7/47d1d799ddeff210f44bf079d89b4c7064bd0bcb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/9/89d796e0ff67326c7739bfe5def778b65d7e7ed8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/e/3/e39d456cb38b5930184f8ad248e44fb27a9621d6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/FileComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/FileComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/xmlFile1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/xmlFile1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/xmlFile2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/xmlFile2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/FileComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filecomparator/FileComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filecomparator/Main.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2cksMdUGLftH1hAEi5yWGKopYHi" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/filecomparator" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3111dba-40a2-4ef6-8494-59812b80a605" name="Changes" comment="" />
+      <created>1708666864676</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708666864676</updated>
+    </task>
+    <servers />
+  </component>
+</project>

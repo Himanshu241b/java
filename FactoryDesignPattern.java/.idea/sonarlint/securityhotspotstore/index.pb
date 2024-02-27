@@ -1,8 +1,4 @@
 
-=
-src/Main.java,9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138
-M
-src/FactoryDesignPattern.java,e/7/e75a16b7a9ecde175b9e7ed33ecfea445a1f1085
 \
 ,src/vehiclefactory/FactoryDesignPattern.java,7/0/7030c21dffc0c79d95f051827d1750b91f037544
 O
@@ -16,3 +12,7 @@ M
 src/vehiclefactory/Truck.java,4/c/4ccf94166f7e66a7417800eb5b5aefb54fb1793d
 V
 &src/vehiclefactory/VehicleFactory.java,6/6/66e66e88e090bd02a1a28620b5906a6b14e99221
+R
+"src/vehiclefactory/docs/index.html,2/9/29076b808186da47a38178b14e4f78f2cecd2a54
+M
+FactoryDesignPattern.java.iml,4/4/445ecb17adf2d21301b2010cbb55330eaaf186b7

@@ -1,6 +1,9 @@
 package vehiclefactory;
 
-class VehicleFactory{
+/**
+ * vehicle factory to create a certain type of vehicle
+ */
+public class VehicleFactory{
     /**
      * factory method creates the vehicle of perticular type and returns its instance
      * @param type type of vehicle to be created
