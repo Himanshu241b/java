@@ -1,0 +1,30 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(´ÄŒ—
+E
+java:S3740"/Provide the parametrized type for this generic.(´þÒ·
+D
+java:S3740&"/Provide the parametrized type for this generic.(È»§t
+J
+java:S3740'"/Provide the parametrized type for this generic.(ÛË»¿ùÿÿÿÿ
+J
+java:S37401"/Provide the parametrized type for this generic.(‹¥”Ñüÿÿÿÿ
+J
+java:S37401"/Provide the parametrized type for this generic.(‹¥”Ñüÿÿÿÿ
+{
+java:S1149"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(´þÒ·
+€
+java:S1149'"eReplace the synchronized class "Vector" by an unsynchronized one such as "ArrayList" or "LinkedList".(ÛË»¿ùÿÿÿÿ
+T
+java:S1854">Remove this useless assignment to local variable "vectorSize".(÷Ì¾¾
+E	java:S106"+Replace this use of System.out by a logger.(·å¯³øÿÿÿÿ
+E	java:S106
+"+Replace this use of System.out by a logger.(¥²÷Œúÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(¼¬Ê‘
+E
+java:S1481"/Remove this unused "vectorSize" local variable.(÷Ì¾¾
+E	java:S106"+Replace this use of System.out by a logger.(àõáœùÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(Ä¢Æ¿
+b	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È»§t
+@
+java:S1905."*Remove this unnecessary cast to "Integer".(ÚÓìµ

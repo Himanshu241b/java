@@ -1,0 +1,10 @@
+
+=
+java:S2129" Remove this "String" constructor(Ûª°¡8üÒÛªŞ1
+L	java:S106"+Replace this use of System.out by a logger.(â’â¨ùÿÿÿÿ8üïÄªŞ1
+m
+java:S1206"PThis class overrides "equals()" and should therefore also override "hashCode()".(ÜÑã8ıïÄªŞ1
+c
+java:S1126"AReplace this if-then-else statement by a single return statement.(¾±ÅÁøÿÿÿÿ8€ğÄªŞ1
+I
+java:S1068	"'Remove this unused "str" private field.(Ì¶Ô‡ùÿÿÿÿ8‚ğÄªŞ1
