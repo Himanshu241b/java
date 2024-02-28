@@ -5,22 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a3111dba-40a2-4ef6-8494-59812b80a605" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../feb_26_2024/.idea/sonarlint/issuestore/3/8/38df112dfb7c98ff87fbdaf8119512a65ca83d4f" beforeDir="false" afterPath="$PROJECT_DIR$/../feb_26_2024/.idea/sonarlint/issuestore/3/8/38df112dfb7c98ff87fbdaf8119512a65ca83d4f" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../feb_26_2024/src/ScrambleString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../feb_26_2024/src/ScrambleString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e39d456cb38b5930184f8ad248e44fb27a9621d6" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e39d456cb38b5930184f8ad248e44fb27a9621d6" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/FileComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/FileComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/FileImporter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/FileImporter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/actual.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/actual.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/expected.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filecomparator/expected.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/FileComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filecomparator/FileComparator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/FileImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filecomparator/FileImporter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/filecomparator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/file1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/file2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/xmlFile1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/xmlFile2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weekly-assignment4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/weekly-assignment4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/ResultCSV2024-02-28_11-46-09.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Outputs/ResultCSV2024-02-28_11-46-09.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/file1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/filecomparator/file2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/filecomparator/FileComparator.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,26 +32,27 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/actual.csv",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "two.files.diff.last.used.file": "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/actual.csv"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/actual.csv&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;two.files.diff.last.used.file&quot;: &quot;/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/actual.csv&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/filecomparator" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/Outputs" />
       <recent name="$PROJECT_DIR$/src/main/java/filecomparator" />
       <recent name="$PROJECT_DIR$" />
     </key>

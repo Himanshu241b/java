@@ -27,6 +27,7 @@ public class FileComparator {
      * @param fileList2 word list from file 2
      */
     public void compareTxt(List<String[]> fileList1, List<String[]> fileList2) {
+        try{
         // maxlength of number of sentences in files
         int maxLength = Math.max(fileList1.size(), fileList2.size());
         //iterate over sentences
@@ -41,6 +42,10 @@ public class FileComparator {
                 compareWordsInSentences(file1Sentence, file2Sentence);
             }
         }
+        }
+        catch (ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -50,42 +55,54 @@ public class FileComparator {
      * @return boolean if the sentences are equal or not
      */
     private boolean areSentencesEqual(String[] sentenceOfActualFile, String[] sentenceOfExpectedFile) {
-        //if length of sentenceOfActualFile dont match length of sentenceOfExpectedFile they are unequal
-        if (sentenceOfActualFile.length != sentenceOfExpectedFile.length) {
-            return false;
-        }
-        // compare the sentences
-        for (int i = 0; i < sentenceOfActualFile.length; i++) {
-            if (!sentenceOfActualFile[i].equals(sentenceOfExpectedFile[i])) {
+
+            //if length of sentenceOfActualFile dont match length of sentenceOfExpectedFile they are unequal
+            if (sentenceOfActualFile.length != sentenceOfExpectedFile.length) {
                 return false;
             }
-        }
-        // when they are equal return true
-        return true;
+            try{
+            // compare the sentences
+            for (int i = 0; i < sentenceOfActualFile.length; i++) {
+                if (!sentenceOfActualFile[i].equals(sentenceOfExpectedFile[i])) {
+                    return false;
+                }
+            }
+            }
+            catch(ArrayIndexOutOfBoundsException e){
+                e.printStackTrace();
+            }
+            // when they are equal return true
+            return true;
+
     }
 
     /**
      * method compares words in sentence
-     * @param santenceOfActualFile sentence of file1
+     * @param sentenceOfActualFile sentence of file1
      * @param sentenceOfExpectedFile sentence of file2
      */
-    private void compareWordsInSentences(String[] santenceOfActualFile, String[] sentenceOfExpectedFile) {
-        int maxLength = Math.max(santenceOfActualFile.length, sentenceOfExpectedFile.length);
-        //word by word comparison of santenceOfActualFile and sentenceOfExpectedFile
-        for (int word = 0; word < maxLength; word++) {
-            if (word < santenceOfActualFile.length && word < sentenceOfExpectedFile.length) {
-                if (!santenceOfActualFile[word].equals(sentenceOfExpectedFile[word])) {
-                    System.out.println("Word " + (word + 1) + ":");
-                    System.out.println("File 1: " + santenceOfActualFile[word]);
-                    System.out.println("File 2: " + sentenceOfExpectedFile[word]);
+    private void compareWordsInSentences(String[] sentenceOfActualFile, String[] sentenceOfExpectedFile) {
+        try {
+            int maxLength = Math.max(sentenceOfActualFile.length, sentenceOfExpectedFile.length);
+            //word by word comparison of sentenceOfActualFile and sentenceOfExpectedFile
+            for (int word = 0; word < maxLength; word++) {
+                if (word < sentenceOfActualFile.length && word < sentenceOfExpectedFile.length) {
+                    if (!sentenceOfActualFile[word].equals(sentenceOfExpectedFile[word])) {
+                        System.out.println("Word " + (word + 1) + ":");
+                        System.out.println("File 1: " + sentenceOfActualFile[word]);
+                        System.out.println("File 2: " + sentenceOfExpectedFile[word]);
+                    }
+                } else if (word < sentenceOfActualFile.length) {
+                    //prints extra words in sentenceOfActualFile
+                    System.out.println("Extra word in File 1: " + sentenceOfActualFile[word]);
+                } else {
+                    //print extra words in sentenceOfExpectedFile
+                    System.out.println("Extra word in File 2: " + sentenceOfExpectedFile[word]);
                 }
-            } else if (word < santenceOfActualFile.length) {
-                //prints extra words in santenceOfActualFile
-                System.out.println("Extra word in File 1: " + santenceOfActualFile[word]);
-            } else {
-                //print extra words in sentenceOfExpectedFile
-                System.out.println("Extra word in File 2: " + sentenceOfExpectedFile[word]);
             }
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
         }
     }
 
@@ -96,11 +113,12 @@ public class FileComparator {
      * @return boolean value if files are equal or not
      */
     public boolean compareCsv(List<String[]> csvList1, List<String[]> csvList2, String[] ignoreColumns) {
+
         //if lines length don't match return false
         if (csvList1.size() != csvList2.size()) {
             return false;
         }
-
+        try{
         // Compare each line in both files
         for (int row = 0; row < csvList1.size(); row++) {
             String[] lineOfActualFile = csvList1.get(row);
@@ -131,6 +149,10 @@ public class FileComparator {
                     return false;
                 }
             }
+            }
+        }
+        catch(ArrayIndexOutOfBoundsException e){
+            e.printStackTrace();
         }
         // when all lines and fields are equal
         return true;
@@ -149,7 +171,7 @@ public class FileComparator {
             // generates datetime from local machine
             LocalDateTime now = LocalDateTime.now();
             // make a filename to store output
-            String filename = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/filecomparator/ResultCSV" + dtf.format(now) + ".csv";
+            String filename = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/Outputs/ResultCSV" + dtf.format(now) + ".csv";
 
             // make a file and append first row to it
             try (FileWriter writer = new FileWriter(filename)) {

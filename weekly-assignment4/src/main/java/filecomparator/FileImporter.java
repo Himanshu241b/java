@@ -36,7 +36,11 @@ class FileImporter{
                     sentenceList.add(words);
                 }
             }
+        }catch (FileNotFoundException e) {
+            // Handle file not found exception
+            e.printStackTrace();
         } catch (IOException e) {
+            // Handle other IO exceptions
             e.printStackTrace();
         }
         // return the result list
@@ -57,7 +61,11 @@ class FileImporter{
                 String[] parts = line.split(","); // Split by comma
                 dataList.add(parts);
             }
+        } catch (FileNotFoundException e) {
+            // Handle file not found exception
+            e.printStackTrace();
         } catch (IOException e) {
+            // Handle other IO exceptions
             e.printStackTrace();
         }
 
