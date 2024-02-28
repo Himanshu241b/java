@@ -22,7 +22,7 @@ class LargestHistogram{
 
         // fill the prevSmallest array
         for(int i = 0; i < heights.length; i++){
-            while(!stack.isEmpty() && heights[i] <= heights[stack.peek()])
+            while(!stack.isEmpty() && heights[i] <= heights[stack.peek()]) //if previous smalllest index has equal or more height pop it and look for next index in stack
                 stack.pop();
             if(stack.isEmpty())
                 prevSmallest[i] = 0;
@@ -32,7 +32,7 @@ class LargestHistogram{
         }
         //fill the nextSmallest array
         for(int i = heights.length - 1; i >= 0; i--){
-            while(!stack.isEmpty() && heights[i] <= heights[stack.peek()])
+            while(!stack.isEmpty() && heights[i] <= heights[stack.peek()]) //if next smalllest index has equal or more height pop it and look for next index in stack
                 stack.pop();
             if(stack.isEmpty())
                 nextSmallest[i] = heights.length-1;
