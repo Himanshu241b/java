@@ -5,6 +5,6 @@ L	java:S106
 F	java:S106"+Replace this use of System.out by a logger.(ÎÑë@8“†ÜĞŞ1
 L	java:S106"+Replace this use of System.out by a logger.(Éã³ùÿÿÿÿ8“†ÜĞŞ1
 I
-java:S1197",Move the array designators [][] to the type.( é²Ş8”†ÜĞŞ1
+java:S1197",Move the array designators [][] to the type.(«íîİ8”†ÜĞŞ1
 o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ô°¢¸8”†ÜĞŞ1
+java:S3776)"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ÌòóË8”†ÜĞŞ1

@@ -15,35 +15,54 @@ class WildcardMatching {
             System.out.println("Wildcard string does not match");
 
     }
+
+    /**
+     * method to check if the string matches the pattern
+     * @param s input string
+     * @param p input pattern
+     * @return true if the string matches the pattern
+     */
     public static boolean isMatch(String s, String p) {
-        int dp[][] = new int[s.length()][p.length()];
-        for(int[] arr : dp)
+        int dp[][] = new int[s.length()][p.length()]; // initialize 2d array for memoization
+        for(int[] arr : dp) // fill the dp array with -1
             Arrays.fill(arr, -1);
         return helper(s, p, s.length()-1, p.length()-1, dp);
     }
-    public static boolean helper(String s, String p, int i, int j, int[][] dp){
-        if(i < 0 && j < 0)
+
+    /**
+     * helper method to check if the string matches the pattern
+     * @param s input string
+     * @param p input pattern
+     * @param stringIndex last index of input string
+     * @param patternIndex last index of pattern string
+     * @param dp 2d array to memoize the repeating work
+     * @return
+     */
+    public static boolean helper(String s, String p, int stringIndex, int patternIndex, int[][] dp){
+        if(stringIndex < 0 && patternIndex < 0) // string has matched the pattern completely
             return true;
-        if(i >= 0 && j < 0)
+        if(stringIndex >= 0 && patternIndex < 0) //string is still not matched but pattern is complete
             return false;
-        if(i < 0 && j >=0){
-            for(int k = 0; k <= j; ++k){
+        if(stringIndex < 0 && patternIndex >=0){ // string has been completely iterated but pattern is still left
+            for(int k = 0; k <= patternIndex; ++k){ //checks if the remaining characters in pattern are '*'
                 if(p.charAt(k)!= '*')
                     return false;
             }
             return true;
         }
-
-        if(dp[i][j] != -1)
-            return dp[i][j] == 1;
+        //check memoized array to see if we already have the result
+        if(dp[stringIndex][patternIndex] != -1)
+            return dp[stringIndex][patternIndex] == 1;
 
         boolean result = false;
-        if(s.charAt(i) == p.charAt(j) || p.charAt(j) == '?')
-            result = helper(s, p, i-1, j-1, dp);
-        if(p.charAt(j) == '*')
-            result = helper(s, p, i-1, j, dp) || helper(s, p, i, j-1, dp);
+        // when the characters match or pattern has '?'
+        if(s.charAt(stringIndex) == p.charAt(patternIndex) || p.charAt(patternIndex) == '?')
+            result = helper(s, p, stringIndex-1, patternIndex-1, dp);
+        // when the pattern has '*' we can use it or ignore it
+        if(p.charAt(patternIndex) == '*')
+            result = helper(s, p, stringIndex-1, patternIndex, dp) || helper(s, p, stringIndex, patternIndex-1, dp);
 
-        dp[i][j] = result ? 1 : 0;
+        dp[stringIndex][patternIndex] = result ? 1 : 0;
         return result;
     }
 }

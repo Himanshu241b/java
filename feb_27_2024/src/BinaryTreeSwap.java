@@ -1,7 +1,10 @@
+/**
+ * TreeNode class representing the nodes of tree
+ */
 class TreeNode{
-    int val;
-    TreeNode left;
-    TreeNode right;
+    int val;    // value stored in node
+    TreeNode left; // left node of tree element
+    TreeNode right; // right node of tree element
     TreeNode(int val){
         this.val = val;
         left = right = null;
@@ -26,7 +29,10 @@ class BinaryTreeSwap{
     }
 
 
-
+    /**
+     * Traverses the tree and updates the values of first second and prev nodes
+     * @param root root node of binary tree
+     */
     public static void traverse(TreeNode root) {
         if (root == null) return;
 
