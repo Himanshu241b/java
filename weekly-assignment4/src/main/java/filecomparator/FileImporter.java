@@ -2,6 +2,7 @@ package filecomparator;
 
 // imports
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,30 +17,52 @@ class FileImporter{
      * read a file and add words to a list of list line by line and return it
      * @param filePath the path to the file
      */
-    public List<String[]> readFile(String filePath){
-        // 2d list to return words in each line
-        List<String[]> fileList = new ArrayList<String[]>();
+    public List<String[]> readTxt(String filePath) {
+        // 2d list to return words in each sentence
+        List<String[]> sentenceList = new ArrayList<>();
 
-        try{
-            BufferedReader reader = new BufferedReader(new FileReader(filePath));
+        try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
 
             // Read lines from the file until the end is reached
             while ((line = reader.readLine()) != null) {
-                // Split the line into words based on whitespace
-                String[] words = line.split("\\s+");
+                // Split the line into sentences based on ". "
+                String[] sentences = line.split("\\.\\s+");
 
-                fileList.add(words);
+                // Process each sentence
+                for (String sentence : sentences) {
+                    // Split the sentence into words based on whitespace
+                    String[] words = sentence.split("\\s+");
+                    sentenceList.add(words);
                 }
-                // Close the reader to free resources
-            reader.close();
             }
-            catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-            }
-            // return the result list
-            return fileList;
         }
+        // return the result list
+        return sentenceList;
+    }
+
+    /**
+     * method to read a csv input file and create a List of string array of field values of csv file
+     * @param path path of the csv file
+     * @return List of field values
+     */
+    public List<String[]> readCsv(String path){
+        List<String[]> dataList = new ArrayList<>();
+
+        try (BufferedReader reader = new BufferedReader(new FileReader(path))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(","); // Split by comma
+                dataList.add(parts);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return dataList;
+    }
 }
 
 

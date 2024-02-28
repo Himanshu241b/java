@@ -1,0 +1,9 @@
+
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Êí‹Û8ÃâÏõŞ1
+m
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Êí‹Û8½ãÏõŞ1
+L	java:S106"+Replace this use of System.out by a logger.(ü…î¡ùÿÿÿÿ8ÀãÏõŞ1
+G	java:S106
+"+Replace this use of System.out by a logger.(³ššƒ8ÀãÏõŞ1
+G	java:S106"+Replace this use of System.out by a logger.(«œ«Ï8ÁãÏõŞ1

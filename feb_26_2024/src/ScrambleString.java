@@ -6,8 +6,8 @@ public class ScrambleString {
 
     public static void main(String[] args) {
         ScrambleString solution = new ScrambleString();
-        System.out.println(solution.isScramble("we", "we")); // Output: true
-        System.out.println(solution.isScramble("phqtrnilf", "ilthnqrpf")); // Output: false
+        System.out.println(solution.isScramble("we", "we"));
+        System.out.println(solution.isScramble("phqtrnilf", "ilthnqrpf"));
     }
     public boolean isScramble(String s1, String s2) {
         // Create a memoization map

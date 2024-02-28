@@ -1,0 +1,26 @@
+
+S
+java:S1141›"5Extract this nested try block into a separate method.(ºÃ¿›8‡å£òŞ1
+Q
+java:S2755Ç"3Disable access to external entities in XML parsing.(ğ¨ºî8îç£òŞ1
+G	java:S106("+Replace this use of System.out by a logger.(¼ÿÚ8òç£òŞ1
+G	java:S106N"+Replace this use of System.out by a logger.(õº³È8ôç£òŞ1
+F	java:S106O"+Replace this use of System.out by a logger.(¦İ08ôç£òŞ1
+L	java:S106P"+Replace this use of System.out by a logger.(òÏÿèøÿÿÿÿ8ôç£òŞ1
+G	java:S106T"+Replace this use of System.out by a logger.(ÛÈ›ã8ôç£òŞ1
+G	java:S106W"+Replace this use of System.out by a logger.(Ûƒ8õç£òŞ1
+o
+java:S3776b"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(÷¿…8õç£òŞ1
+p
+java:S3776‘"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(Ãûîß8÷ç£òŞ1
+H	java:S106½"+Replace this use of System.out by a logger.(Ì£ØÍ8ÿç£òŞ1
+M	java:S106Ë"+Replace this use of System.err by a logger.(½ıêúÿÿÿÿ8şç£òŞ1
+H	java:S106Î"+Replace this use of System.out by a logger.(”½ ÿ8ÿç£òŞ1
+H	java:S106Ğ"+Replace this use of System.out by a logger.(©ª½Ù8è£òŞ1
+H	java:S106Õ"+Replace this use of System.err by a logger.(î£’¡8ÿç£òŞ1
+u
+java:S3776ä"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¨ş´«ÿÿÿÿÿ8€è£òŞ1
+H	java:S106æ"+Replace this use of System.out by a logger.(’Üİß8‚è£òŞ1
+M	java:S106ë"+Replace this use of System.out by a logger.(ñ¹Óêşÿÿÿÿ8ƒè£òŞ1
+M	java:S106ÿ"+Replace this use of System.out by a logger.( İ•øÿÿÿÿ8„è£òŞ1
+H	java:S106"+Replace this use of System.out by a logger.(í„¸Ï8¶ÈºòŞ1
