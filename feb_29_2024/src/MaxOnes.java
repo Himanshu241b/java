@@ -13,15 +13,15 @@ public class MaxOnes {
 
         while (right < A.size()) {
             // when new element in window is 0 increase zerocount
-            if (A.get(right) == 0) {
-                zeroCount++;
-            }
+
             //if zerocount is greater than what we can flip decrease window size
             while (zeroCount > B) {
                 if (A.get(left) == 0) {
                     zeroCount--;
                 }
-                left++;
+                left++;     if (A.get(right) == 0) {
+                    zeroCount++;
+                }
             }
             //if we get a new maxlength change previous value and also maxleft and maxright index of window
             if (right - left + 1 > maxLength) {

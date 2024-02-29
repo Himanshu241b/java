@@ -10,3 +10,5 @@
 src/TreeSum.java,5/c/5c98b1825b839dc2017b9917608732a8a94e894c
 N
 src/OrderOfPersonsHeights.java,6/e/6e271a5e66dec33cd266ba6c1e28d15e2e0eda01
+I
+src/CustomClassInSet.java,e/0/e045c1ea90faf1b68232fdce86261bd19f4d5ed1
