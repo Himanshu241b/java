@@ -1,6 +1,6 @@
-//imports
-import java.util.Scanner;
-
+/**
+ * class representing a node of tree
+ */
 class TreeNode{
     int val;
     TreeNode left;
@@ -23,6 +23,12 @@ class TreeSum{
         System.out.println("sum = " + result);
     }
 
+    /**
+     * method to find the sum of all numbers formed from root to leaf nodes
+     * @param root root node of tree
+     * @param currentSum current sum of all numbers formed from root to leaf nodes in each branch
+     * @return sum of all numbers formed from root to leaf nodes
+     */
     public static int findSum(TreeNode root, int currentSum){
         if (root == null) {
             return 0;

@@ -2,7 +2,16 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+/**
+ * class containing the driver code
+ */
 public class MaxOnes {
+    /**
+     * method to find the indices of longest consecutive 1's in the array
+     * @param A input binary array
+     * @param B number of 0's that can be flipped
+     * @return  the indices of the longest consecutive 1's in the array
+     */
     public ArrayList<Integer> maxone(ArrayList<Integer> A, int B) {
         int left = 0;
         int right = 0;
@@ -32,7 +41,7 @@ public class MaxOnes {
 
             right++;
         }
-
+        // ADD THE indices to result array
         ArrayList<Integer> result = new ArrayList<>();
         for (int i = maxLeft; i <= maxRight; i++) {
             result.add(i);

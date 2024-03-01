@@ -3,6 +3,10 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+
+/**
+ * Class containing driver code
+ */
 class orderOfPersonsHeights{
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -21,6 +25,13 @@ class orderOfPersonsHeights{
         for(int i = 0; i < orderedPeople.size(); i++)
             System.out.println(orderedPeople.get(i).toString());
     }
+
+    /**
+     * method to order people according to their height
+     * @param heights array of heights of people
+     * @param infronts array of people taller than that person in front of him
+     * @return List of people ordered according to their actual height
+     */
     public static ArrayList<Integer> orderPeople(int[] heights, int[] infronts){
         int n = heights.length;
 
