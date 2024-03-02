@@ -1,16 +1,2 @@
 
-a
-java:S1226Y"?Introduce a new variable instead of reusing the parameter "l1".(‹­õäıÿÿÿÿ8·èÌØß1
-a
-java:S1226]"?Introduce a new variable instead of reusing the parameter "l2".(Ñüàãÿÿÿÿÿ8¸èÌØß1
 L	java:S106"+Replace this use of System.out by a logger.(­…ø–ùÿÿÿÿ8Ÿ”áØß1
-[
-java:S1854P"9Remove this useless assignment to local variable "right".(ÀÖì½şÿÿÿÿ8ÆèÌØß1
-Z
-java:S1854O"8Remove this useless assignment to local variable "left".(âö–°úÿÿÿÿ8ÆèÌØß1
-T
-java:S1854N"7Remove this useless assignment to local variable "mid".(›üøÉ8ÆèÌØß1
-U
-java:S1854U"8Remove this useless assignment to local variable "curr".(ïşÁ8ÇèÌØß1
-V
-java:S1854T"9Remove this useless assignment to local variable "dummy".(Ø³¯²8ÇèÌØß1

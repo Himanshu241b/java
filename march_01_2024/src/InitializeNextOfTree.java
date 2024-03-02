@@ -25,15 +25,15 @@ class InitializeNextOfTree{
         root.right.left = new Treenode(8);
         root.left.right = new Treenode(9);
 
-        Treenode nextRoot = initializeNext(root);
+        Treenode newRoot = initializeNext(root);
 
         //print the tree level by level
-        Treenode curr = nextRoot;
+        Treenode curr = newRoot;
         while(curr.left != null){
-            nextRoot = curr;
-            while(nextRoot.next != null){
-                System.out.print(nextRoot.val+"->");
-                nextRoot = nextRoot.next;
+            newRoot = curr;
+            while(newRoot.next != null){
+                System.out.print(newRoot.val+"->");
+                newRoot = newRoot.next;
             }
             System.out.println();
             curr = curr.left;

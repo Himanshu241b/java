@@ -29,15 +29,17 @@ class MergeKSortedLinkedLists{
 
         while(result != null){
             System.out.println(result.val+" ");
+            result = result.next;
         }
     }
-    public ListNode mergeKLists(ListNode[] lists) {
+    
+    public static ListNode mergeKLists(ListNode[] lists) {
         if(lists == null || lists.length == 0)
             return null;
 
         return mergeListsHelper(lists, 0, lists.length-1);
     }
-    public ListNode mergeListsHelper(ListNode[] lists, int start, int end){
+    public static ListNode mergeListsHelper(ListNode[] lists, int start, int end){
         if(start == end)
             return lists[start];
         if(start+1 == end)
@@ -47,40 +49,7 @@ class MergeKSortedLinkedLists{
         ListNode right = mergeListsHelper(lists, mid+1, end);
         return merge(left, right);
     }
-    public ListNode merge(ListNode l1, ListNode l2){
-        ListNode dummy = new ListNode();
-        ListNode curr = dummy;
-        while(l1 != null && l2 != null){
-            if(l1.val < l2.val){
-                curr.next = l1;
-                l1 = l1.next;
-            }
-            else{
-                curr.next = l2;
-                l2 = l2.next;
-            }
-            curr = curr.next;
-        }
-        curr.next = (l1 != null) ? l1 : l2;
-
-        return dummy.next;
-    }public ListNode mergeKLists(ListNode[] lists) {
-        if(lists == null || lists.length == 0)
-            return null;
-
-        return mergeListsHelper(lists, 0, lists.length-1);
-    }
-    public ListNode mergeListsHelper(ListNode[] lists, int start, int end){
-        if(start == end)
-            return lists[start];
-        if(start+1 == end)
-            return merge(lists[start], lists[end]);
-        int mid = start + (end-start) / 2;
-        ListNode left = mergeListsHelper(lists, start, mid);
-        ListNode right = mergeListsHelper(lists, mid+1, end);
-        return merge(left, right);
-    }
-    public ListNode merge(ListNode l1, ListNode l2){
+    public static ListNode merge(ListNode l1, ListNode l2){
         ListNode dummy = new ListNode();
         ListNode curr = dummy;
         while(l1 != null && l2 != null){
