@@ -86,7 +86,7 @@ class SBI extends Bank {
     }
     // method to deduct money from sender's account while transfer
     @Override  
-    public void deduct(Account userAccount, double amount) throws AccountNotFoundException, InsufficientFundsException, AccountException{
+    public void deduct(Account userAccount, double amount) throws AccountNotFoundException, InsufficientFundsException{
         Account senderAccount = null;
         for(Account account :getAccounts())
             if(account != null && account == userAccount)

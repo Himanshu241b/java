@@ -1,0 +1,46 @@
+
+p
+java:S1192`"SDefine a constant instead of duplicating this literal "Enter valid choice" 3 times.(ÔˆûÌ8Æ‚é™ß1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¥ò¡Øûÿÿÿÿ8É‚é™ß1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 37 to the 15 allowed.(Çµí‘8Ê…é™ß1
+c
+java:S3457"AFormat specifiers should be used instead of string concatenation.(¯ü¢äşÿÿÿÿ8ì…é™ß1
+G	java:S106-"+Replace this use of System.out by a logger.(Öå¤Ê8ğ…é™ß1
+G	java:S106."+Replace this use of System.out by a logger.(à•î³8ñ…é™ß1
+G	java:S106/"+Replace this use of System.out by a logger.(äœşË8ò…é™ß1
+L	java:S1060"+Replace this use of System.out by a logger.(¢‹í¿şÿÿÿÿ8ó…é™ß1
+G	java:S1061"+Replace this use of System.out by a logger.(Õ¦¼›8ô…é™ß1
+L	java:S1062"+Replace this use of System.out by a logger.(ÕÆüÿÿÿÿ8ô…é™ß1
+G	java:S1064"+Replace this use of System.out by a logger.(«Ú·8õ…é™ß1
+L	java:S1065"+Replace this use of System.out by a logger.(²Ê¯àşÿÿÿÿ8ö…é™ß1
+L	java:S1066"+Replace this use of System.out by a logger.(Õ¿©ûÿÿÿÿ8ö…é™ß1
+L	java:S1067"+Replace this use of System.out by a logger.(à¯Ö¬úÿÿÿÿ8÷…é™ß1
+L	java:S1068"+Replace this use of System.out by a logger.(¯½ˆàúÿÿÿÿ8ø…é™ß1
+L	java:S1069"+Replace this use of System.out by a logger.(ÅÊŒÓüÿÿÿÿ8ù…é™ß1
+L	java:S106>"+Replace this use of System.out by a logger.(­ôÄıÿÿÿÿ8û…é™ß1
+G	java:S106?"+Replace this use of System.out by a logger.(ÓÄ•†8û…é™ß1
+G	java:S106@"+Replace this use of System.out by a logger.(”†¼ü8ü…é™ß1
+L	java:S106A"+Replace this use of System.out by a logger.(Âáî›ûÿÿÿÿ8ü…é™ß1
+G	java:S106B"+Replace this use of System.out by a logger.(¿Şú‰8ü…é™ß1
+L	java:S106J"+Replace this use of System.out by a logger.(ûŸ‚»øÿÿÿÿ8ÿ…é™ß1
+L	java:S106K"+Replace this use of System.out by a logger.(¼—ÂÂúÿÿÿÿ8€†é™ß1
+h	java:S128]"LEnd this switch case with an unconditional break, return or throw statement.(©ÓÌâ8†é™ß1
+G	java:S106`"+Replace this use of System.out by a logger.(ÔˆûÌ8„†é™ß1
+L	java:S106e"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8…†é™ß1
+G	java:S106k"+Replace this use of System.out by a logger.(ÀÆ‹8‡†é™ß1
+G	java:S106r"+Replace this use of System.out by a logger.(ÇæÔ–8‡†é™ß1
+L	java:S106s"+Replace this use of System.out by a logger.(¼—ÂÂúÿÿÿÿ8ˆ†é™ß1
+L	java:S106v"+Replace this use of System.out by a logger.(¨¶˜±ûÿÿÿÿ8‰†é™ß1
+i	java:S128‰"LEnd this switch case with an unconditional break, return or throw statement.(©ÓÌâ8Š†é™ß1
+H	java:S106Œ"+Replace this use of System.out by a logger.(ÔˆûÌ8Œ†é™ß1
+M	java:S106‘"+Replace this use of System.err by a logger.(ïù¯¯ûÿÿÿÿ8†é™ß1
+M	java:S106œ"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ8†é™ß1
+M	java:S106¡"+Replace this use of System.out by a logger.(Ÿ÷®°úÿÿÿÿ8‘†é™ß1
+H	java:S106¤"+Replace this use of System.out by a logger.(ÔˆûÌ8‘†é™ß1
+<
+java:S2119µ"Save and re-use this "Random".(‰Ú­ß8•†é™ß1
+;
+java:S2119»"Save and re-use this "Random".(¼İÅf8˜†é™ß1
+ä
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 143 to 64, Complexity from 20 to 14, Nesting Level from 5 to 2, Number of Variables from 25 to 6.(Çµí‘8š†é™ß1

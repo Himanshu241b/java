@@ -49,12 +49,12 @@ public class Main {
            System.out.println("ifsc:"+hdfcAccounts[0].getIfsc());
            System.out.println("Acc. no."+hdfcAccounts[0].getaccountNumber());
 
-           System.out.println("name:"+hdfcAccounts[1].getName());
-           System.out.println("Balance:"+hdfcAccounts[1].getBalance());
-           System.out.println("Card:"+hdfcAccounts[1].getCardNumber());
-           System.out.println("pin:"+hdfcAccounts[1].getPin());
-           System.out.println("ifsc:"+hdfcAccounts[1].getIfsc());
-           System.out.println("Acc. no."+hdfcAccounts[1].getaccountNumber());
+           System.out.println("name:"+iciciAccounts[1].getName());
+           System.out.println("Balance:"+iciciAccounts[1].getBalance());
+           System.out.println("Card:"+iciciAccounts[1].getCardNumber());
+           System.out.println("pin:"+iciciAccounts[1].getPin());
+           System.out.println("ifsc:"+iciciAccounts[1].getIfsc());
+           System.out.println("Acc. no."+iciciAccounts[1].getaccountNumber());
 
            
            char choice;
