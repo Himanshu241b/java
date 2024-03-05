@@ -1,0 +1,11 @@
+
+†
+java:S1319#"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(à¤÷‡
+C
+java:S1604."(Make this anonymous inner class a lambda(Íë«Çşÿÿÿÿ
+g	java:S101
+"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(òÍëûÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(£Àééøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(¯ø¢åøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ùÓí‹øÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(òé
