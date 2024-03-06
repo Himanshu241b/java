@@ -1,0 +1,41 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 60 to the 15 allowed.(Çµí‘8â¾“á1
+]
+java:S1854"ARemove this useless assignment to local variable "candidatesCsv".(ŒÇ18ä¾“á1
+N
+java:S1481"2Remove this unused "candidatesCsv" local variable.(ŒÇ18è¾“á1
+G	java:S106"+Replace this use of System.out by a logger.(ÔÙ¯Â8è¾“á1
+G	java:S106"+Replace this use of System.out by a logger.(àÂÚ¥8è¾“á1
+L	java:S106"+Replace this use of System.out by a logger.(ìô¨üÿÿÿÿ8é¾“á1
+L	java:S106"+Replace this use of System.out by a logger.(Ì«Ùúÿÿÿÿ8é¾“á1
+m	java:S128t"LEnd this switch case with an unconditional break, return or throw statement.(âØ¬øÿÿÿÿ8é¾“á1
+G	java:S106"+Replace this use of System.out by a logger.(ôÚ©ò8ê¾“á1
+G	java:S106"+Replace this use of System.out by a logger.(¥ª¢‹8ê¾“á1
+L	java:S106"+Replace this use of System.out by a logger.(‹ş³—øÿÿÿÿ8ê¾“á1
+G	java:S106"+Replace this use of System.out by a logger.(Áêöİ8ê¾“á1
+G	java:S106#"+Replace this use of System.out by a logger.(ô¸¯¼8ë¾“á1
+G	java:S106&"+Replace this use of System.out by a logger.(üí’ï8ë¾“á1
+L	java:S106'"+Replace this use of System.out by a logger.(ãâ˜Ìıÿÿÿÿ8ë¾“á1
+L	java:S106("+Replace this use of System.out by a logger.(òÙŸÑÿÿÿÿÿ8ë¾“á1
+G	java:S106*"+Replace this use of System.out by a logger.(§ÙÕè8ë¾“á1
+F	java:S106."+Replace this use of System.out by a logger.(Äû‡b8ì¾“á1
+L	java:S1062"+Replace this use of System.out by a logger.(Ş‹ÿëıÿÿÿÿ8ì¾“á1
+L	java:S1064"+Replace this use of System.out by a logger.(Ú‰ìÅÿÿÿÿÿ8ì¾“á1
+G	java:S1066"+Replace this use of System.out by a logger.(µ’£Ü8ì¾“á1
+G	java:S106:"+Replace this use of System.out by a logger.(´Ôù°8ì¾“á1
+L	java:S106<"+Replace this use of System.out by a logger.(Õ®Ô‹úÿÿÿÿ8ì¾“á1
+G	java:S106C"+Replace this use of System.out by a logger.(ÀÆ‹8í¾“á1
+G	java:S106I"+Replace this use of System.out by a logger.(ÀÆ‹8í¾“á1
+L	java:S106N"+Replace this use of System.out by a logger.(ØÎ€›ûÿÿÿÿ8í¾“á1
+G	java:S106Q"+Replace this use of System.out by a logger.(–Ó‘Œ8í¾“á1
+G	java:S106T"+Replace this use of System.out by a logger.(ÔˆûÌ8í¾“á1
+L	java:S106Z"+Replace this use of System.out by a logger.(Ô ·ÿÿÿÿÿ8í¾“á1
+L	java:S106["+Replace this use of System.out by a logger.(µ¢Ûòúÿÿÿÿ8í¾“á1
+G	java:S106`"+Replace this use of System.out by a logger.(“à˜¯8î¾“á1
+G	java:S106b"+Replace this use of System.out by a logger.(ô¸¯¼8î¾“á1
+G	java:S106k"+Replace this use of System.out by a logger.(ÀÆ‹8î¾“á1
+G	java:S106o"+Replace this use of System.out by a logger.(ÔˆûÌ8ï¾“á1
+F	java:S106w"+Replace this use of System.out by a logger.(éå8—Û¾“á1
+ä
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 110 to 64, Complexity from 21 to 14, Nesting Level from 6 to 2, Number of Variables from 17 to 6.(Çµí‘8ï¾“á1

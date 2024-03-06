@@ -1,0 +1,5 @@
+emp_id,password,name,dateOfBirth
+AS01,abc,abc,28/08/2001
+AS02,29/08/2001,null,null
+AS03,30/08/2001,null,null
+AS04,05/11/2000,null,null

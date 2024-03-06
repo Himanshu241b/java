@@ -1,0 +1,3 @@
+module AdminModule {
+    exports adminmodule;
+}

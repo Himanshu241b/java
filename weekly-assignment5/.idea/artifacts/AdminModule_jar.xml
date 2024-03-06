@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AdminModule:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/AdminModule_jar</output-path>
+    <root id="archive" name="AdminModule.jar">
+      <element id="module-output" name="AdminModule" />
+    </root>
+  </artifact>
+</component>
