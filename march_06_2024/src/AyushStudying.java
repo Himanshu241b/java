@@ -18,6 +18,7 @@ public class AyushStudying {
                 time[i] = scanner.nextInt();
             }
 
+            // Call the minimalMaxTime method to compute the minimum maximum time
             int result = minimalMaxTime(n, m, time);
             System.out.println(result);
         }
@@ -25,6 +26,7 @@ public class AyushStudying {
         scanner.close();
     }
 
+    // Method to compute the minimal maximum time
     public static int minimalMaxTime(int n, int m, int[] time) {
         // Binary search for the minimum maximum time
         int low = 1;
@@ -42,6 +44,7 @@ public class AyushStudying {
         return low;
     }
 
+    // Method to check if a given maximum time is valid
     public static boolean isValid(int n, int m, int[] time, int maxTime) {
         int days = 1;
         int currentWorkload = 0;

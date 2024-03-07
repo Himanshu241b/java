@@ -1,8 +1,4 @@
 
-=
-src/Main.java,9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138
-F
-src/AgressiveCows.java,4/b/4b4c1ff460a8bc07951bc92d974f6caee64a6311
 G
 src/AggressiveCows.java,6/c/6c5ff8360046c0f46a09dbdb44f5a3e730a27fba
 F
