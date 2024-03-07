@@ -1,0 +1,30 @@
+
+
+java:S1192T"nDefine a constant instead of duplicating this literal "File not found while trying to edit candidate" 3 times.(…ôÉÌúÿÿÿÿ8‡ĞØ¥á1
+i
+java:S2095!"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ƒ”ª›8éĞØ¥á1
+W
+java:S1118":Add a private constructor to hide the implicit public one.(ƒ¨­ˆ8ìĞØ¥á1
+F	java:S106"+Replace this use of System.out by a logger.(Òàñ&8ñĞØ¥á1
+G	java:S106"+Replace this use of System.out by a logger.(¥’Ï¼8ñĞØ¥á1
+L	java:S106"+Replace this use of System.out by a logger.(èµ†°üÿÿÿÿ8ñĞØ¥á1
+G	java:S106"+Replace this use of System.out by a logger.(¡›£8òĞØ¥á1
+G	java:S106"+Replace this use of System.out by a logger.(é…•è8óĞØ¥á1
+G	java:S106-"+Replace this use of System.out by a logger.(ÄÅ™8ôĞØ¥á1
+L	java:S1060"+Replace this use of System.out by a logger.(ˆÎ’„ÿÿÿÿÿ8õĞØ¥á1
+G	java:S1067"+Replace this use of System.out by a logger.(“Âº‡8õĞØ¥á1
+G	java:S106;"+Replace this use of System.out by a logger.(´Ïˆş8õĞØ¥á1
+G	java:S106="+Replace this use of System.out by a logger.(İ‚óÿ8öĞØ¥á1
+L	java:S106?"+Replace this use of System.out by a logger.(Îÿ¸¾ÿÿÿÿÿ8öĞØ¥á1
+G	java:S106A"+Replace this use of System.out by a logger.(À¶Ø“8ùĞØ¥á1
+L	java:S106T"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ûĞØ¥á1
+L	java:S106b"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ûĞØ¥á1
+L	java:S106h"+Replace this use of System.out by a logger.(Äƒ¶íúÿÿÿÿ8üĞØ¥á1
+8
+java:S3626"Remove this redundant jump.(ÉŠ©ƒ8üĞØ¥á1
+L	java:S106l"+Replace this use of System.out by a logger.(ãèŞúÿÿÿÿ8ıĞØ¥á1
+L	java:S106n"+Replace this use of System.out by a logger.(¶­øüÿÿÿÿ8ıĞØ¥á1
+L	java:S106q"+Replace this use of System.out by a logger.(É‘óªúÿÿÿÿ8ÿĞØ¥á1
+M	java:S106†"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ÑØ¥á1
+H	java:S106–"+Replace this use of System.out by a logger.(¸ÖÔ8ÑØ¥á1
+H	java:S106™"+Replace this use of System.out by a logger.(Ó¶·’8Ê»›½á1

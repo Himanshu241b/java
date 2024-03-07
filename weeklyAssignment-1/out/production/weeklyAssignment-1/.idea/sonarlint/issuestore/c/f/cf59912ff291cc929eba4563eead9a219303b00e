@@ -1,0 +1,88 @@
+
+K
+java:S3740Ä"/Provide the parametrized type for this generic.(§ÔˆÕÿÿÿÿÿ
+K
+java:S3740Ä"/Provide the parametrized type for this generic.(§ÔˆÕÿÿÿÿÿ
+u
+java:S2293 "YReplace the type specification in this constructor call with the diamond operator ("<>").(ğ®Ùûúÿÿÿÿ
+u
+java:S2293©"YReplace the type specification in this constructor call with the diamond operator ("<>").(×‘¹ëÿÿÿÿÿ
+p
+java:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(İà”À
+u
+java:S2293¼"YReplace the type specification in this constructor call with the diamond operator ("<>").(è£Ëøüÿÿÿÿ
+p
+java:S2293Å"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÔššĞ
+j
+java:S1192l"ODefine a constant instead of duplicating this literal "Student name: " 5 times.(®œ‘úÿÿÿÿ
+–
+java:S1192j"{Define a constant instead of duplicating this literal "---------------------------------------------------------" 10 times.(É´ğëıÿÿÿÿ
+‡
+java:S1319Ÿ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÎÒÃŸ
+‡
+java:S1319¨"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(”›¦
+‡
+java:S1319±"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(èÉ¿˜
+Œ
+java:S1319»"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(öœé¶úÿÿÿÿ
+Œ
+java:S1319Ä"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(§ÔˆÕÿÿÿÿÿ
+
+java:S1319Ä"rThe type of "belowThresholdList" should be an interface such as "List" rather than the implementation "ArrayList".(§ÔˆÕÿÿÿÿÿ
+‡
+java:S1319Ä"kThe type of "failingList" should be an interface such as "List" rather than the implementation "ArrayList".(§ÔˆÕÿÿÿÿÿ
+Œ
+java:S1319Ğ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(´‹ºüÿÿÿÿ
+P
+java:S11418"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+D
+java:S1604Ó"(Make this anonymous inner class a lambda(œÑ¼Êøÿÿÿÿ
+g	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(§€ş¾ùÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(Çµí‘
+U
+java:S1854_":Remove this useless assignment to local variable "choice".(Èµ­¿ûÿÿÿÿ
+c
+java:S1854["HRemove this useless assignment to local variable "specialAttentionList".(æ’§ıøÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(¥›·şÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ŞÃä–ùÿÿÿÿ
+E	java:S106!"+Replace this use of System.out by a logger.(ˆ‰±¥şÿÿÿÿ
+?	java:S106("+Replace this use of System.out by a logger.(‘¥Â<
+[
+java:S16594"EDeclare "cppMarks" and all following declarations on a separate line.(Ü…ƒ’
+@	java:S1060"+Replace this use of System.out by a logger.(é‰¶Ù
+E	java:S1062"+Replace this use of System.out by a logger.(Ú‚±Ûÿÿÿÿÿ
+@	java:S1069"+Replace this use of System.out by a logger.(’í¶é
+@	java:S106;"+Replace this use of System.out by a logger.(¶Êíı
+E	java:S106="+Replace this use of System.out by a logger.(ÇÌÊ‰ıÿÿÿÿ
+@	java:S106F"+Replace this use of System.out by a logger.(õü‚æ
+@	java:S106P"+Replace this use of System.out by a logger.(õü‚æ
+E	java:S106S"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+T
+java:S1481["9Remove this unused "specialAttentionList" local variable.(æ’§ıøÿÿÿÿ
+@	java:S106a"+Replace this use of System.out by a logger.(ÕóùÇ
+E	java:S106f"+Replace this use of System.out by a logger.(”³ìØıÿÿÿÿ
+@	java:S106i"+Replace this use of System.out by a logger.(ìÚº·
+E	java:S106j"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+E	java:S106l"+Replace this use of System.out by a logger.(®œ‘úÿÿÿÿ
+E	java:S106n"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+?	java:S106r"+Replace this use of System.out by a logger.(ö¶§(
+E	java:S106s"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+E	java:S106v"+Replace this use of System.out by a logger.(ªÌÛûÿÿÿÿ
+E	java:S106x"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+E	java:S106|"+Replace this use of System.out by a logger.(Ó‡Î¼úÿÿÿÿ
+E	java:S106}"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+A	java:S106€"+Replace this use of System.out by a logger.(‘ÙÀı
+F	java:S106‚"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+F	java:S106†"+Replace this use of System.out by a logger.(‰¿Îûÿÿÿÿ
+F	java:S106‡"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+A	java:S106‰"+Replace this use of System.out by a logger.(‘±ó¯
+F	java:S106‹"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(¯¥¶íüÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+A	java:S106’"+Replace this use of System.out by a logger.(¤üï˜
+F	java:S106”"+Replace this use of System.out by a logger.(É´ğëıÿÿÿÿ
+@	java:S106˜"+Replace this use of System.out by a logger.(éå
+F	java:S106™"+Replace this use of System.out by a logger.(İ§¬üÿÿÿÿ
+İ
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 110 to 64, Complexity from 24 to 14, Nesting Level from 5 to 2, Number of Variables from 25 to 6.(Çµí‘

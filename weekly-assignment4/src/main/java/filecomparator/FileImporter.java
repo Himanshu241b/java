@@ -18,33 +18,36 @@ class FileImporter{
      * @param filePath the path to the file
      */
     public List<String[]> readTxt(String filePath) {
-        // 2d list to return words in each sentence
         List<String[]> sentenceList = new ArrayList<>();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
+            StringBuilder fileContentBuilder = new StringBuilder();
             String line;
 
-            // Read lines from the file until the end is reached
+            // Read lines from the file and append them to the StringBuilder
             while ((line = reader.readLine()) != null) {
-                // Split the line into sentences based on ". "
-                String[] sentences = line.split("\\.\\s+");
-
-                // Process each sentence
-                for (String sentence : sentences) {
-                    // Split the sentence into words based on whitespace
-                    String[] words = sentence.split("\\s+");
-                    sentenceList.add(words);
-                }
+                fileContentBuilder.append(line).append("\n");
             }
-        }catch (FileNotFoundException e) {
+
+            // Split the entire content into sentences based on ". "
+            String[] sentences = fileContentBuilder.toString().split("\\.\\s+");
+
+            // Process each sentence
+            for (String sentence : sentences) {
+                // Split the sentence into words based on whitespace
+                String[] words = sentence.split("\\s+");
+                sentenceList.add(words);
+            }
+        } catch (FileNotFoundException fileNotFoundException) {
             // Handle file not found exception
-            e.printStackTrace();
-        } catch (IOException e) {
+            fileNotFoundException.printStackTrace();
+        } catch (IOException ioException) {
             // Handle other IO exceptions
-            e.printStackTrace();
+            ioException.printStackTrace();
         }
-        // return the result list
+// return the result list
         return sentenceList;
+
     }
 
     /**
@@ -61,12 +64,12 @@ class FileImporter{
                 String[] parts = line.split(","); // Split by comma
                 dataList.add(parts);
             }
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException fileNotFoundException) {
             // Handle file not found exception
-            e.printStackTrace();
-        } catch (IOException e) {
+            fileNotFoundException.printStackTrace();
+        } catch (IOException ioException) {
             // Handle other IO exceptions
-            e.printStackTrace();
+            ioException.printStackTrace();
         }
 
         return dataList;

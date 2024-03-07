@@ -7,3 +7,5 @@ J
 src/ATMSimulator/Bank.java,b/3/b3b8ce99c73a9d998dba7575236315e01728e267
 I
 src/ATMSimulator/ATM.java,5/2/52c4d12576f9d5aeeedd017e7fe34c2002b1014f
+F
+weekly-assignment3.iml,6/3/639dc953da575399c165b29be20a7401f9c20d18

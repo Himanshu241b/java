@@ -1,1 +1,2 @@
-emp_id,name,dateOfBirth,symbol,votes
+employee_id,candidate_id,name,dateOfBirth,symbol,voteCount
+AS01,CD01,abc,28/01/2001,$,15

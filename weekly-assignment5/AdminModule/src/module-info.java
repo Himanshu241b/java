@@ -1,3 +1,3 @@
 module AdminModule {
-    exports adminmodule;
+    exports AdminModule;
 }

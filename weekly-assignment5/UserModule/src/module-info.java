@@ -1,2 +1,3 @@
 module UserModule {
+    requires AdminModule;
 }

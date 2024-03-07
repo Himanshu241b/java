@@ -1,33 +1,0 @@
-
-D
-java:S2189""Add an end condition to this loop.(ü§è½ùÿÿÿÿ8Îµ§úà1
-o
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(Çµí‘8¢Õ’öà1
-G	java:S106
-"+Replace this use of System.out by a logger.(ÔÙ¯Â8§Õ’öà1
-G	java:S106"+Replace this use of System.out by a logger.(àÂÚ¥8§Õ’öà1
-L	java:S106"+Replace this use of System.out by a logger.(ìô¨üÿÿÿÿ8§Õ’öà1
-L	java:S106"+Replace this use of System.out by a logger.(Ì«Ùúÿÿÿÿ8§Õ’öà1
-m	java:S128R"LEnd this switch case with an unconditional break, return or throw statement.(âØ¬øÿÿÿÿ8¨Õ’öà1
-G	java:S106"+Replace this use of System.out by a logger.(ôÚ©ò8¨Õ’öà1
-G	java:S106"+Replace this use of System.out by a logger.(¥ª¢‹8¨Õ’öà1
-L	java:S106"+Replace this use of System.out by a logger.(‹ş³—øÿÿÿÿ8¨Õ’öà1
-G	java:S106"+Replace this use of System.out by a logger.(Áêöİ8¨Õ’öà1
-G	java:S106"+Replace this use of System.out by a logger.(ô¸¯¼8©Õ’öà1
-G	java:S106""+Replace this use of System.out by a logger.(üí’ï8©Õ’öà1
-L	java:S106#"+Replace this use of System.out by a logger.(ŒñÃ¼şÿÿÿÿ8©Õ’öà1
-L	java:S106$"+Replace this use of System.out by a logger.(òÙŸÑÿÿÿÿÿ8©Õ’öà1
-G	java:S106&"+Replace this use of System.out by a logger.(§ÙÕè8ªÕ’öà1
-F	java:S106*"+Replace this use of System.out by a logger.(Äû‡b8ªÕ’öà1
-L	java:S106."+Replace this use of System.out by a logger.(Ş‹ÿëıÿÿÿÿ8ªÕ’öà1
-L	java:S1060"+Replace this use of System.out by a logger.(Ú‰ìÅÿÿÿÿÿ8ªÕ’öà1
-G	java:S1062"+Replace this use of System.out by a logger.(µ’£Ü8ªÕ’öà1
-G	java:S1066"+Replace this use of System.out by a logger.(´Ôù°8«Õ’öà1
-L	java:S1068"+Replace this use of System.out by a logger.(Õ®Ô‹úÿÿÿÿ8«Õ’öà1
-G	java:S106?"+Replace this use of System.out by a logger.(ÀÆ‹8«Õ’öà1
-G	java:S106E"+Replace this use of System.out by a logger.(ÀÆ‹8¬Õ’öà1
-L	java:S106I"+Replace this use of System.out by a logger.(ØÎ€›ûÿÿÿÿ8¬Õ’öà1
-G	java:S106L"+Replace this use of System.out by a logger.(ÔˆûÌ8¬Õ’öà1
-F	java:S106U"+Replace this use of System.out by a logger.(éå8¬Õ’öà1
-ã
-java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 79 to 64, Complexity from 16 to 14, Nesting Level from 6 to 2, Number of Variables from 10 to 6.(Çµí‘8¬Õ’öà1

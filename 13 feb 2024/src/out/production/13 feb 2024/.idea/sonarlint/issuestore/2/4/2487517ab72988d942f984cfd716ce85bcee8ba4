@@ -1,0 +1,65 @@
+
+
+java:S1192¸"rDefine a constant instead of duplicating this literal "Invalid input. Please enter valid integer values." 3 times.(„³çıÿÿÿÿ
+P
+java:S1141*"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+P
+java:S11411"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+P
+java:S1141D"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+P
+java:S1141P"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+^
+java:S4973?"<Strings and Boxed types should be compared using "equals()".(åıòˆøÿÿÿÿ8°¿ŒŸß1
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‚¡êÍıÿÿÿÿ
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(Çµí‘
+E	java:S106"+Replace this use of System.out by a logger.(ƒşªØÿÿÿÿÿ
+E	java:S106"+Replace this use of System.out by a logger.(ã©­…ùÿÿÿÿ
+?	java:S106"+Replace this use of System.out by a logger.(±Æ®}
+@	java:S106"+Replace this use of System.out by a logger.(‹«”ş
+@	java:S106"+Replace this use of System.out by a logger.(äêÉÑ
+@	java:S106"+Replace this use of System.out by a logger.(ÊØàµ
+@	java:S106"+Replace this use of System.out by a logger.(ã¯¯İ
+@	java:S106"+Replace this use of System.out by a logger.(Íúîô
+E	java:S106"+Replace this use of System.out by a logger.(ïÚâÀşÿÿÿÿ
+@	java:S106"+Replace this use of System.out by a logger.(•éõ«
+E	java:S106-"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+@	java:S1062"+Replace this use of System.out by a logger.(Ö†½™
+@	java:S106;"+Replace this use of System.out by a logger.(’®²‘
+E	java:S106H"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+E	java:S106L"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+E	java:S106T"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+?	java:S106X"+Replace this use of System.out by a logger.(ï¼°$
+E	java:S106["+Replace this use of System.out by a logger.(ÊôÍíşÿÿÿÿ
+E	java:S106b"+Replace this use of System.out by a logger.(©şêÜúÿÿÿÿ
+@	java:S106h"+Replace this use of System.out by a logger.(§Ùê
+@	java:S106o"+Replace this use of System.out by a logger.(—Æé
+A	java:S106‚"+Replace this use of System.out by a logger.(šÔç—
+F	java:S106‹"+Replace this use of System.out by a logger.(û¬Š„ÿÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(ÓŸåŠùÿÿÿÿ
+F	java:S106˜"+Replace this use of System.out by a logger.(ÃÑÜıüÿÿÿÿ
+F	java:S106"+Replace this use of System.out by a logger.(ä˜ĞÑûÿÿÿÿ
+A	java:S106¡"+Replace this use of System.out by a logger.(Æ¢ø­
+A	java:S106¤"+Replace this use of System.out by a logger.(—ÄÀü
+A	java:S106§"+Replace this use of System.out by a logger.(Ôç¢×
+A	java:S106ª"+Replace this use of System.out by a logger.(ï°âë
+F	java:S106­"+Replace this use of System.out by a logger.(ôƒ­‚ÿÿÿÿÿ
+A	java:S106¶"+Replace this use of System.out by a logger.(õ±ù
+F	java:S106¸"+Replace this use of System.out by a logger.(„³çıÿÿÿÿ
+A	java:S106À"+Replace this use of System.out by a logger.(ŠØ›ö
+A	java:S106Â"+Replace this use of System.out by a logger.(—ÄÀü
+A	java:S106Å"+Replace this use of System.out by a logger.(Ôç¢×
+A	java:S106È"+Replace this use of System.out by a logger.(ï°âë
+F	java:S106Ë"+Replace this use of System.out by a logger.(¬Ùöºúÿÿÿÿ
+F	java:S106Î"+Replace this use of System.out by a logger.(¿âÎÔúÿÿÿÿ
+A	java:S106Ó"+Replace this use of System.out by a logger.(Õ‰‹
+F	java:S106Õ"+Replace this use of System.out by a logger.(„³çıÿÿÿÿ
+F	java:S106Ü"+Replace this use of System.out by a logger.(ŠÍ²ùÿÿÿÿ
+F	java:S106Ş"+Replace this use of System.out by a logger.(¶İŸüÿÿÿÿ
+A	java:S106á"+Replace this use of System.out by a logger.(î—±í
+F	java:S106ä"+Replace this use of System.out by a logger.(˜ ßÊùÿÿÿÿ
+F	java:S106é"+Replace this use of System.out by a logger.(˜§“ıÿÿÿÿ
+F	java:S106ì"+Replace this use of System.out by a logger.(„³çıÿÿÿÿ
+Ü
+java:S6541"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 89 to 64, Complexity from 16 to 14, Nesting Level from 6 to 2, Number of Variables from 15 to 6.(Çµí‘

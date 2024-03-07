@@ -58,7 +58,7 @@ public class Main {
                     }
                     System.out.println("Enter course code to assign a course:");
                     Course courseToAssign = null;   
-                    String courseCode = scanner.nextLine();
+                    String courseCode = scanner.next();
                     for(Course course : university.getCourseList())
                         if(course.getCourseCode() == courseCode)
                             courseToAssign = course;

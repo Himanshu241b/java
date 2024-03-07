@@ -1,6 +1,4 @@
 
-r	java:S127<"XRefactor the code in order to not assign to this loop counter from within the loop body.(İëìûÿÿÿÿ
-œ
-java:S26817"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(ïœ z
-@	java:S106#"+Replace this use of System.out by a logger.(À¿÷•
-E	java:S106&"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ
+y	java:S127<"XRefactor the code in order to not assign to this loop counter from within the loop body.(ŒÉúşÿÿÿÿ8Êæûà1
+L	java:S106""+Replace this use of System.out by a logger.(³æ••ıÿÿÿÿ8ø¿Çûà1
+L	java:S106%"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¿ÖÛûà1

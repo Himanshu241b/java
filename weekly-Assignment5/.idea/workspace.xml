@@ -4,12 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3bf91fd3-aebb-4560-ba4e-3fcc8c5db655" name="Changes" comment="">
+    <list default="true" id="34fff391-94ba-47da-ad67-43ebebc52ddd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../13 feb 2024/src/UniversityManagement/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../13 feb 2024/src/UniversityManagement/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WeeklyAssignment-3/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../WeeklyAssignment-3/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WeeklyAssignment-3/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../WeeklyAssignment-3/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../march_01_2024/.idea/sonarlint/issuestore/6/4/6495cb40ea2b252fbb08afcc1f638d50399f8f13" beforeDir="false" afterPath="$PROJECT_DIR$/../march_01_2024/.idea/sonarlint/issuestore/6/4/6495cb40ea2b252fbb08afcc1f638d50399f8f13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../march_01_2024/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../march_01_2024/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../march_01_2024/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../march_01_2024/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../march_01_2024/src/InitializeNextOfTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../march_01_2024/src/InitializeNextOfTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1177c9dd4f9cfd553043bacc6426da0c2c9a8739" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/1177c9dd4f9cfd553043bacc6426da0c2c9a8739" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d155658fb0d92b0c486d176470af6676c4532aa" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d155658fb0d92b0c486d176470af6676c4532aa" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79a75e13ecb096096fe12a59423038723214a50e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/9/79a75e13ecb096096fe12a59423038723214a50e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d9bd922f4d24883de3e801112cdde455c6373ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/f/8fa442ee06f49ad63e839c8baa137c33692dccae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/4/c4bfcc8501ca4e055259dfc87021485f411cb2e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3076c385526c01576acb7bd8e37e48d8c4264bc" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/3/f3076c385526c01576acb7bd8e37e48d8c4264bc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/7/d/7d9bd922f4d24883de3e801112cdde455c6373ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/8/f/8fa442ee06f49ad63e839c8baa137c33692dccae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/c/4/c4bfcc8501ca4e055259dfc87021485f411cb2e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/admin.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/admin.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/avisoftEmployees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/avisoftEmployees.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/candidates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/candidates.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/CandidateManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/CandidateManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/PasswordChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/PasswordChanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/UserRegisterer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/UserRegisterer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/Voter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/Voter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/VotingBooth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/VotingBooth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment4/.idea/sonarlint/issuestore/1/0/107c8829e6bd97657fb09cbb5481640be3f288e5" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment4/.idea/sonarlint/issuestore/1/c/1c58eb6e28d4c44d5df3e141c1eba66deffb2784" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment4/.idea/sonarlint/issuestore/4/7/47d1d799ddeff210f44bf079d89b4c7064bd0bcb" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment4/.idea/sonarlint/issuestore/4/7/47d1d799ddeff210f44bf079d89b4c7064bd0bcb" afterDir="false" />
@@ -43,25 +80,126 @@
       <change beforePath="$PROJECT_DIR$/../weekly-assignment4/src/main/java/filecomparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment4/src/main/java/filecomparator/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment4/target/classes/filecomparator/FileImporter.class" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment4/target/classes/filecomparator/FileImporter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment4/target/classes/filecomparator/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment4/target/classes/filecomparator/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/artifacts/AdminModule_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/artifacts/UserModule_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/0/4/04191e73bf80db8a5f595bdba02b407c007a67ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/0/4/0430ff3516fdf614b8ccc1ca7b68934e66ab0611" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/0/c/0c7e4c44b97630441646800a829b43cdada444d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/1/1/1177c9dd4f9cfd553043bacc6426da0c2c9a8739" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/1/2/1286d34da210fef06d7729d20cb73a507ab3e141" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/1/d/1d155658fb0d92b0c486d176470af6676c4532aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/1/e/1ebf32a70a6ff19541b658f5bb3de6afb7d1bf0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/2/5/25e1994cf8eb8798c07828dbbcd122174a19339a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/2/f/2f6bbca82fe0a0acf71d5e29bbdf2016a640b864" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/3/2/3289f08247ba4b97c53f2c76fe60b076882456e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/3/4/340d9b3f8de86469221f0363059d228a641081d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/3/c/3ca18975f0b5c29be9dd6ec6d950b0fd12489afb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/3/f/3fdd3a774638426049bc248647a578dc3fe45a3d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/4/2/4272ea896223ce436e048af251cab498202df58d" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/4/2/4272ea896223ce436e048af251cab498202df58d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/4/b/4b5739074a0f14c723dc3ee0040ab6fcc2be3fff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/5/3/5380ddc503d492e37a6ca2266228667cddf58800" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/6/0/6025909122218c960c53c767a4d667f5fae41d20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/6/a/6a9e41cb5d2d3829347d709a02a950718359430f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/7/1/7132232620c09586ebcac338e8492659c3a6272e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/7/9/79a75e13ecb096096fe12a59423038723214a50e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/7/a/7a376b2957b86f2690b2bf0845914280d847d0cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/7/d/7d9bd922f4d24883de3e801112cdde455c6373ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/8/f/8fa442ee06f49ad63e839c8baa137c33692dccae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/9/4/94a11c5f8c44bf6acc507eb170f88b6f088bd019" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/9/6/96ae1a5bc916aee1205d7d09627bfa3ee3d6d34f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/9/f/9fbf85f52387e9ef6910960e7bcadf20f27b77e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/3/b3fcff1703bea108a5b52da87384c1959669b68b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/7/b7b226c7c82868f9ab5df361584a6874abaa393a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/8/b82b8688b614498298964ef182bf8328e8df1d9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/d/bd6fa679bd264bdcf7cb5f558e19c17506df0f2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/f/bf180cd83f60d66b7c52bd6d98fb6ab3e94eecfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/f/bf7fa8ead5dc24cf215cdbe20e97dcee8c7278fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/b/f/bfcc0b340ffd61c273f31d131836e6a0fd53cac4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/c/3/c3948cf23511b62b0714d7ce1191346351fca996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/c/4/c4bfcc8501ca4e055259dfc87021485f411cb2e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/c/d/cdc434daeee688944ced38ff1c9875422db88382" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/d/7/d7d2c9cd1bfd067b8d51ad8451974abdef6033f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/e/6/e63bf26812cca92521f4df54fa158283116d9820" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/e/c/ec7cc59fab43c3bbba96afaa885fb2eeeba7aade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/f/b/fb7d4df8e37b528019aa7b44b478a82c15b73f2d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/9/2/924f089edb4af5ee45c8a9d1129cd28e2b368138" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/0/4/04191e73bf80db8a5f595bdba02b407c007a67ed" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/0/4/0430ff3516fdf614b8ccc1ca7b68934e66ab0611" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/0/c/0c7e4c44b97630441646800a829b43cdada444d7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/1/1/1177c9dd4f9cfd553043bacc6426da0c2c9a8739" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/1/2/1286d34da210fef06d7729d20cb73a507ab3e141" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/1/d/1d155658fb0d92b0c486d176470af6676c4532aa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/1/e/1ebf32a70a6ff19541b658f5bb3de6afb7d1bf0f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/2/5/25e1994cf8eb8798c07828dbbcd122174a19339a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/2/f/2f6bbca82fe0a0acf71d5e29bbdf2016a640b864" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/3/2/3289f08247ba4b97c53f2c76fe60b076882456e5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/3/4/340d9b3f8de86469221f0363059d228a641081d2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/3/c/3ca18975f0b5c29be9dd6ec6d950b0fd12489afb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/3/f/3fdd3a774638426049bc248647a578dc3fe45a3d" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/4/b/4b5739074a0f14c723dc3ee0040ab6fcc2be3fff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/5/3/5380ddc503d492e37a6ca2266228667cddf58800" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/6/0/6025909122218c960c53c767a4d667f5fae41d20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/6/a/6a9e41cb5d2d3829347d709a02a950718359430f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/7/1/7132232620c09586ebcac338e8492659c3a6272e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/7/9/79a75e13ecb096096fe12a59423038723214a50e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/7/a/7a376b2957b86f2690b2bf0845914280d847d0cf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/7/d/7d9bd922f4d24883de3e801112cdde455c6373ce" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/8/1/817225d14feb725db82d54da9845429241e14c6e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/8/f/8fa442ee06f49ad63e839c8baa137c33692dccae" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/9/4/94a11c5f8c44bf6acc507eb170f88b6f088bd019" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/9/6/96ae1a5bc916aee1205d7d09627bfa3ee3d6d34f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/9/f/9fbf85f52387e9ef6910960e7bcadf20f27b77e1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/a/5/a5cc2925ca8258af241be7e5b0381edf30266302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/3/b3fcff1703bea108a5b52da87384c1959669b68b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/7/b7b226c7c82868f9ab5df361584a6874abaa393a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/8/b82b8688b614498298964ef182bf8328e8df1d9e" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/d/bd6fa679bd264bdcf7cb5f558e19c17506df0f2f" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/f/bf180cd83f60d66b7c52bd6d98fb6ab3e94eecfe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/f/bf7fa8ead5dc24cf215cdbe20e97dcee8c7278fe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/b/f/bfcc0b340ffd61c273f31d131836e6a0fd53cac4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/c/3/c3948cf23511b62b0714d7ce1191346351fca996" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/c/4/c4bfcc8501ca4e055259dfc87021485f411cb2e0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/c/d/cdc434daeee688944ced38ff1c9875422db88382" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/d/7/d7d2c9cd1bfd067b8d51ad8451974abdef6033f8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/e/6/e63bf26812cca92521f4df54fa158283116d9820" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/e/c/ec7cc59fab43c3bbba96afaa885fb2eeeba7aade" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/f/b/fb7d4df8e37b528019aa7b44b478a82c15b73f2d" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/AdminModule/src/AdminModule/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/AdminModule/src/AdminModule/Admin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/AdminModule/src/AdminModule/AdminLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/AdminModule/src/AdminModule/AdminLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/AdminModule/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/AdminModule/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/PasswordChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/PasswordChanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/UserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/UserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/UserRegisterer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/UserRegisterer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/Validator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/UserModule/Validator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/UserModule/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../weekly-assignment5/weekly-assignment5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-assignment5/weekly-assignment5.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="2dGSepMGMlxXowVzji9xeG3XPPt" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2dIp87FEcJ5tEMcXpKxca8dOlBh" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -69,31 +207,47 @@
     <option name="openDirectoriesWithSingleClick" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/himanshu/Desktop/Avisoft/java/weekly-Assignment5/src/database&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/himanshu/Desktop/Avisoft/java/weekly-Assignment5/src/Main.java&quot;
   }
-}]]></component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-78a6f59c" />
-      </set>
-    </attachedChunks>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/database" />
+      <recent name="$PROJECT_DIR$/src/onlinevotingsystem" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3bf91fd3-aebb-4560-ba4e-3fcc8c5db655" name="Changes" comment="" />
-      <created>1709633022957</created>
+      <changelist id="34fff391-94ba-47da-ad67-43ebebc52ddd" name="Changes" comment="" />
+      <created>1709705285226</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1709633022957</updated>
+      <updated>1709705285226</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

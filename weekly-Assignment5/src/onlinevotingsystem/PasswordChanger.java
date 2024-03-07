@@ -1,4 +1,4 @@
-package UserModule;
+package onlinevotingsystem;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -8,10 +8,10 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
 class PasswordChanger{
-    public static void changePassword(String employeeId){
+    public static void changePassword(String employeeId, String filePathOfAdminOrVoter){
         Scanner scanner = new Scanner(System.in);
         try {
-            Path path = Paths.get("/home/himanshu/Desktop/Avisoft/java/weekly-assignment5/src/database/avisoftEmployees.csv");
+            Path path = Paths.get(filePathOfAdminOrVoter);
             List<String> lines = Files.readAllLines(path);
 
             for (int i = 0; i < lines.size(); i++) {

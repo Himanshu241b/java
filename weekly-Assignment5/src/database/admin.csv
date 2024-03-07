@@ -1,2 +1,2 @@
-admin_id,password,name,dateOfBirth
-AD01,11/01/2001,admin,11/01/2001
+admin_id,password,name,dateOfBirth,roles
+AD01,11/01/2001,admin,11/01/2001,add/edit/delete

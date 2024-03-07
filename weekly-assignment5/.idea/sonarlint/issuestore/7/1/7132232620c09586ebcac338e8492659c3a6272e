@@ -1,10 +1,0 @@
-
-W
-java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ëÅ˜óà1
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÊÈ‘e8Şø‰’á1
-\
-java:S1118":Add a private constructor to hide the implicit public one.(Â äÚøÿÿÿÿ8òÅ˜óà1
-h
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8­¶§úà1
-G	java:S106"+Replace this use of System.out by a logger.(·ûÃË8ùÅ˜óà1
-G	java:S106"+Replace this use of System.out by a logger.(Ö·È½8ûÅ˜óà1

@@ -1,4 +1,4 @@
-package adminmodule;
+package AdminModule;
 
 public class Admin{
     private String adminId;

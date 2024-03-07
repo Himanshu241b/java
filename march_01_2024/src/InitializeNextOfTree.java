@@ -28,36 +28,36 @@ class InitializeNextOfTree{
         Treenode newRoot = initializeNext(root);
 
         //print the tree level by level
-        Treenode curr = newRoot;
-        while(curr.left != null){
-            newRoot = curr;
-            while(newRoot.next != null){
-                System.out.print(newRoot.val+"->");
-                newRoot = newRoot.next;
+        while(newRoot != null) {
+            Treenode curr = newRoot;
+            while (curr != null) {
+                System.out.print(curr.val + " ");
+                curr = curr.next;
             }
             System.out.println();
-            curr = curr.left;
+            newRoot = newRoot.left;
         }
     }
 
     public static Treenode initializeNext(Treenode root){
 
         for(Treenode head = root; head != null;){
-            if(head.left == null)
+            if(head.left == null)   // if left is null then it means no children nodes to connect now
                 return root;
 
             Treenode prev = null;
-            Treenode curr = head;
+            Treenode curr = head;    //curr always pointing starting node of every level in starting
 
             while(curr != null){
-                if(prev != null)
-                    prev.right.next = curr.left;
-                    curr.left = curr.right;
+                if(prev != null)    //  for first node of every level, prev pointing to null
+                    prev.right.next = curr.left;     //connect prev node right to curr left node
+                curr.left.next = curr.right;    // connect same children nodes of parent
 
-                    prev = curr;
-                    curr = curr.next;
+                prev = curr;     // move prev and curr node to next node
+                curr = curr.next;
+
             }
-            head = head.left;
+            head = head.left;    // move head to next level
         }
         return root;
     }

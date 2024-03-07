@@ -1,5 +1,7 @@
-package usermodule;//imports
+package UserModule;
+//imports
 import java.util.Scanner;
+import AdminModule.Admin;
 
 class Main{
     public static void main(String[] args){

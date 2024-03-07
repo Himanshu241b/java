@@ -1,24 +1,24 @@
 
 }
-java:S1192"[Define a constant instead of duplicating this literal "Enter path of actual file:" 3 times.(υΆγκωÿÿÿÿ8¶»Ϋή1
+java:S1192"[Define a constant instead of duplicating this literal "Enter path of actual file:" 3 times.(υΆγκωÿÿÿÿ8±¨Εί1
 
-java:S1192"]Define a constant instead of duplicating this literal "Enter path of expected file:" 3 times.(νΰε†ύÿÿÿÿ8·»Ϋή1
-D
-java:S2189""Add an end condition to this loop.(ό§θ½ωÿÿÿÿ8¶ϊπή1
-G	java:S106"+Replace this use of System.out by a logger.(ή»Χ»8€»Ϋή1
-L	java:S106"+Replace this use of System.out by a logger.(‚£ν‰ϊÿÿÿÿ8€»Ϋή1
-L	java:S106"+Replace this use of System.out by a logger.(Ύς΅Ίÿÿÿÿÿ8€»Ϋή1
-G	java:S106"+Replace this use of System.out by a logger.(ÿ±γΕ8€»Ϋή1
-m	java:S128="LEnd this switch case with an unconditional break, return or throw statement.(βΨ¬ψÿÿÿÿ8»Ϋή1
-m	java:S1287"LEnd this switch case with an unconditional break, return or throw statement.(ΞΡαπύÿÿÿÿ8»Ϋή1
-L	java:S106"+Replace this use of System.out by a logger.(υΆγκωÿÿÿÿ8»Ϋή1
-L	java:S106"+Replace this use of System.out by a logger.(νΰε†ύÿÿÿÿ8»Ϋή1
-L	java:S106"+Replace this use of System.out by a logger.( «—½ώÿÿÿÿ8‚»Ϋή1
-G	java:S106"+Replace this use of System.out by a logger.(¶πΫ8‚»Ϋή1
-L	java:S106""+Replace this use of System.out by a logger.(Θ¶“όÿÿÿÿ8‚»Ϋή1
-F	java:S106)"+Replace this use of System.out by a logger.(°κ8»Ϋή1
-L	java:S106/"+Replace this use of System.out by a logger.(υΆγκωÿÿÿÿ8»Ϋή1
-L	java:S1061"+Replace this use of System.out by a logger.(νΰε†ύÿÿÿÿ8»Ϋή1
-L	java:S1068"+Replace this use of System.out by a logger.(υΆγκωÿÿÿÿ8»Ϋή1
-L	java:S106:"+Replace this use of System.out by a logger.(νΰε†ύÿÿÿÿ8»Ϋή1
-G	java:S106@"+Replace this use of System.out by a logger.(ΤϋΜ8΅½Ϋή1
+java:S1192"]Define a constant instead of duplicating this literal "Enter path of expected file:" 3 times.(νΰε†ύÿÿÿÿ8±¨Εί1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ηµν‘8©Εί1
+G	java:S106"+Replace this use of System.out by a logger.(ή»Χ»8©Εί1
+L	java:S106"+Replace this use of System.out by a logger.(‚£ν‰ϊÿÿÿÿ8©Εί1
+L	java:S106"+Replace this use of System.out by a logger.(Ύς΅Ίÿÿÿÿÿ8©Εί1
+G	java:S106"+Replace this use of System.out by a logger.(ÿ±γΕ8©Εί1
+m	java:S128C"LEnd this switch case with an unconditional break, return or throw statement.(βΨ¬ψÿÿÿÿ8©Εί1
+L	java:S106"+Replace this use of System.out by a logger.(υΆγκωÿÿÿÿ8©Εί1
+L	java:S106"+Replace this use of System.out by a logger.(νΰε†ύÿÿÿÿ8©Εί1
+L	java:S106"+Replace this use of System.out by a logger.( «—½ώÿÿÿÿ8©Εί1
+G	java:S106 "+Replace this use of System.out by a logger.(¶πΫ8©Εί1
+L	java:S106#"+Replace this use of System.out by a logger.(Θ¶“όÿÿÿÿ8©Εί1
+F	java:S106*"+Replace this use of System.out by a logger.(°κ8©Εί1
+L	java:S1060"+Replace this use of System.out by a logger.(υΆγκωÿÿÿÿ8©Εί1
+L	java:S1062"+Replace this use of System.out by a logger.(νΰε†ύÿÿÿÿ8©Εί1
+L	java:S1069"+Replace this use of System.out by a logger.(υΆγκωÿÿÿÿ8‘©Εί1
+L	java:S106;"+Replace this use of System.out by a logger.(νΰε†ύÿÿÿÿ8‘©Εί1
+L	java:S106@"+Replace this use of System.out by a logger.(έΎ™£όÿÿÿÿ8‘©Εί1
+G	java:S106F"+Replace this use of System.out by a logger.(ΤϋΜ8’©Εί1

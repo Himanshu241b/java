@@ -1,6 +1,7 @@
 package filecomparator;
 
 //imports
+import java.io.FileNotFoundException;
 import java.time.DateTimeException;
 import java.util.List;
 import javax.xml.parsers.DocumentBuilder;
@@ -23,62 +24,63 @@ public class FileComparator {
 
     /**
      * Method to compare two files
-     * @param fileList1 word list from file 1
-     * @param fileList2 word list from file 2
+     *
+     * @param actualTxtFileList word list from file 1
+     * @param expectedTxtFileList word list from file 2
      */
-    public void compareTxt(List<String[]> fileList1, List<String[]> fileList2) {
-        try{
-        // maxlength of number of sentences in files
-        int maxLength = Math.max(fileList1.size(), fileList2.size());
-        //iterate over sentences
-        for (int sentence = 0; sentence < maxLength; sentence++) {
-            String[] file1Sentence = sentence < fileList1.size() ? fileList1.get(sentence) : new String[0];
-            String[] file2Sentence = sentence < fileList2.size() ? fileList2.get(sentence) : new String[0];
+    public void compareTxt(List<String[]> actualTxtFileList, List<String[]> expectedTxtFileList) {
+        try {
+            // maxlength of number of sentences in files
+            int maxLength = Math.max(actualTxtFileList.size(), expectedTxtFileList.size());
+            //iterate over sentences
+            for (int sentence = 0; sentence < maxLength; sentence++) {
+                String[] file1Sentence = sentence < actualTxtFileList.size() ? actualTxtFileList.get(sentence) : new String[0];
+                String[] file2Sentence = sentence < expectedTxtFileList.size() ? expectedTxtFileList.get(sentence) : new String[0];
 
-            //check if sentence are equal from both files
-            if (!areSentencesEqual(file1Sentence, file2Sentence)) {
-                // if they are not equal print difference between words in the senetence
-                System.out.println("Difference found in sentence " + (sentence + 1) + ":");
-                compareWordsInSentences(file1Sentence, file2Sentence);
+                //check if sentence are equal from both files
+                if (!areSentencesEqual(file1Sentence, file2Sentence)) {
+                    // if they are not equal print difference between words in the senetence
+                    System.out.println("Difference found in sentence " + (sentence + 1) + ":");
+                    compareWordsInSentences(file1Sentence, file2Sentence);
+                }
             }
-        }
-        }
-        catch (ArrayIndexOutOfBoundsException e){
-            e.printStackTrace();
+        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            arrayIndexOutOfBoundsException.printStackTrace();
         }
     }
 
     /**
      * checks if the sentences are equal or not
-     * @param sentenceOfActualFile sentence of file1
+     *
+     * @param sentenceOfActualFile   sentence of file1
      * @param sentenceOfExpectedFile sentence of file2
      * @return boolean if the sentences are equal or not
      */
     private boolean areSentencesEqual(String[] sentenceOfActualFile, String[] sentenceOfExpectedFile) {
 
-            //if length of sentenceOfActualFile dont match length of sentenceOfExpectedFile they are unequal
-            if (sentenceOfActualFile.length != sentenceOfExpectedFile.length) {
-                return false;
-            }
-            try{
+        //if length of sentenceOfActualFile dont match length of sentenceOfExpectedFile they are unequal
+        if (sentenceOfActualFile.length != sentenceOfExpectedFile.length) {
+            return false;
+        }
+        try {
             // compare the sentences
-            for (int i = 0; i < sentenceOfActualFile.length; i++) {
-                if (!sentenceOfActualFile[i].equals(sentenceOfExpectedFile[i])) {
+            for (int word = 0; word < sentenceOfActualFile.length; word++) {
+                if (!sentenceOfActualFile[word].equals(sentenceOfExpectedFile[word])) {
                     return false;
                 }
             }
-            }
-            catch(ArrayIndexOutOfBoundsException e){
-                e.printStackTrace();
-            }
-            // when they are equal return true
-            return true;
+        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            arrayIndexOutOfBoundsException.printStackTrace();
+        }
+        // when they are equal return true
+        return true;
 
     }
 
     /**
      * method compares words in sentence
-     * @param sentenceOfActualFile sentence of file1
+     *
+     * @param sentenceOfActualFile   sentence of file1
      * @param sentenceOfExpectedFile sentence of file2
      */
     private void compareWordsInSentences(String[] sentenceOfActualFile, String[] sentenceOfExpectedFile) {
@@ -89,70 +91,69 @@ public class FileComparator {
                 if (word < sentenceOfActualFile.length && word < sentenceOfExpectedFile.length) {
                     if (!sentenceOfActualFile[word].equals(sentenceOfExpectedFile[word])) {
                         System.out.println("Word " + (word + 1) + ":");
-                        System.out.println("File 1: " + sentenceOfActualFile[word]);
-                        System.out.println("File 2: " + sentenceOfExpectedFile[word]);
+                        System.out.println("Actual File: " + sentenceOfActualFile[word]);
+                        System.out.println("Expected File: " + sentenceOfExpectedFile[word]);
                     }
                 } else if (word < sentenceOfActualFile.length) {
                     //prints extra words in sentenceOfActualFile
-                    System.out.println("Extra word in File 1: " + sentenceOfActualFile[word]);
+                    System.out.println("Extra word in Actual File: " + sentenceOfActualFile[word]);
                 } else {
                     //print extra words in sentenceOfExpectedFile
-                    System.out.println("Extra word in File 2: " + sentenceOfExpectedFile[word]);
+                    System.out.println("Extra word in Expected File: " + sentenceOfExpectedFile[word]);
                 }
             }
-        }
-        catch(ArrayIndexOutOfBoundsException e){
-            e.printStackTrace();
+        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            arrayIndexOutOfBoundsException.printStackTrace();
         }
     }
 
     /**
      * method to compareCsv files to check if they are same or not
-     * @param csvList1 list of all fields in csv file in every row
-     * @param csvList2  list of all fields in csv file in every row
+     *
+     * @param actualCsvFileList list of all fields in csv file in every row
+     * @param expectedCsvFileList list of all fields in csv file in every row
      * @return boolean value if files are equal or not
      */
-    public boolean compareCsv(List<String[]> csvList1, List<String[]> csvList2, String[] ignoreColumns) {
+    public boolean compareCsv(List<String[]> actualCsvFileList, List<String[]> expectedCsvFileList, String[] ignoreColumns) {
 
         //if lines length don't match return false
-        if (csvList1.size() != csvList2.size()) {
+        if (actualCsvFileList.size() != expectedCsvFileList.size()) {
             return false;
         }
-        try{
-        // Compare each line in both files
-        for (int row = 0; row < csvList1.size(); row++) {
-            String[] lineOfActualFile = csvList1.get(row);
-            String[] lineOfExpectedFile = csvList2.get(row);
+        try {
+            // Compare each line in both files
+            for (int row = 0; row < actualCsvFileList.size(); row++) {
+                String[] lineOfActualFile = actualCsvFileList.get(row);
+                String[] lineOfExpectedFile = expectedCsvFileList.get(row);
 
-            // number of fields must be equal in both files
-            if (lineOfActualFile.length != lineOfExpectedFile.length) {
-                return false;
-            }
-
-            // comparing the fields per line, excluding ignored columns
-            for (int field = 0; field < lineOfActualFile.length; field++) {
-                // Check if the current field should be ignored
-                boolean ignoreField = false;
-                for (String ignoreColumn : ignoreColumns) {
-                    if (ignoreColumn.equals(csvList1.get(0)[field])) {
-                        ignoreField = true;
-                        break;
-                    }
-                }
-
-                // If the field is ignored, skip the comparison
-                if (ignoreField) {
-                    continue;
-                }
-
-                if (!lineOfActualFile[field].equals(lineOfExpectedFile[field])) {
+                // number of fields must be equal in both files
+                if (lineOfActualFile.length != lineOfExpectedFile.length) {
                     return false;
                 }
+
+                // comparing the fields per line, excluding ignored columns
+                for (int field = 0; field < lineOfActualFile.length; field++) {
+                    // Check if the current field should be ignored
+                    boolean ignoreField = false;
+                    for (String ignoreColumn : ignoreColumns) {
+                        if (ignoreColumn.equals(actualCsvFileList.get(0)[field])) {
+                            ignoreField = true;
+                            break;
+                        }
+                    }
+
+                    // If the field is ignored, skip the comparison
+                    if (ignoreField) {
+                        continue;
+                    }
+
+                    if (!lineOfActualFile[field].equals(lineOfExpectedFile[field])) {
+                        return false;
+                    }
+                }
             }
-            }
-        }
-        catch(ArrayIndexOutOfBoundsException e){
-            e.printStackTrace();
+        } catch (ArrayIndexOutOfBoundsException arrayIndexOutOfBoundsException) {
+            arrayIndexOutOfBoundsException.printStackTrace();
         }
         // when all lines and fields are equal
         return true;
@@ -161,17 +162,18 @@ public class FileComparator {
 
     /**
      * method to create a csv output file of differences
+     *
      * @param csvList1 the list of fields in first csv file
      * @param csvList2 the list of fields in second csv file
      */
     public void createCsvOutputFile(List<String[]> csvList1, List<String[]> csvList2, String[] ignoreColumns) {
         try {
             // formatter to format datetime format
-            DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
+            DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
             // generates datetime from local machine
             LocalDateTime now = LocalDateTime.now();
             // make a filename to store output
-            String filename = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/Outputs/ResultCSV" + dtf.format(now) + ".csv";
+            String filename = "/home/himanshu/Desktop/Avisoft/java/weekly-assignment4/src/main/java/OutputFiles/ResultCSV" + dateTimeFormatter.format(now) + ".csv";
 
             // make a file and append first row to it
             try (FileWriter writer = new FileWriter(filename)) {
@@ -186,7 +188,7 @@ public class FileComparator {
                         // Check if the current column should be ignored
                         boolean ignoreColumn = false;
                         for (String ignore : ignoreColumns) {
-                            if (field < csvList1.get(0).length && ignore.equals(csvList1.get(0)[field])) {
+                            if (field < csvList1.get(0).length && ignore.equalsIgnoreCase(csvList1.get(0)[field])) {
                                 ignoreColumn = true;
                                 break;
                             }
@@ -204,41 +206,45 @@ public class FileComparator {
                         }
                     }
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
+            } catch (FileNotFoundException fileNotFoundException) {
+                fileNotFoundException.printStackTrace();
             }
 
             System.out.println("Differences written to file: " + filename);
-        } catch (DateTimeException e) {
-            e.printStackTrace();
+        } catch (DateTimeException dateTimeException) {
+            dateTimeException.printStackTrace();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
         }
     }
 
-
-    public void compareXml(String xmlPath1, String xmlPath2) {
+    /**
+     * method to compare two xml files
+     * @param actualXmlPath path of the actual xml file
+     * @param expectedXmlPath   path of the expected xml file
+     */
+    public void compareXml(String actualXmlPath, String expectedXmlPath) throws XmlFileDontExistException{
         try {
             // Parse the first XML file
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
             DocumentBuilder builder = factory.newDocumentBuilder();
-            File file1 = new File(xmlPath1);
-            if (!file1.exists() || !file1.isFile()) {
-                System.err.println("File " + xmlPath1 + " does not exist or is not a regular file.");
-                return;
+            File actualXmlFile = new File(actualXmlPath);
+            if (!actualXmlFile.exists() || !actualXmlFile.isFile()) {
+                throw new XmlFileDontExistException("File " + actualXmlPath + " does not exist.");
             }
-            System.out.println(file1.toString());
-            Document doc1 = builder.parse(file1);
-            System.out.println("**********" + doc1.toString());
+            System.out.println(actualXmlFile.toString());
+            Document actualXmlDocument = builder.parse(actualXmlFile);
+            System.out.println("**********" + actualXmlDocument.toString());
 
             // Parse the second XML file
-            File file2 = new File(xmlPath2);
-            if (!file2.exists() || !file2.isFile()) {
-                System.err.println("File " + xmlPath2 + " does not exist or is not a regular file.");
-                return;
+            File expectedXmlFile = new File(expectedXmlPath);
+            if (!expectedXmlFile.exists() || !expectedXmlFile.isFile()) {
+                throw new XmlFileDontExistException("File " + actualXmlPath + " does not exist.");
             }
-            Document doc2 = builder.parse(file2);
+            Document expectedXmlDocument = builder.parse(expectedXmlFile);
 
             // Compare the documents
-            compareNodes(doc1.getDocumentElement(), doc2.getDocumentElement());
+            compareNodes(actualXmlDocument.getDocumentElement(), expectedXmlDocument.getDocumentElement());
 
         } catch (ParserConfigurationException | SAXException | IOException e) {
             e.printStackTrace();
@@ -246,43 +252,52 @@ public class FileComparator {
 
     }
 
-    // Compare nodes recursively
-    private static void compareNodes(Node node1, Node node2) {
-        if (!node1.getNodeName().equals(node2.getNodeName())) {
-            System.out.println("Different node name: " + node1.getNodeName() + " vs " + node2.getNodeName());
-        }
+    /**
+     *  method that compares the nodes recursively
+     * @param actualXmlNode Node of actual xml file to compare against node of expected xml file
+     * @param expectedXmlNode Node of expected xml file to compare against node of actual xml file
+     */
+    private static void compareNodes(Node actualXmlNode, Node expectedXmlNode) {
+        try {
+            if (!actualXmlNode.getNodeName().equals(expectedXmlNode.getNodeName())) {
+                System.out.println("Different node name: " + actualXmlNode.getNodeName() + " vs " + expectedXmlNode.getNodeName());
+            }
 
-        // Compare attributes
-        if (!node1.getNodeValue().equals(node2.getNodeValue())) {
-            System.out.println("Different node value: " + node1.getNodeValue() + " vs " + node2.getNodeValue());
+            // Compare attributes
+            if (!actualXmlNode.getNodeValue().equals(expectedXmlNode.getNodeValue())) {
+                System.out.println("Different node value: " + actualXmlNode.getNodeValue() + " vs " + expectedXmlNode.getNodeValue());
+            }
+        }
+        catch(NullPointerException nullPointerException){
+            nullPointerException.printStackTrace();
         }
 
         // Compare child nodes
-        NodeList children1 = node1.getChildNodes();
-        NodeList children2 = node2.getChildNodes();
+        NodeList childrenOfActualXmlNode = actualXmlNode.getChildNodes();
+        NodeList childrenOfExpectedXmlNode = expectedXmlNode.getChildNodes();
 
-        for (int i = 0; i < children1.getLength(); i++) {
-            Node child1 = children1.item(i);
+        for (int childOfActualXmlNodeIterator = 0; childOfActualXmlNodeIterator < childrenOfActualXmlNode.getLength(); childOfActualXmlNodeIterator++) {
+            Node childNodeOfActualXmlNode = childrenOfActualXmlNode.item(childOfActualXmlNodeIterator);
             boolean found = false;
-            for (int j = 0; j < children2.getLength(); j++) {
-                Node child2 = children2.item(j);
-                if (child1.getNodeType() == Node.ELEMENT_NODE && child2.getNodeType() == Node.ELEMENT_NODE &&
-                        child1.getNodeName().equals(child2.getNodeName())) {
-                    compareNodes(child1, child2); // Recursively compare child nodes
+            for (int childOfExpectedXmlNodeIterator = 0; childOfExpectedXmlNodeIterator < childrenOfExpectedXmlNode.getLength(); childOfExpectedXmlNodeIterator++) {
+                Node childNodeOfExpectedXmlNode = childrenOfExpectedXmlNode.item(childOfExpectedXmlNodeIterator);
+                if (childNodeOfActualXmlNode.getNodeType() == Node.ELEMENT_NODE && childNodeOfExpectedXmlNode.getNodeType() == Node.ELEMENT_NODE &&
+                        childNodeOfActualXmlNode.getNodeName().equals(childNodeOfExpectedXmlNode.getNodeName())) {
+                    compareNodes(childNodeOfActualXmlNode, childNodeOfExpectedXmlNode); // Recursively compare child nodes
                     found = true;
                     break;
                 }
             }
             if (!found) {
-                System.out.println("Extra node in file1.xml: " + child1.getNodeName());
+                System.out.println("Extra node in file1.xml: " + childNodeOfActualXmlNode.getNodeName());
             }
         }
 
-        for (int i = 0; i < children2.getLength(); i++) {
-            Node child2 = children2.item(i);
+        for (int i = 0; i < childrenOfExpectedXmlNode.getLength(); i++) {
+            Node child2 = childrenOfExpectedXmlNode.item(i);
             boolean found = false;
-            for (int j = 0; j < children1.getLength(); j++) {
-                Node child1 = children1.item(j);
+            for (int j = 0; j < childrenOfActualXmlNode.getLength(); j++) {
+                Node child1 = childrenOfActualXmlNode.item(j);
                 if (child2.getNodeType() == Node.ELEMENT_NODE && child1.getNodeType() == Node.ELEMENT_NODE &&
                         child2.getNodeName().equals(child1.getNodeName())) {
                     found = true;
@@ -295,3 +310,4 @@ public class FileComparator {
         }
     }
 }
+

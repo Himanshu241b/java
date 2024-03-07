@@ -1,27 +1,20 @@
-package AdminModule;
+package onlinevotingsystem;
+public class Admin extends User{
 
-public class Admin{
-    private String adminId;
-    private String name;
-    private String dateOfBirth;
 
-    Admin(String adminId, String name, String dateOfBirth){
-        this.adminId = adminId;
-        this.name = name;
-        this.dateOfBirth = dateOfBirth;
+    private String roles;
+    Admin(String adminId, String name, String dateOfBirth, String roles){
+        super(adminId, name, dateOfBirth);
+        this.roles = roles;
     }
 
-    //getters and setters
-    public String getAdminId() {
-        return adminId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    @Override
+    public void displayUser(){
+        System.out.println("**********Admin details*********");
+        System.out.println("Admin id:"+ this.getUserId());
+        System.out.println("Admin name : " + this.getName());
+        System.out.println("Admin dateOfBirth : " + this.getDateOfBirth());
+        System.out.println("Admin roles : " + this.roles);
     }
 
 }
