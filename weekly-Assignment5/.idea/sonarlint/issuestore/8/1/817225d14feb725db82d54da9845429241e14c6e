@@ -1,14 +1,14 @@
 
 m
-java:S1192ศ"ODefine a constant instead of duplicating this literal "Login first..." 5 times.(ภฦ8ฯตรแ1
-z	java:S135*"YReduce the total number of break and continue statements in this loop to use at most one.(ิ๘ํพ๘ÿÿÿÿ8ฯตรแ1
-v	java:S135ฎ"YReduce the total number of break and continue statements in this loop to use at most one.(ผะฝ่8ฯตรแ1
+java:S1192ะ"ODefine a constant instead of duplicating this literal "Login first..." 5 times.(ภฦ8ฯตรแ1
+z	java:S135+"YReduce the total number of break and continue statements in this loop to use at most one.(ิ๘ํพ๘ÿÿÿÿ8ฯตรแ1
+v	java:S135ถ"YReduce the total number of break and continue statements in this loop to use at most one.(ผะฝ่8ฯตรแ1
 D
-java:S2189""Add an end condition to this loop.(üง่ฝ๙ÿÿÿÿ8ฦะตรแ1
+java:S2189""Add an end condition to this loop.(üง่ฝ๙ÿÿÿÿ8ึปๅอแ1
 p
-java:S3776"SRefactor this method to reduce its Cognitive Complexity from 244 to the 15 allowed.(วตํ‘8สะตรแ1
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 256 to the 15 allowed.(วตํ‘8สะตรแ1
 8
-java:S36266"Remove this redundant jump.(ษฉ8อะตรแ1
+java:S36267"Remove this redundant jump.(ษฉ8อะตรแ1
 ^
 java:S1075"ARefactor your code to get this URI from a customizable parameter.(ูฏฅ8ิะตรแ1
 ^
@@ -19,70 +19,74 @@ G	java:S106"+Replace this use of System.out by a logger.(ิูฏย8ีะตรแ1
 G	java:S106"+Replace this use of System.out by a logger.(เยฺฅ8ีะตรแ1
 L	java:S106"+Replace this use of System.out by a logger.(์๔จüÿÿÿÿ8ึะตรแ1
 L	java:S106"+Replace this use of System.out by a logger.(ฬซู๚ÿÿÿÿ8ึะตรแ1
-n	java:S128ÿ"LEnd this switch case with an unconditional break, return or throw statement.(โุฌ๘ÿÿÿÿ8ืะตรแ1
+n	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(โุฌ๘ÿÿÿÿ8ืะตรแ1
 G	java:S106"+Replace this use of System.out by a logger.(๔ฺฉ๒8ืะตรแ1
 G	java:S106"+Replace this use of System.out by a logger.(ฅชข8ืะตรแ1
 L	java:S106 "+Replace this use of System.out by a logger.(þณ—๘ÿÿÿÿ8ืะตรแ1
 G	java:S106!"+Replace this use of System.out by a logger.(ม๊๖Ý8ุะตรแ1
 L	java:S106""+Replace this use of System.out by a logger.(ๆำปี๚ÿÿÿÿ8ุะตรแ1
-G	java:S106#"+Replace this use of System.out by a logger.(ปร8ุะตรแ1
-L	java:S106+"+Replace this use of System.out by a logger.(Þฏ“๙ÿÿÿÿ8ูะตรแ1
-L	java:S106,"+Replace this use of System.out by a logger.(ฺ์ลÿÿÿÿÿ8ูะตรแ1
-G	java:S106."+Replace this use of System.out by a logger.(๔ธฏผ8ูะตรแ1
-F	java:S1061"+Replace this use of System.out by a logger.(ฤ๛b8ฺะตรแ1
-L	java:S1063"+Replace this use of System.out by a logger.(๏’฿ืýÿÿÿÿ8ฺะตรแ1
-G	java:S1069"+Replace this use of System.out by a logger.(üํ’๏8ฺะตรแ1
-L	java:S106:"+Replace this use of System.out by a logger.(ชจใ๛ÿÿÿÿ8ฺะตรแ1
-L	java:S106="+Replace this use of System.out by a logger.(๒ูัÿÿÿÿÿ8Ûะตรแ1
-L	java:S106@"+Replace this use of System.out by a logger.(ฑฉþศÿÿÿÿÿ8Ûะตรแ1
-G	java:S106E"+Replace this use of System.out by a logger.(งูี่8Ûะตรแ1
-L	java:S106H"+Replace this use of System.out by a logger.(ฌ—ธ๕þÿÿÿÿ8Ûะตรแ1
-G	java:S106T"+Replace this use of System.out by a logger.(็ฺนก8Ûะตรแ1
-L	java:S106Y"+Replace this use of System.out by a logger.(Þÿ๋ýÿÿÿÿ8Üะตรแ1
-L	java:S106]"+Replace this use of System.out by a logger.(Þฏ“๙ÿÿÿÿ8Üะตรแ1
-L	java:S106^"+Replace this use of System.out by a logger.(ฺ์ลÿÿÿÿÿ8Üะตรแ1
-G	java:S106`"+Replace this use of System.out by a logger.(ต’ฃÜ8Üะตรแ1
-L	java:S106e"+Replace this use of System.out by a logger.(๏’฿ืýÿÿÿÿ8Üะตรแ1
-G	java:S106k"+Replace this use of System.out by a logger.(ดิ๙ฐ8Ýะตรแ1
-G	java:S106m"+Replace this use of System.out by a logger.(ๅฉ8Ýะตรแ1
-G	java:S106r"+Replace this use of System.out by a logger.(็ฺนก8Ýะตรแ1
-G	java:S106x"+Replace this use of System.out by a logger.(ภฦ8Ýะตรแ1
-G	java:S106~"+Replace this use of System.out by a logger.(ภฦ8Þะตรแ1
-H	java:S106"+Replace this use of System.out by a logger.(ฆ—ลู8Þะตรแ1
-M	java:S106"+Replace this use of System.out by a logger.(ฦüำýýÿÿÿÿ8Þะตรแ1
-M	java:S106"+Replace this use of System.out by a logger.(ฮั ล๙ÿÿÿÿ8Þะตรแ1
-M	java:S106”"+Replace this use of System.out by a logger.(ุฮ€๛ÿÿÿÿ8฿ะตรแ1
-H	java:S106—"+Replace this use of System.out by a logger.(–ำ‘8฿ะตรแ1
-H	java:S106"+Replace this use of System.out by a logger.(ิ๛ฬ8฿ะตรแ1
-M	java:S106 "+Replace this use of System.out by a logger.(ิ ทÿÿÿÿÿ8฿ะตรแ1
-M	java:S106ก"+Replace this use of System.out by a logger.(ตขÛ๒๚ÿÿÿÿ8฿ะตรแ1
-H	java:S106ข"+Replace this use of System.out by a logger.(ฟ“๘8฿ะตรแ1
-M	java:S106ฃ"+Replace this use of System.out by a logger.(เ๚ฟ็üÿÿÿÿ8฿ะตรแ1
-H	java:S106ค"+Replace this use of System.out by a logger.(ณ8เะตรแ1
-M	java:S106ฅ"+Replace this use of System.out by a logger.(ทซภ’๛ÿÿÿÿ8เะตรแ1
-M	java:S106ฆ"+Replace this use of System.out by a logger.(ภฬ–๚ÿÿÿÿ8เะตรแ1
-H	java:S106ง"+Replace this use of System.out by a logger.(ฃพý 8เะตรแ1
-M	java:S106จ"+Replace this use of System.out by a logger.(ิÜþÿÿÿÿ8เะตรแ1
-n	java:S128๒"LEnd this switch case with an unconditional break, return or throw statement.(ปü๖þÿÿÿÿ8แะตรแ1
-H	java:S106ฏ"+Replace this use of System.out by a logger.(แ๒8โะตรแ1
-H	java:S106ฐ"+Replace this use of System.out by a logger.(“เฏ8โะตรแ1
-H	java:S106ฒ"+Replace this use of System.out by a logger.(๔ธฏผ8โะตรแ1
-M	java:S106ท"+Replace this use of System.out by a logger.(โไ๚ÿÿÿÿ8โะตรแ1
-M	java:S106ภ"+Replace this use of System.out by a logger.(โไ๚ÿÿÿÿ8ใะตรแ1
-H	java:S106ศ"+Replace this use of System.out by a logger.(ภฦ8ใะตรแ1
-H	java:S106ฮ"+Replace this use of System.out by a logger.(ภฦ8ใะตรแ1
-H	java:S106ิ"+Replace this use of System.out by a logger.(ภฦ8ใะตรแ1
-H	java:S106ฺ"+Replace this use of System.out by a logger.(ภฦ8ใะตรแ1
-H	java:S106เ"+Replace this use of System.out by a logger.(ภฦ8ไะตรแ1
-M	java:S106ๅ"+Replace this use of System.out by a logger.(วฉฆü๚ÿÿÿÿ8ไะตรแ1
-M	java:S106่"+Replace this use of System.out by a logger.(”‘ธ๛๙ÿÿÿÿ8ไะตรแ1
-M	java:S106ํ"+Replace this use of System.out by a logger.(ลต๙โ๛ÿÿÿÿ8ไะตรแ1
+F	java:S106#"+Replace this use of System.out by a logger.(เ๗า8ุะตรแ1
+G	java:S106$"+Replace this use of System.out by a logger.(ปร8ูะตรแ1
+L	java:S106,"+Replace this use of System.out by a logger.(Þฏ“๙ÿÿÿÿ8ูะตรแ1
+L	java:S106-"+Replace this use of System.out by a logger.(ฺ์ลÿÿÿÿÿ8ูะตรแ1
+G	java:S106/"+Replace this use of System.out by a logger.(๔ธฏผ8ฺะตรแ1
+F	java:S1062"+Replace this use of System.out by a logger.(ฤ๛b8ฺะตรแ1
+L	java:S1064"+Replace this use of System.out by a logger.(๏’฿ืýÿÿÿÿ8ฺะตรแ1
+G	java:S106:"+Replace this use of System.out by a logger.(üํ’๏8ฺะตรแ1
+L	java:S106;"+Replace this use of System.out by a logger.(ชจใ๛ÿÿÿÿ8Ûะตรแ1
+L	java:S106>"+Replace this use of System.out by a logger.(๒ูัÿÿÿÿÿ8Ûะตรแ1
+L	java:S106A"+Replace this use of System.out by a logger.(ฑฉþศÿÿÿÿÿ8Ûะตรแ1
+G	java:S106F"+Replace this use of System.out by a logger.(งูี่8Ûะตรแ1
+L	java:S106I"+Replace this use of System.out by a logger.(ฌ—ธ๕þÿÿÿÿ8Ûะตรแ1
+G	java:S106U"+Replace this use of System.out by a logger.(็ฺนก8Üะตรแ1
+L	java:S106Z"+Replace this use of System.out by a logger.(Þÿ๋ýÿÿÿÿ8Üะตรแ1
+L	java:S106^"+Replace this use of System.out by a logger.(Þฏ“๙ÿÿÿÿ8Üะตรแ1
+L	java:S106_"+Replace this use of System.out by a logger.(ฺ์ลÿÿÿÿÿ8Üะตรแ1
+G	java:S106a"+Replace this use of System.out by a logger.(ต’ฃÜ8Üะตรแ1
+L	java:S106f"+Replace this use of System.out by a logger.(๏’฿ืýÿÿÿÿ8Ýะตรแ1
+G	java:S106l"+Replace this use of System.out by a logger.(ดิ๙ฐ8Ýะตรแ1
+G	java:S106n"+Replace this use of System.out by a logger.(ๅฉ8Ýะตรแ1
+G	java:S106s"+Replace this use of System.out by a logger.(็ฺนก8Ýะตรแ1
+G	java:S106y"+Replace this use of System.out by a logger.(ภฦ8Þะตรแ1
+G	java:S106"+Replace this use of System.out by a logger.(ภฦ8Þะตรแ1
+H	java:S106"+Replace this use of System.out by a logger.(ฆ—ลู8Þะตรแ1
+M	java:S106"+Replace this use of System.out by a logger.(ฦüำýýÿÿÿÿ8Þะตรแ1
+M	java:S106"+Replace this use of System.out by a logger.(ฮั ล๙ÿÿÿÿ8฿ะตรแ1
+H	java:S106–"+Replace this use of System.out by a logger.(ฦฑว8฿ะตรแ1
+M	java:S106"+Replace this use of System.out by a logger.(ุฮ€๛ÿÿÿÿ8฿ะตรแ1
+H	java:S106"+Replace this use of System.out by a logger.(–ำ‘8฿ะตรแ1
+H	java:S106ก"+Replace this use of System.out by a logger.(ิ๛ฬ8฿ะตรแ1
+M	java:S106ง"+Replace this use of System.out by a logger.(ิ ทÿÿÿÿÿ8฿ะตรแ1
+M	java:S106จ"+Replace this use of System.out by a logger.(ตขÛ๒๚ÿÿÿÿ8฿ะตรแ1
+H	java:S106ฉ"+Replace this use of System.out by a logger.(ฟ“๘8เะตรแ1
+M	java:S106ช"+Replace this use of System.out by a logger.(เ๚ฟ็üÿÿÿÿ8เะตรแ1
+H	java:S106ซ"+Replace this use of System.out by a logger.(ณ8เะตรแ1
+M	java:S106ฌ"+Replace this use of System.out by a logger.(ทซภ’๛ÿÿÿÿ8เะตรแ1
+M	java:S106ญ"+Replace this use of System.out by a logger.(ภฬ–๚ÿÿÿÿ8เะตรแ1
+H	java:S106ฎ"+Replace this use of System.out by a logger.(ฃพý 8โะตรแ1
+M	java:S106ฏ"+Replace this use of System.out by a logger.(งดว์๙ÿÿÿÿ8โะตรแ1
+M	java:S106ฐ"+Replace this use of System.out by a logger.(ิÜþÿÿÿÿ8โะตรแ1
+n	java:S128"LEnd this switch case with an unconditional break, return or throw statement.(ปü๖þÿÿÿÿ8แะตรแ1
+H	java:S106ท"+Replace this use of System.out by a logger.(แ๒8โะตรแ1
+H	java:S106ธ"+Replace this use of System.out by a logger.(“เฏ8ใะตรแ1
+H	java:S106บ"+Replace this use of System.out by a logger.(๔ธฏผ8ใะตรแ1
+M	java:S106ฟ"+Replace this use of System.out by a logger.(โไ๚ÿÿÿÿ8ใะตรแ1
+M	java:S106ศ"+Replace this use of System.out by a logger.(โไ๚ÿÿÿÿ8ใะตรแ1
+H	java:S106ะ"+Replace this use of System.out by a logger.(ภฦ8ใะตรแ1
+H	java:S106ึ"+Replace this use of System.out by a logger.(ภฦ8ไะตรแ1
+H	java:S106Ü"+Replace this use of System.out by a logger.(ภฦ8ไะตรแ1
+H	java:S106โ"+Replace this use of System.out by a logger.(ภฦ8ไะตรแ1
+H	java:S106่"+Replace this use of System.out by a logger.(ภฦ8ไะตรแ1
+M	java:S106ํ"+Replace this use of System.out by a logger.(วฉฆü๚ÿÿÿÿ8ไะตรแ1
 M	java:S106๐"+Replace this use of System.out by a logger.(”‘ธ๛๙ÿÿÿÿ8ไะตรแ1
-M	java:S106๕"+Replace this use of System.out by a logger.(๗ฎฐ๚ÿÿÿÿ8ไะตรแ1
-H	java:S106๘"+Replace this use of System.out by a logger.(ิป๙ฝ8ไะตรแ1
-H	java:S106๚"+Replace this use of System.out by a logger.(ิ๛ฬ8ไะตรแ1
-G	java:S106"+Replace this use of System.out by a logger.(้ๅ8ไะตรแ1
+M	java:S106๕"+Replace this use of System.out by a logger.(ลต๙โ๛ÿÿÿÿ8ไะตรแ1
+M	java:S106๘"+Replace this use of System.out by a logger.(”‘ธ๛๙ÿÿÿÿ8ไะตรแ1
+H	java:S106þ"+Replace this use of System.out by a logger.(‘ฯฤ8ไะตรแ1
+M	java:S106…"+Replace this use of System.out by a logger.(๗ฎฐ๚ÿÿÿÿ8๛ำฝอแ1
+H	java:S106"+Replace this use of System.out by a logger.(ิป๙ฝ8…ฐๆอแ1
+H	java:S106"+Replace this use of System.out by a logger.(ิ๛ฬ8ริ่อแ1
+G	java:S106’"+Replace this use of System.out by a logger.(้ๅ8ขํอแ1
 Z
-java:S6353ข"<Use concise character class syntax '\\d' instead of '[0-9]'.(€ ัซ8่ะตรแ1
+java:S6353ฒ"<Use concise character class syntax '\\d' instead of '[0-9]'.(€ ัซ8่ะตรแ1
 ไ
-java:S6541"ฦA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 244 to 64, Complexity from 58 to 14, Nesting Level from 9 to 2, Number of Variables from 22 to 6.(วตํ‘8้ะตรแ1
+java:S6541"ฦA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 259 to 64, Complexity from 62 to 14, Nesting Level from 9 to 2, Number of Variables from 22 to 6.(วตํ‘8้ะตรแ1

@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34fff391-94ba-47da-ad67-43ebebc52ddd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../march_07_2024/callsRecord.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../march_07_2024/callsRecord.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../march_07_2024/secondHisghestSalary.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../march_07_2024/secondHisghestSalary.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/onlinevotingsystem/ResultRevealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

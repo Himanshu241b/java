@@ -32,6 +32,7 @@ class Main{
                         System.out.println("Press 3: To change your password");
                         System.out.println("Press 4: To view your profile");
                         System.out.println("Press 5: To vote");
+                        System.out.println("Press 6: To see current status of votes");
                         System.out.println("Press 0: To logout...");
                         char userChoice = scanner.next().charAt(0);
 
@@ -142,6 +143,12 @@ class Main{
                                 }
 
                                 break;
+                            case '6': // display the current status of votes
+                                if(voter != null)
+                                    ResultRevealer.showStatus(candidatesCsvPath);
+                                else
+                                    System.out.println("Login first");
+                                break;
                             case '0':  // logout a voter
                                 if(voter != null) {
                                     voter = null;
@@ -165,6 +172,7 @@ class Main{
                         System.out.println("Press 6: To delete a candidate.");
                         System.out.println("Press 7: To enable voting.");
                         System.out.println("Press 8: To disable voting.");
+                        System.out.println("Press 9: To see current stutus of votes.");
                         System.out.println("Press 0: To logout");
                         char adminChoice = scanner.next().charAt(0);
                         switch (adminChoice){
@@ -239,6 +247,14 @@ class Main{
                                     else
                                         System.out.println("login first...");
                                     break;
+                                case '9': // display current status of votes
+                                    if(admin != null)
+                                        ResultRevealer.showStatus(candidatesCsvPath);
+                                    else
+                                        System.out.println("Login first.1" +
+                                                "");
+                                    break;
+
                                 case '0': // logout
                                     if(admin != null){
                                         admin = null;
