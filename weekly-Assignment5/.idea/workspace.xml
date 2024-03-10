@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34fff391-94ba-47da-ad67-43ebebc52ddd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/onlinevotingsystem/ResultRevealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../march_08_2024/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../march_08_2024/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../march_08_2024/RankScores.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../march_08_2024/RankScores.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6182a6c092228f0396d91374109af1d6efa175ae" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/1/6182a6c092228f0396d91374109af1d6efa175ae" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd24cd3875b258f8d2227062a14c0ccfc9428a74" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/dd24cd3875b258f8d2227062a14c0ccfc9428a74" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec7cc59fab43c3bbba96afaa885fb2eeeba7aade" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec7cc59fab43c3bbba96afaa885fb2eeeba7aade" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/avisoftEmployees.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/avisoftEmployees.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/database/candidates.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/candidates.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/PasswordChanger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/PasswordChanger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/ResultRevealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/ResultRevealer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/onlinevotingsystem/VotingBooth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/onlinevotingsystem/VotingBooth.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -49,7 +49,7 @@ class Main{
                                     if (Login.loginUser(employeeId, password, avisoftEmployeesCsvPath) == null) {
                                         System.out.println("Your employee id or password is incorrect");
                                         if (attempts == 0) {
-                                            System.out.println("You must wait for 5 minutes before trying again..");
+                                            System.out.println("You must wait for 10 seconds before trying again..");
                                             setCooldown();
                                         }
                                         continue;
@@ -99,7 +99,7 @@ class Main{
                                             voter = Login.loginUser(loginEmployeeId, loginPassword, avisoftEmployeesCsvPath);
                                             if (voter == null) {
                                                 if(attempts == 0){
-                                                    System.out.println("You must wait for 5 minutes before trying again..");
+                                                    System.out.println("You must wait for 10 seconds before trying again..");
                                                     setCooldown();
                                                 }
                                                  continue;
@@ -173,6 +173,7 @@ class Main{
                         System.out.println("Press 7: To enable voting.");
                         System.out.println("Press 8: To disable voting.");
                         System.out.println("Press 9: To see current stutus of votes.");
+                        System.out.println("Press a: To declare result");
                         System.out.println("Press 0: To logout");
                         char adminChoice = scanner.next().charAt(0);
                         switch (adminChoice){
@@ -188,7 +189,7 @@ class Main{
                                         admin = Login.loginUser(adminId, password, adminCsvPath);
                                         if (admin == null) {
                                             if(attempts == 0){
-                                                System.out.println("Please retry after 5 minutes.");
+                                                System.out.println("Please retry after 10 seconds.");
                                                 setCooldown();
                                             }
                                             continue;
@@ -197,7 +198,7 @@ class Main{
                                     }
                                 }
                                 else{
-                                    System.out.println("Please retry after 5 minutes.");
+                                    System.out.println("Please retry after 10 seconds till your cooldown dies.");
                                 }
                                 break;
                             case '2': //   change admin password
@@ -251,10 +252,16 @@ class Main{
                                     if(admin != null)
                                         ResultRevealer.showStatus(candidatesCsvPath);
                                     else
-                                        System.out.println("Login first.1" +
-                                                "");
+                                        System.out.println("Login first");
                                     break;
-
+                                case 'a': // declare the result
+                                    if(admin != null) {
+                                        ResultRevealer.declare(candidatesCsvPath);
+                                        System.exit(0);
+                                    }
+                                    else
+                                        System.out.println("Login first");
+                                    break;
                                 case '0': // logout
                                     if(admin != null){
                                         admin = null;
@@ -283,7 +290,7 @@ class Main{
         scheduledExecutorService.schedule(() -> {
             isCooldown = false;
             scheduledExecutorService.shutdown();
-        }, 5, TimeUnit.SECONDS);
+        }, 10, TimeUnit.SECONDS);
     }
 
 

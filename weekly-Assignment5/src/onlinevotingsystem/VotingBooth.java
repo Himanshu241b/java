@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.lang.NumberFormatException;
 class VotingBooth{
     static Scanner scanner = new Scanner(System.in);
     public static void castVote(String voterId, String candidateCsvPath, String avisoftEmployeesCsvPath) {
@@ -81,13 +82,17 @@ class VotingBooth{
                 String[] parts = line.split(",");
                 // If the line corresponds to the candidate we want to edit, update it
                 if (parts.length > 0 && parts[4].equals(selectedCandidateSymbol)) {
-                    int votes = Integer.parseInt(parts[5])+1;
+                    int votes = Integer.parseInt(parts[5]) + 1;
                     parts[5] = String.valueOf(votes);
                     lines.add(parts);
                 } else {
                     lines.add(parts);
                 }
             }
+        }
+            catch(NumberFormatException numberFormatException) {
+                System.out.println("Invalid input while parsing string to integer.");
+
         }
         catch(FileNotFoundException fileNotFoundException){
             System.out.println("File not found while trying to add vote to candidate");

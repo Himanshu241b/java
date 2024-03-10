@@ -1,10 +1,17 @@
 
+z	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(˜ïˆÿÿÿÿÿ8­ÛÈñá1
 W
-java:S1118
-":Add a private constructor to hide the implicit public one.(¬‹ïå8Š™½“á1
-L	java:S106"+Replace this use of System.out by a logger.(×Ó˜üÿÿÿÿ8™½“á1
-G	java:S106"+Replace this use of System.out by a logger.(´Æ†‹8™½“á1
-G	java:S106"+Replace this use of System.out by a logger.(¤€à­8™½“á1
-G	java:S106%"+Replace this use of System.out by a logger.(àˆºò8™½“á1
-L	java:S106)"+Replace this use of System.out by a logger.(”¼€—ùÿÿÿÿ8™½“á1
-G	java:S106,"+Replace this use of System.out by a logger.(õÙ×Å8™½“á1
+java:S1118":Add a private constructor to hide the implicit public one.(¬‹ïå8èĞñá1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(²ßö8÷ÛÈñá1
+8
+java:S3626"Remove this redundant jump.(ÉŠ©ƒ8ùÛÈñá1
+L	java:S106"+Replace this use of System.out by a logger.(×Ó˜üÿÿÿÿ8ÜÈñá1
+L	java:S106"+Replace this use of System.out by a logger.(ÕŸİ£şÿÿÿÿ8‚ÜÈñá1
+G	java:S106#"+Replace this use of System.out by a logger.(´Æ†‹8‚ÜÈñá1
+G	java:S106+"+Replace this use of System.out by a logger.(¤€à­8„ÜÈñá1
+G	java:S1061"+Replace this use of System.out by a logger.(àˆºò8„ÜÈñá1
+L	java:S1065"+Replace this use of System.out by a logger.(”¼€—ùÿÿÿÿ8…ÜÈñá1
+G	java:S1068"+Replace this use of System.out by a logger.(õÙ×Å8…ÜÈñá1
+^
+java:S6353C"<Use concise character class syntax '\\d' instead of '[0-9]'.(œ‚„ìúÿÿÿÿ8–Éñá1

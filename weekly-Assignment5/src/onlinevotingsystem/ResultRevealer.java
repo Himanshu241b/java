@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.NumberFormatException;
 
 class ResultRevealer{
     public static void showStatus(String candidateCsvPath){
@@ -20,4 +21,44 @@ class ResultRevealer{
             e.printStackTrace();
         }
     }
+
+
+        public static void declare(String candidateCsvPath){
+            try (BufferedReader bufferedReader = new BufferedReader(new FileReader(candidateCsvPath))) {
+                String line;
+                int maxVotes = 0;
+                bufferedReader.readLine();
+                while ((line = bufferedReader.readLine()) != null) {
+                    String[] parts = line.split(",");
+                    int candidateVotes = Integer.parseInt(parts[5]);
+                    if (candidateVotes > maxVotes)
+                        maxVotes = candidateVotes;
+                }
+                displayResult(maxVotes, candidateCsvPath);
+            }
+            catch(NumberFormatException numberFormatException){
+                System.out.println("invalid input while parsing string to integer.");
+            } catch (FileNotFoundException fileNotFoundException) {
+                System.out.println("File not found while trying to display candidate");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        public static void displayResult(int maxVotes, String candidateCsvPath){
+            try (BufferedReader bufferedReader = new BufferedReader(new FileReader(candidateCsvPath))) {
+                String line;
+                System.out.println("************Result************");
+                bufferedReader.readLine();
+                while ((line = bufferedReader.readLine()) != null) {
+                    String[] parts = line.split(",");
+                    if(parts[5].equals(String.valueOf(maxVotes)));
+                        System.out.println(parts[2] +" has won the election");
+                }
+            } catch (FileNotFoundException fileNotFoundException) {
+                System.out.println("File not found while trying to display candidate");
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 }
