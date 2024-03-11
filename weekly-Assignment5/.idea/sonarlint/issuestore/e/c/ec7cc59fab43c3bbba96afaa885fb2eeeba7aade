@@ -13,5 +13,5 @@ G	java:S106+"+Replace this use of System.out by a logger.(¤€à­8„ÜÈñá1
 G	java:S1061"+Replace this use of System.out by a logger.(àˆºò8„ÜÈñá1
 L	java:S1065"+Replace this use of System.out by a logger.(”¼€—ùÿÿÿÿ8…ÜÈñá1
 G	java:S1068"+Replace this use of System.out by a logger.(õÙ×Å8…ÜÈñá1
-^
-java:S6353C"<Use concise character class syntax '\\d' instead of '[0-9]'.(œ‚„ìúÿÿÿÿ8–Éñá1
+Y
+java:S6353C"<Use concise character class syntax '\\d' instead of '[0-9]'.(äœ8–Éñá1

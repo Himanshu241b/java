@@ -9,10 +9,20 @@ import java.util.List;
 import java.util.ArrayList;
 import java.io.BufferedReader;
 import java.io.FileReader;
+
+/**
+ * Candidate Manager class to manage the candidate through admin
+ */
 class CandidateManager{
     static Scanner scanner = new Scanner(System.in);
+
+    /**
+     * method to add a candidate to the list of candidates in database
+     * @param candidatesCsvPath
+     */
     public static void addCandidate(String candidatesCsvPath){
 
+        // take add details
         System.out.println("Enter candidate id:");
         String candidateId = scanner.next();
         System.out.println("Enter candidate name:");
@@ -24,23 +34,23 @@ class CandidateManager{
         System.out.println("Enter candidate's employee id");
         String candidateEmployeeId = scanner.next();
 
-        // Sample data for the new entry
+        // Create  new entry
         String[] newEntry = {candidateEmployeeId,candidateId, candidateName, candidateDateOfBirth, candidateSymbol, "0"};
 
-
+        //write to database
         try {
             // Create a BufferedWriter to write to the CSV file
-            BufferedWriter writer = new BufferedWriter(new FileWriter(candidatesCsvPath, true));
+            BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(candidatesCsvPath, true));
 
             // Join the array elements into a CSV-formatted string
             String csvLine = String.join(",", newEntry);
 
             // Write the new entry to the CSV file
-            writer.write(csvLine);
-            writer.newLine();
+            bufferedWriter.write(csvLine);
+            bufferedWriter.newLine();
 
-            // Close the writer
-            writer.close();
+            // Close the bufferedWriter
+            bufferedWriter.close();
 
             System.out.println("New candidate added successfully");
         }

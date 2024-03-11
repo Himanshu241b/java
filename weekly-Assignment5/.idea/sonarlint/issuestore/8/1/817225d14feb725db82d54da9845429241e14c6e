@@ -5,8 +5,6 @@ m
 java:S1192Ñ"ODefine a constant instead of duplicating this literal "Login first..." 5 times.(ÀÆ‹8¹›ïá1
 z	java:S135+"YReduce the total number of break and continue statements in this loop to use at most one.(Ôøí¾øÿÿÿÿ8¹›ïá1
 v	java:S135·"YReduce the total number of break and continue statements in this loop to use at most one.(¼Ğ½è8¹›ïá1
-D
-java:S2189""Add an end condition to this loop.(ü§è½ùÿÿÿÿ8Áº›ïá1
 p
 java:S3776"SRefactor this method to reduce its Cognitive Complexity from 262 to the 15 allowed.(Çµí‘8Çº›ïá1
 8
@@ -90,7 +88,5 @@ M	java:S106Œ"+Replace this use of System.out by a logger.(Ÿ÷®°úÿÿÿÿ8âº›ïá1
 H	java:S106"+Replace this use of System.out by a logger.(Ô»ù½8âº›ïá1
 H	java:S106‘"+Replace this use of System.out by a logger.(ÔˆûÌ8âº›ïá1
 G	java:S106™"+Replace this use of System.out by a logger.(éå8ãº›ïá1
-Z
-java:S6353¹"<Use concise character class syntax '\\d' instead of '[0-9]'.(€ Ñ«8çº›ïá1
 ä
 java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 267 to 64, Complexity from 64 to 14, Nesting Level from 9 to 2, Number of Variables from 22 to 6.(Çµí‘8èº›ïá1

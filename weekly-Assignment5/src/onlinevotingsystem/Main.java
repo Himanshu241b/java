@@ -61,7 +61,7 @@ class Main{
                                         while (true) {
                                             System.out.println("Enter your name:");
                                             name = scanner.next();
-                                            if (!isValidName(name))
+                                            if (!InputValidator.isValidName(name))
                                                 System.out.println("Name cant have spaces, numbers and special characters");
                                             else
                                                 break;
@@ -69,7 +69,7 @@ class Main{
                                         while (true) {
                                             System.out.println("Enter your date of birth (DD/MM/YYYY):");
                                             String dateOfBirth = scanner.next();
-                                            if (!isValidDate(dateOfBirth))
+                                            if (!InputValidator.isValidDate(dateOfBirth))
                                                 System.out.println("Enter a valid date in correct format");
                                             else {
                                                 voter = UserRegisterer.registerUser(name, dateOfBirth, employeeId);
@@ -294,28 +294,5 @@ class Main{
     }
 
 
-        public static boolean isValidName(String name) {
-            // Regular expression pattern for a name
-            // Allows alphabets, spaces, hyphens, and apostrophes
-            String regex = "^[a-zA-Z]+$";
-
-            // Compile the regular expression pattern
-            Pattern pattern = Pattern.compile(regex);
-
-            // Match the name against the pattern
-            return pattern.matcher(name).matches();
-        }
-
-
-    public static boolean isValidDate(String date) {
-        // Regular expression pattern for a date in dd/mm/yyyy format
-        // Ensures valid days, months, and years
-        String regex = "^(0[1-9]|[1-2][0-9]|3[0-1])/(0[1-9]|1[0-2])/((19|20)\\d\\d)$";
-
-        // Compile the regular expression pattern
-        Pattern pattern = Pattern.compile(regex);
-
-        // Match the date against the pattern
-        return pattern.matcher(date).matches();
-    }
+    
 }

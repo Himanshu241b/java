@@ -64,10 +64,10 @@ class PasswordChanger{
             // Regular expression pattern for a strong password
             // Requires at least one digit, one lowercase letter, one uppercase letter,
             // one special character, and a minimum length of 8 characters
-            String regex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
+            String passwordPattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{8,}$";
 
             // Compile the regular expression pattern
-            Pattern pattern = Pattern.compile(regex);
+            Pattern pattern = Pattern.compile(passwordPattern);
 
             // Match the password against the pattern
             Matcher matcher = pattern.matcher(newPassword);
