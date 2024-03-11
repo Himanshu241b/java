@@ -283,16 +283,24 @@ class Main{
         }while(true);
     }
 
-    public static void setCooldown(){
+    /**
+     * method to setCooldown in case of 3 invalid login attempts
+     */
+    public static void setCooldown() {
+        // Set the cooldown flag to true, indicating that the cooldown is active.
         isCooldown = true;
 
+        // Create a ScheduledExecutorService with a single thread to schedule tasks.
         ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
+
+        // Schedule a task to run after 10 seconds.
         scheduledExecutorService.schedule(() -> {
+            // Once the scheduled time elapses, set the cooldown flag back to false,
+            // indicating that the cooldown period is over.
             isCooldown = false;
+
+            // Shutdown the ScheduledExecutorService after the task is completed.
             scheduledExecutorService.shutdown();
         }, 10, TimeUnit.SECONDS);
     }
-
-
-    
 }
