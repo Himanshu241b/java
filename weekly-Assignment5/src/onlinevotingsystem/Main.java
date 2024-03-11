@@ -2,6 +2,7 @@ package onlinevotingsystem;
 //imports
 import java.util.Scanner;
 import java.util.concurrent.Executors;
+import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
@@ -286,21 +287,53 @@ class Main{
     /**
      * method to setCooldown in case of 3 invalid login attempts
      */
-    public static void setCooldown() {
-        // Set the cooldown flag to true, indicating that the cooldown is active.
-        isCooldown = true;
+    public class CooldownManager {
+        private static boolean isCooldown = false;
 
-        // Create a ScheduledExecutorService with a single thread to schedule tasks.
-        ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
+        public static void setCooldown() {
+            // Set the cooldown flag to true, indicating that the cooldown is active.
+            isCooldown = true;
 
-        // Schedule a task to run after 10 seconds.
-        scheduledExecutorService.schedule(() -> {
-            // Once the scheduled time elapses, set the cooldown flag back to false,
-            // indicating that the cooldown period is over.
-            isCooldown = false;
+            // Create a ScheduledExecutorService with a single thread to schedule tasks.
+            ScheduledExecutorService scheduledExecutorService = Executors.newScheduledThreadPool(1);
 
-            // Shutdown the ScheduledExecutorService after the task is completed.
-            scheduledExecutorService.shutdown();
-        }, 10, TimeUnit.SECONDS);
+            try {
+                // Schedule a task to run after 10 seconds.
+                scheduledExecutorService.schedule(() -> {
+                    // Once the scheduled time elapses, set the cooldown flag back to false,
+                    // indicating that the cooldown period is over.
+                    isCooldown = false;
+
+                    // Shutdown the ScheduledExecutorService after the task is completed.
+                    scheduledExecutorService.shutdown();
+                }, 10, TimeUnit.SECONDS);
+
+            }
+            catch(RejectedExecutionException rejectedExecutionException){
+                System.out.println(rejectedExecutionException.getMessage());
+            }
+            catch(NullPointerException nullPointerException){
+                System.out.println(nullPointerException.getMessage());
+            }
+            catch(IllegalStateException illegalStateException){
+                System.out.println(illegalStateException.getMessage());
+            }
+            catch(SecurityException securityException){
+                System.out.println(securityException.getMessage());
+            }
+            catch(OutOfMemoryError outOfMemoryError){
+                System.out.println(outOfMemoryError.getMessage());
+            }
+            catch (Exception e) {
+                // Handle any exceptions that occur during task scheduling.
+                e.printStackTrace(); // Or log the exception message
+            } finally {
+                // Make sure to shut down the ScheduledExecutorService if an exception occurs.
+                if (!scheduledExecutorService.isShutdown()) {
+                    scheduledExecutorService.shutdown();
+                }
+            }
+        }
     }
+
 }
