@@ -7,6 +7,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
+/**
+ * class to register a user
+ */
 class UserRegisterer{
 
     /**

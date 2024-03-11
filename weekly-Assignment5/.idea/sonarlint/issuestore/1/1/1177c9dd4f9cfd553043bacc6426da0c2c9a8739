@@ -1,11 +1,10 @@
 
 g
-java:S2259#"EA "NullPointerException" could be thrown; "isVoted" is nullable here.(À¼Ê¨ıÿÿÿÿ8“Ÿ¡•á1
+java:S2259&"EA "NullPointerException" could be thrown; "isVoted" is nullable here.(À¼Ê¨ıÿÿÿÿ8“Ÿ¡•á1
 W
-java:S1118
-":Add a private constructor to hide the implicit public one.(¢íÆÁ8¢Ÿ•á1
-L	java:S106""+Replace this use of System.out by a logger.(µ¨³öøÿÿÿÿ8¥Ÿ•á1
+java:S1118":Add a private constructor to hide the implicit public one.(¢íÆÁ8¢Ÿ•á1
+L	java:S106%"+Replace this use of System.out by a logger.(µ¨³öøÿÿÿÿ8¥Ÿ•á1
 J
-java:S1125#"(Remove the unnecessary boolean literals.(À¼Ê¨ıÿÿÿÿ8§Ÿ•á1
-L	java:S106&"+Replace this use of System.out by a logger.(”¼€—ùÿÿÿÿ8¨Ÿ•á1
-G	java:S106)"+Replace this use of System.out by a logger.(õÙ×Å8¨Ÿ•á1
+java:S1125&"(Remove the unnecessary boolean literals.(À¼Ê¨ıÿÿÿÿ8§Ÿ•á1
+L	java:S106)"+Replace this use of System.out by a logger.(”¼€—ùÿÿÿÿ8¨Ÿ•á1
+G	java:S106,"+Replace this use of System.out by a logger.(õÙ×Å8¨Ÿ•á1

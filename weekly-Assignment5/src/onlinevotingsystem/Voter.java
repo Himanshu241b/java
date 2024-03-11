@@ -24,6 +24,9 @@ public class Voter extends User{
         isVoted = true;
     }
 
+    /**
+     *method to display the details of a voter
+     */
     @Override
     public void displayUser(){
         System.out.println("*********Voter details************");

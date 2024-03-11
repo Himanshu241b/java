@@ -1,6 +1,6 @@
 
 
-java:S1192^"nDefine a constant instead of duplicating this literal "File not found while trying to edit candidate" 3 times.(…ôÉÌúÿÿÿÿ8‡ĞØ¥á1
+java:S1192b"nDefine a constant instead of duplicating this literal "File not found while trying to edit candidate" 3 times.(…ôÉÌúÿÿÿÿ8‡ĞØ¥á1
 h
 java:S2095+"LUse try-with-resources or close this "BufferedWriter" in a "finally" clause.(ª¤º)8éĞØ¥á1
 W
@@ -12,19 +12,19 @@ G	java:S106 "+Replace this use of System.out by a logger.(¡›£8òĞØ¥á1
 G	java:S106""+Replace this use of System.out by a logger.(é…•è8óĞØ¥á1
 G	java:S1067"+Replace this use of System.out by a logger.(ÄÅ™8ôĞØ¥á1
 L	java:S106:"+Replace this use of System.out by a logger.(ˆÎ’„ÿÿÿÿÿ8õĞØ¥á1
-G	java:S106A"+Replace this use of System.out by a logger.(“Âº‡8õĞØ¥á1
-G	java:S106E"+Replace this use of System.out by a logger.(´Ïˆş8õĞØ¥á1
-G	java:S106G"+Replace this use of System.out by a logger.(İ‚óÿ8öĞØ¥á1
-L	java:S106I"+Replace this use of System.out by a logger.(Îÿ¸¾ÿÿÿÿÿ8öĞØ¥á1
-G	java:S106K"+Replace this use of System.out by a logger.(À¶Ø“8ùĞØ¥á1
-L	java:S106^"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ûĞØ¥á1
-L	java:S106l"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ûĞØ¥á1
-L	java:S106r"+Replace this use of System.out by a logger.(Äƒ¶íúÿÿÿÿ8üĞØ¥á1
+G	java:S106E"+Replace this use of System.out by a logger.(“Âº‡8õĞØ¥á1
+G	java:S106I"+Replace this use of System.out by a logger.(´Ïˆş8õĞØ¥á1
+G	java:S106K"+Replace this use of System.out by a logger.(İ‚óÿ8öĞØ¥á1
+L	java:S106M"+Replace this use of System.out by a logger.(Îÿ¸¾ÿÿÿÿÿ8öĞØ¥á1
+G	java:S106O"+Replace this use of System.out by a logger.(À¶Ø“8ùĞØ¥á1
+L	java:S106b"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ûĞØ¥á1
+L	java:S106p"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ûĞØ¥á1
+L	java:S106v"+Replace this use of System.out by a logger.(Äƒ¶íúÿÿÿÿ8üĞØ¥á1
 9
-java:S3626‰"Remove this redundant jump.(ÉŠ©ƒ8üĞØ¥á1
-L	java:S106v"+Replace this use of System.out by a logger.(ãèŞúÿÿÿÿ8ıĞØ¥á1
-L	java:S106x"+Replace this use of System.out by a logger.(¶­øüÿÿÿÿ8ıĞØ¥á1
-L	java:S106{"+Replace this use of System.out by a logger.(É‘óªúÿÿÿÿ8ÿĞØ¥á1
-M	java:S106"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ÑØ¥á1
-H	java:S106 "+Replace this use of System.out by a logger.(¸ÖÔ8ÑØ¥á1
-H	java:S106£"+Replace this use of System.out by a logger.(Ó¶·’8Ê»›½á1
+java:S3626’"Remove this redundant jump.(ÉŠ©ƒ8üĞØ¥á1
+L	java:S106~"+Replace this use of System.out by a logger.(ãèŞúÿÿÿÿ8ıĞØ¥á1
+M	java:S106€"+Replace this use of System.out by a logger.(¶­øüÿÿÿÿ8ıĞØ¥á1
+M	java:S106„"+Replace this use of System.out by a logger.(É‘óªúÿÿÿÿ8ÿĞØ¥á1
+M	java:S106™"+Replace this use of System.out by a logger.(…ôÉÌúÿÿÿÿ8ÑØ¥á1
+H	java:S106©"+Replace this use of System.out by a logger.(¸ÖÔ8ÑØ¥á1
+H	java:S106¬"+Replace this use of System.out by a logger.(Ó¶·’8Ê»›½á1

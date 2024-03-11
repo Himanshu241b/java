@@ -5,8 +5,20 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
+/**
+ * class to login a user or admin
+ */
+
 class Login {
+    /**
+     * methodto login a user or admin
+     * @param employeeOrAdminId id of the employee or admin
+     * @param password password of the user
+     * @param filePathOfAdminOrUser file path in database
+     * @return returns the object of the user or admin if login successful
+     */
     public static User loginUser(String employeeOrAdminId, String password, String filePathOfAdminOrUser){
+        //read the database file
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filePathOfAdminOrUser))) {
             String line; // each line of csv file
             bufferedReader.readLine(); // skip first line with headers

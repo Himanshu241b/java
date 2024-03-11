@@ -10,18 +10,26 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * class to change the password of a user or admin
+ */
 class PasswordChanger{
-    public static void changePassword(String employeeId, String filePathOfAdminOrVoter){
+    /**
+     * method to change the password
+     * @param employeeOrAdminId id of the employee of admin
+     * @param filePathOfAdminOrVoter file path of admin or employee file in database
+     */
+    public static void changePassword(String employeeOrAdminId, String filePathOfAdminOrVoter){
         Scanner scanner = new Scanner(System.in);
         try {
             Path path = Paths.get(filePathOfAdminOrVoter);
             List<String> lines = Files.readAllLines(path);
 
-            for (int i = 0; i < lines.size(); i++) {
-                String line = lines.get(i);
+            for (int lineNumber = 0; lineNumber < lines.size(); lineNumber++) {
+                String line = lines.get(lineNumber);
                 String[] parts = line.split(",");
                 String newPassword;
-                if (parts.length >= 4 && parts[0].equals(employeeId)) {
+                if (parts.length >= 4 && parts[0].equals(employeeOrAdminId)) {
                     while(true) {
                         System.out.println("Enter new Password:");
                         newPassword = scanner.next();
@@ -34,9 +42,10 @@ class PasswordChanger{
                     }
                     System.out.println("Enter new Password again:");
                     String newPasswordAgain = scanner.next();
+                    //double check the password entered by user
                     if(newPassword.equals(newPasswordAgain)) {
                         parts[1] = newPassword;
-                        lines.set(i, String.join(",", parts));
+                        lines.set(lineNumber, String.join(",", parts));
                         break;
                     }
                     else{
@@ -59,6 +68,12 @@ class PasswordChanger{
             ioException.printStackTrace();
         }
     }
+
+    /**
+     * method to check strength of password entered by user
+     * @param newPassword new password entered by user
+     * @return true if new password entered is of valid strength
+     */
 
     public static boolean checkPasswordStrength(String newPassword){
             // Regular expression pattern for a strong password

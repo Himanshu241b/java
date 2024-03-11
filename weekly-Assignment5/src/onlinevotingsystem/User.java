@@ -1,5 +1,8 @@
 package onlinevotingsystem;
 
+/**
+ * User class that represents a user of voting system
+ */
 public abstract class User {
     String userId;
     String name;
@@ -13,6 +16,7 @@ public abstract class User {
         this.dateOfBirth = dateOfBirth;
     }
 
+    //getters and setters
     public String getUserId(){
         return userId;
     }

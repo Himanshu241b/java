@@ -1,24 +1,24 @@
 
 “
-java:S1192"qDefine a constant instead of duplicating this literal "File not found while trying to display candidate" 3 times.(£‡ΈΏψÿÿÿÿ8©γρα1
+java:S1192"qDefine a constant instead of duplicating this literal "File not found while trying to display candidate" 3 times.(£‡ΈΏψÿÿÿÿ8©γρα1
 ©
-java:S26818"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(—Κ“ξϊÿÿÿÿ8Όγρα1
+java:S2681K"†This line will not be executed conditionally; only the first line of this 2-line block will be. The rest will execute unconditionally.(—Κ“ξϊÿÿÿÿ8Όγρα1
 s
 java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ªίΉ±ωÿÿÿÿ8θγρα1
 W
-java:S1118	":Add a private constructor to hide the implicit public one.(θ™―8μγρα1
+java:S1118":Add a private constructor to hide the implicit public one.(θ™―8μγρα1
 n
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(Òο΄εύÿÿÿÿ8ςγρα1
-G	java:S106"+Replace this use of System.out by a logger.(„®Ό8ϊγρα1
-L	java:S106"+Replace this use of System.out by a logger.(£‡ΈΏψÿÿÿÿ8όγρα1
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(Òο΄εύÿÿÿÿ8ςγρα1
+G	java:S106"+Replace this use of System.out by a logger.(„®Ό8ϊγρα1
+L	java:S106"+Replace this use of System.out by a logger.(£‡ΈΏψÿÿÿÿ8όγρα1
 n
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(Òο΄εύÿÿÿÿ8ÿγρα1
-L	java:S106("+Replace this use of System.out by a logger.(Δ­Έσωÿÿÿÿ8‚δρα1
-L	java:S106*"+Replace this use of System.out by a logger.(£‡ΈΏψÿÿÿÿ8„δρα1
-L	java:S1063"+Replace this use of System.out by a logger.(…¶Òϊÿÿÿÿ8δρα1
+java:S2677,"LUse or store the value returned from "readLine" instead of throwing it away.(Òο΄εύÿÿÿÿ8ÿγρα1
+L	java:S1066"+Replace this use of System.out by a logger.(Δ­Έσωÿÿÿÿ8‚δρα1
+L	java:S1068"+Replace this use of System.out by a logger.(£‡ΈΏψÿÿÿÿ8„δρα1
+L	java:S106F"+Replace this use of System.out by a logger.(…¶Òϊÿÿÿÿ8δρα1
 n
-java:S26774"LUse or store the value returned from "readLine" instead of throwing it away.(Òο΄εύÿÿÿÿ8…δρα1
+java:S2677G"LUse or store the value returned from "readLine" instead of throwing it away.(Òο΄εύÿÿÿÿ8…δρα1
 9
-java:S11167"Remove this empty statement.(χΪ…8δρα1
-L	java:S1068"+Replace this use of System.out by a logger.(—Κ“ξϊÿÿÿÿ8δρα1
-L	java:S106;"+Replace this use of System.out by a logger.(£‡ΈΏψÿÿÿÿ8λ±’ρα1
+java:S1116J"Remove this empty statement.(χΪ…8δρα1
+L	java:S106K"+Replace this use of System.out by a logger.(—Κ“ξϊÿÿÿÿ8δρα1
+L	java:S106N"+Replace this use of System.out by a logger.(£‡ΈΏψÿÿÿÿ8λ±’ρα1

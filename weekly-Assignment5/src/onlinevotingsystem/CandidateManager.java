@@ -18,7 +18,7 @@ class CandidateManager{
 
     /**
      * method to add a candidate to the list of candidates in database
-     * @param candidatesCsvPath
+     * @param candidatesCsvPath path of  candidatecsv file
      */
     public static void addCandidate(String candidatesCsvPath){
 
@@ -61,11 +61,15 @@ class CandidateManager{
         }
     }
 
+    /**
+     * method to edit candidate entry
+     * @param candidateCsvPath path of candidatecsv file
+     */
     public static void editCandidate(String candidateCsvPath){
         System.out.println("Enter id of candidate to edit:");
         String candidateId = scanner.next();
 
-        // ID of the candidate you want to edit
+        // details of the candidate you want to edit
         System.out.println("Enter new id:");
         String candidateIdToEdit = scanner.next();
         System.out.println("Enter new name:");
@@ -114,11 +118,16 @@ class CandidateManager{
         System.out.println("Candidate credentials updated successfully.");
     }
 
+    /**
+     * method to delete a candidate
+     * @param candidateCsvPath path of candidatecsv file
+     */
     public static void deleteCandidate(String candidateCsvPath){
         System.out.println("Enter candidate id of candidate to delete:");
         String deleteCandidateId = scanner.next();
         System.out.println("Enter candidate id again to confirm the deletion:");
         String deleteCandidateIdAgain = scanner.next();
+        //double check to confirm deletion
         if(!deleteCandidateIdAgain.equals(deleteCandidateId)) {
             System.out.println("Id of candidate dont match cant delete");
             return;
@@ -132,7 +141,7 @@ class CandidateManager{
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(",");
                 // If the line corresponds to the candidate we want to edit, update it
-                if (parts.length > 0 && parts[1].equals(deleteCandidateId)) {
+                if (parts.length > 0 && parts[1].equals(deleteCandidateId)) { // if found the candidate skip writing it to the list
                     isDeleted = true;
                     continue;
                 } else {

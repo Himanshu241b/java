@@ -1,5 +1,5 @@
 package onlinevotingsystem;
-
+//imports
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,19 @@ import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.lang.NumberFormatException;
+
+/**
+ * class to handle voting to candidates by different users
+ */
 class VotingBooth{
     static Scanner scanner = new Scanner(System.in);
+
+    /**
+     * method to cast a vote to candidate
+     * @param voterId voterId of voter
+     * @param candidateCsvPath candidatecsv file path
+     * @param avisoftEmployeesCsvPath avisoftEmployees file path
+     */
     public static void castVote(String voterId, String candidateCsvPath, String avisoftEmployeesCsvPath) {
         //check if the user is eligible to vote(above18)
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(avisoftEmployeesCsvPath))) {
@@ -56,6 +67,11 @@ class VotingBooth{
         //Update isVoted in avisoftEmployeeCsv
         updateIsVotedInAvisoftEmployees(voterId, avisoftEmployeesCsvPath);
         }
+
+    /**
+     * method to display the candidates listed with their symbols
+     * @param candidateCsvPath path of candidatecsv file
+     */
     public static void displayCandidatesToVote(String candidateCsvPath) {
         System.out.println("Enter a symbol from below to vote: ");
         // Read all lines from the CSV file
@@ -73,6 +89,12 @@ class VotingBooth{
         }
 
     }
+
+    /**
+     * method to add a vote to candidatecsv file
+     * @param selectedCandidateSymbol the candidate symbol selected that user wants to vote
+     * @param candidateCsvPath path of candidatecsv file
+     */
     public static void addVoteToCandidateCsv(String selectedCandidateSymbol, String candidateCsvPath){
         // Read all lines from the CSV file
         List<String[]> lines = new ArrayList<>();
@@ -115,6 +137,12 @@ class VotingBooth{
             e.printStackTrace();
         }
     }
+
+    /**
+     * mehthod to update the isVoted property of voter to true
+     * @param voterId voterId of voter
+     * @param avisoftEmployeesCsvPath avisoftEmployeescsv file path
+     */
     public static void updateIsVotedInAvisoftEmployees(String voterId, String avisoftEmployeesCsvPath){
         // Read all lines from the CSV file
         System.out.println(voterId);
