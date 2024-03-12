@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f3b05ce-13fd-461b-90f6-96534ad8a6b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../weekly-Assignment5/src/onlinevotingsystem/ResultRevealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-Assignment5/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-Assignment5/.idea/sonarlint/issuestore/8/1/817225d14feb725db82d54da9845429241e14c6e" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-Assignment5/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-Assignment5/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-Assignment5/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-Assignment5/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-Assignment5/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-Assignment5/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../weekly-Assignment5/src/onlinevotingsystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../weekly-Assignment5/src/onlinevotingsystem/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="0f3b05ce-13fd-461b-90f6-96534ad8a6b2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

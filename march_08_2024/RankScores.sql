@@ -40,6 +40,10 @@ VALUES
     (6, 3.65);
     
 -- query to return ranked scores
-SELECT Score, DENSE_RANK() OVER (ORDER BY Score DESC) AS Rank
-FROM Scores 
-ORDER BY Score DESC;
+SELECT 
+    Score, 
+    DENSE_RANK() OVER (ORDER BY Score DESC) AS 'Rank'
+FROM 
+    Scores
+ORDER BY 
+    Score DESC;
