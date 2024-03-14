@@ -58,4 +58,4 @@ INSERT INTO Patients (patient_id, patient_name, conditions) VALUES
 -- Retrieve patient information for Type I Diabetes
 SELECT patient_id, patient_name, conditions
 FROM Patients
-WHERE conditions LIKE 'DIAB1%' or conditions like '% IAB1%';
+WHERE conditions LIKE 'DIAB1%' or conditions like '% DIAB1%';
