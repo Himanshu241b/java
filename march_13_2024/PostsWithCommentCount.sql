@@ -121,7 +121,7 @@ SELECT
    COUNT(DISTINCT sub_id) as comment_count
 FROM
    postsWithComments 
-GROUP BYs
+GROUP BY
    post_id 
 ORDER BY
    post_id;

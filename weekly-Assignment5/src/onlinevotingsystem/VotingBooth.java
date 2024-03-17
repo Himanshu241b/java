@@ -20,7 +20,7 @@ class VotingBooth{
      * @param candidateCsvPath candidatecsv file path
      * @param avisoftEmployeesCsvPath avisoftEmployees file path
      */
-    public static void castVote(String voterId, String candidateCsvPath, String avisoftEmployeesCsvPath) {
+    public static void castVote(String voterId, String candidateCsvPath, String avisoftEmployeesCsvPath, int notaCount) {
         //check if the user is eligible to vote(above18)
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(avisoftEmployeesCsvPath))) {
             String line;
@@ -62,6 +62,10 @@ class VotingBooth{
         displayCandidatesToVote(candidateCsvPath);
         System.out.println("Enter your choice:");
         String selectedCandidateSymbol = scanner.next();
+        if(selectedCandidateSymbol.equals("!")) {
+            ++notaCount;
+            return;
+        }
         //add vote in candidateCSV file
         addVoteToCandidateCsv(selectedCandidateSymbol,candidateCsvPath);
         //Update isVoted in avisoftEmployeeCsv
@@ -82,6 +86,7 @@ class VotingBooth{
                 String[] parts = line.split(",");
                 System.out.println(parts[1] + "  " + parts[2] + "----->" + parts[4]);
             }
+            System.out.println("NOTA -----> !");
         } catch (FileNotFoundException fileNotFoundException) {
             System.out.println("File not found while trying to display candidate");
         } catch (IOException e) {

@@ -60,7 +60,7 @@ INSERT INTO Accounts (account_id, income) VALUES
 (8, 87709),
 (6, 91796);
 
--- SQL query to report the number of bank accounts of each salary category
+savepointssss-- SQL query to report the number of bank accounts of each salary category
 SELECT 
     'Low Salary' AS category,
     COUNT(CASE WHEN income < 20000 THEN account_id ELSE NULL END) AS accounts_count

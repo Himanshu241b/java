@@ -71,7 +71,7 @@ class ResultRevealer{
                 bufferedReader.readLine();
                 while ((line = bufferedReader.readLine()) != null) {
                     String[] parts = line.split(",");
-                    if(parts[5].equals(String.valueOf(maxVotes)));
+                    if(parts[5].equals(String.valueOf(maxVotes)))
                         System.out.println(parts[2] +" has won the election");
                 }
             } catch (FileNotFoundException fileNotFoundException) {

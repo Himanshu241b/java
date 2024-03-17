@@ -56,8 +56,8 @@ class CandidateManager{
         }
         catch(FileNotFoundException fileNotFoundException){
             System.out.println("File not found while adding candidate");
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
         }
     }
 
@@ -96,23 +96,23 @@ class CandidateManager{
         }
         catch(FileNotFoundException fileNotFoundException){
             System.out.println("File not found while trying to edit candidate");
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
         }
 
         // Write the updated contents back to the CSV file
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(candidateCsvPath))) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(candidateCsvPath))) {
             for (String[] parts : lines) {
                 String line = String.join(",", parts);
-                bw.write(line);
-                bw.newLine();
+                bufferedWriter.write(line);
+                bufferedWriter.newLine();
             }
         }
             catch (FileNotFoundException fileNotFoundException){
                 System.out.println("File not found while trying to edit candidate");
             }
-        catch (IOException e) {
-            e.printStackTrace();
+        catch (IOException ioException) {
+            ioException.printStackTrace();
         }
 
         System.out.println("Candidate credentials updated successfully.");
@@ -151,8 +151,8 @@ class CandidateManager{
         }
         catch(FileNotFoundException fileNotFoundException){
             System.out.println("File not found while trying to edit candidate");
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
         }
 
         // Write the updated contents back to the CSV file
@@ -162,8 +162,8 @@ class CandidateManager{
                 bw.write(line);
                 bw.newLine();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
         }
         if(isDeleted){
             System.out.println("Candidate deleted successfully");

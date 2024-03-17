@@ -5,12 +5,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.RejectedExecutionException;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
+
 
 class Main{
     private static boolean isCooldown = false;
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
+        int notaCount = 0;
         final String avisoftEmployeesCsvPath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment5/src/database/avisoftEmployees.csv";
         final String adminCsvPath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment5/src/database/admin.csv";
         final String candidatesCsvPath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment5/src/database/candidates.csv";
@@ -133,7 +134,7 @@ class Main{
                                         System.out.println("You have already voted");
                                     } else {
                                         if (isvotingEnabled) {
-                                            VotingBooth.castVote(voter.getUserId(), candidatesCsvPath, avisoftEmployeesCsvPath);
+                                            VotingBooth.castVote(voter.getUserId(), candidatesCsvPath, avisoftEmployeesCsvPath, notaCount);
                                             voter.setIsVoted();
                                         } else {
                                             System.out.println("Voting not enabled by admin.");
@@ -287,9 +288,6 @@ class Main{
     /**
      * method to setCooldown in case of 3 invalid login attempts
      */
-    public class CooldownManager {
-        private static boolean isCooldown = false;
-
         public static void setCooldown() {
             // Set the cooldown flag to true, indicating that the cooldown is active.
             isCooldown = true;
@@ -336,4 +334,3 @@ class Main{
         }
     }
 
-}

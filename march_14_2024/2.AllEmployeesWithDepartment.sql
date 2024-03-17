@@ -376,6 +376,7 @@ VALUES
 (110, 'Accounting', 205, 1700);
 
 -- query to find the name (first_name, last name), department ID and name of all the employees.
+
 SELECT 
     e.FIRST_NAME,
     e.LAST_NAME,

@@ -156,20 +156,18 @@ WITH RankedProducts AS (
         o.customer_id,
         p.product_id,
         p.product_name,
-        rank() OVER (PARTITION BY o.customer_id ORDER BY COUNT(*) DESC) AS productRank
+        rank() OVER (PARTITION BY o.customer_id ORDER BY COUNT(*) DESC) AS productRank -- rank function gives same rank for same values but leaves a hole while ranking
     FROM
         Orders o
     JOIN Products p ON o.product_id = p.product_id
     GROUP BY
         o.customer_id,
-        p.product_id
+        o.product_id
 )
-
 SELECT
     customer_id,
     product_id,
-    product_name,
-    productRank
+    product_name
 FROM
     RankedProducts
 WHERE
