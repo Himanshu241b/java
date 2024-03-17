@@ -1,0 +1,43 @@
+
+{
+java:S1192K"YDefine a constant instead of duplicating this literal "task added successfully." 3 times.(›„›‘ÿÿÿÿÿ8–ûèÂä1
+y
+java:S1192>"WDefine a constant instead of duplicating this literal "Course does not exist." 3 times.(îÛÄ‘ÿÿÿÿÿ8—ûèÂä1
+~
+java:S1488/"\Immediately return this expression instead of assigning it to the temporary variable "task".(Âøİ—ÿÿÿÿÿ8˜ûèÂä1
+Œ
+java:S4165"jRemove this useless assignment; "taskPriority" already holds the assigned value along all execution paths.(¤ıÆ•ÿÿÿÿÿ8ØøÂä1
+\
+java:S1118":Add a private constructor to hide the implicit public one.(àô–üÿÿÿÿ8¤şèÂä1
+F	java:S106"+Replace this use of System.out by a logger.(Ÿ¾õJ8©şèÂä1
+L	java:S106"+Replace this use of System.out by a logger.(‰”ı‘øÿÿÿÿ8ªşèÂä1
+G	java:S106"+Replace this use of System.out by a logger.(Æ°¸‘8ªşèÂä1
+E	java:S106"+Replace this use of System.out by a logger.(—‹8ªşèÂä1
+G	java:S106"+Replace this use of System.out by a logger.(è¥ÙÔ8ªşèÂä1
+L	java:S106"+Replace this use of System.out by a logger.(˜õÉÈıÿÿÿÿ8«şèÂä1
+G	java:S106""+Replace this use of System.out by a logger.(¼Œı‚8«şèÂä1
+G	java:S106$"+Replace this use of System.out by a logger.(”€‡Ë8«şèÂä1
+L	java:S106+"+Replace this use of System.out by a logger.(²«ˆøÿÿÿÿ8¬şèÂä1
+o
+java:S37762"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(æ«¨Ä8®şèÂä1
+G	java:S1063"+Replace this use of System.out by a logger.(…‘ªÖ8¯şèÂä1
+G	java:S1064"+Replace this use of System.out by a logger.(ŠŠ¥£8¯şèÂä1
+G	java:S1065"+Replace this use of System.out by a logger.(ÆˆŠ8°şèÂä1
+L	java:S1066"+Replace this use of System.out by a logger.(†ïÌøÿÿÿÿ8°şèÂä1
+L	java:S106>"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8±şèÂä1
+L	java:S106K"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8²şèÂä1
+L	java:S106Q"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8³şèÂä1
+L	java:S106^"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8³şèÂä1
+L	java:S106d"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8´şèÂä1
+L	java:S106q"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8µşèÂä1
+G	java:S106t"+Replace this use of System.out by a logger.(ï­™8µşèÂä1
+L	java:S106"+Replace this use of System.out by a logger.(°šá–ûÿÿÿÿ8·şèÂä1
+M	java:S106…"+Replace this use of System.out by a logger.(¤ô„€şÿÿÿÿ8¹şèÂä1
+p
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(İœß˜8ºşèÂä1
+H	java:S106™"+Replace this use of System.out by a logger.(®èåë8»şèÂä1
+M	java:S106¤"+Replace this use of System.out by a logger.(¡òÂ­şÿÿÿÿ8½şèÂä1
+H	java:S106¦"+Replace this use of System.out by a logger.(³™ğÉ8¿şèÂä1
+M	java:S106«"+Replace this use of System.out by a logger.(¨ãüÿÿÿÿ8‹ëêÂä1
+ã
+java:S65412"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 69 to 64, Complexity from 19 to 14, Nesting Level from 4 to 2, Number of Variables from 17 to 6.(æ«¨Ä8ÀşèÂä1

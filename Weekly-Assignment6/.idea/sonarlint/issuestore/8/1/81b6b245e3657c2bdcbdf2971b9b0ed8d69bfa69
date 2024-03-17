@@ -1,0 +1,9 @@
+
+L	java:S1066"+Replace this use of System.out by a logger.(„š¶òøÿÿÿÿ8ñòÔ¯ä1
+G	java:S1067"+Replace this use of System.out by a logger.(ê« ¸8òòÔ¯ä1
+G	java:S1068"+Replace this use of System.out by a logger.(ï‘Ï«8òòÔ¯ä1
+L	java:S1069"+Replace this use of System.out by a logger.(ù­¾¿øÿÿÿÿ8¶¿Õ¯ä1
+G	java:S106:"+Replace this use of System.out by a logger.(ù´í›8˜ÉÖ¯ä1
+L	java:S106;"+Replace this use of System.out by a logger.(éŠÙŸûÿÿÿÿ8¶ÓÙ¯ä1
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8±ş­Àä1
