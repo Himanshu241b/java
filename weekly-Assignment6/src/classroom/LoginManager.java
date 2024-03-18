@@ -32,6 +32,9 @@ public class LoginManager {
             } catch (IOException ioException) {
                 ioException.printStackTrace();
             }
+            catch (Exception exception){
+                exception.printStackTrace();
+            }
         System.out.println("Account not found.");
             return null;
         }

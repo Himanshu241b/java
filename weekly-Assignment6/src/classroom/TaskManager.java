@@ -1,5 +1,6 @@
 package classroom;
 
+import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -35,17 +36,27 @@ public class TaskManager {
         }
         System.out.print("Enter datetime in the format yyyy-MM-dd-HH-mm: ");
         String inputDate;
-        while(true){
-            inputDate = scanner.next();
-            if(InputValidator.validateDateTimeFormat(inputDate)){
-                break;
+        try {
+            while (true) {
+                inputDate = scanner.next();
+                if (InputValidator.validateDateTimeFormat(inputDate)) {
+                    break;
+                }
+                System.out.println("Enter date in correct format:(YYYY-MM-DD-HH-mm:");
             }
-            System.out.println("Enter date in correct format:(YYYY-MM-DD-HH-mm:");
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm");
+            LocalDateTime dueDate = LocalDateTime.parse(inputDate, formatter);
+            Task task = new Task(taskId, taskTitle, taskDescription, taskPriority, dueDate);
+
+            return task;
         }
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm");
-        LocalDateTime dueDate = LocalDateTime.parse(inputDate, formatter);
-        Task task = new Task(taskId,taskTitle,taskDescription,taskPriority,dueDate);
-        return task;
+        catch(DateTimeException dateTimeException){
+            dateTimeException.printStackTrace();
+        }
+        catch(Exception exception){
+            exception.printStackTrace();
+        }
+        return null;
     }
     public static void addTask(Task task, List<User> studentsList, List<Course> coursesList){
         System.out.println("select the class you want to add task to:");
@@ -153,23 +164,30 @@ public class TaskManager {
             System.out.println("You have not joined any course/class.");
             return;
         }
-        for(User listedStudent : studentsList){
-            if(listedStudent.getEmail().equals(student.getEmail())){
-                for(Task task : listedStudent.getTasksList()){
-                    if(task.getTaskId() == submitTaskId){
-                        listedStudent.getTasksList().remove(task);
-
-                        LocalDateTime currentDateTime = LocalDateTime.now();
-                        if (task.getTaskDueDate().isAfter(currentDateTime)) {
-                            System.out.println("Task submitted on time successfully.");
-                        } else {
-                            System.out.println("Late submission of task.");
+        try {
+            for (User listedStudent : studentsList) {
+                if (listedStudent.getEmail().equals(student.getEmail())) {
+                    for (Task task : listedStudent.getTasksList()) {
+                        if (task.getTaskId() == submitTaskId) {
+                            listedStudent.getTasksList().remove(task);
+                            LocalDateTime currentDateTime = LocalDateTime.now();
+                            if (task.getTaskDueDate().isAfter(currentDateTime)) {
+                                System.out.println("Task submitted on time successfully.");
+                            } else {
+                                System.out.println("Late submission of task.");
+                            }
+                            return;
                         }
-                        return;
                     }
+                    System.out.println("NO task found with id " + submitTaskId);
                 }
-                System.out.println("NO task found with id " + submitTaskId);
             }
+        }
+        catch (DateTimeException dateTimeException) {
+            dateTimeException.printStackTrace();
+        }
+        catch (Exception exception){
+            exception.printStackTrace();
         }
     }
 
