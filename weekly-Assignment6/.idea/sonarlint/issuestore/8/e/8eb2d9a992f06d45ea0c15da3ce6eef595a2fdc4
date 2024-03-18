@@ -1,43 +1,43 @@
 
 {
-java:S1192V"YDefine a constant instead of duplicating this literal "task added successfully." 3 times.(›„›‘ÿÿÿÿÿ8Õ‘»ÿä1
+java:S1192f"YDefine a constant instead of duplicating this literal "task added successfully." 3 times.(›„›‘ÿÿÿÿÿ8Õ‘»ÿä1
 y
-java:S1192I"WDefine a constant instead of duplicating this literal "Course does not exist." 3 times.(îÛÄ‘ÿÿÿÿÿ8Õ‘»ÿä1
+java:S1192Y"WDefine a constant instead of duplicating this literal "Course does not exist." 3 times.(îÛÄ‘ÿÿÿÿÿ8Õ‘»ÿä1
 ~
-java:S14881"\Immediately return this expression instead of assigning it to the temporary variable "task".(Âøİ—ÿÿÿÿÿ8Ö‘»ÿä1
+java:S1488:"\Immediately return this expression instead of assigning it to the temporary variable "task".(Âøİ—ÿÿÿÿÿ8Ö‘»ÿä1
 Œ
-java:S4165"jRemove this useless assignment; "taskPriority" already holds the assigned value along all execution paths.(¤ıÆ•ÿÿÿÿÿ8§“»ÿä1
+java:S4165#"jRemove this useless assignment; "taskPriority" already holds the assigned value along all execution paths.(¤ıÆ•ÿÿÿÿÿ8§“»ÿä1
 \
-java:S1118	":Add a private constructor to hide the implicit public one.(àô–üÿÿÿÿ8ª“»ÿä1
-F	java:S106"+Replace this use of System.out by a logger.(Ÿ¾õJ8®“»ÿä1
-L	java:S106"+Replace this use of System.out by a logger.(‰”ı‘øÿÿÿÿ8®“»ÿä1
-G	java:S106"+Replace this use of System.out by a logger.(Æ°¸‘8®“»ÿä1
-E	java:S106"+Replace this use of System.out by a logger.(—‹8®“»ÿä1
-G	java:S106"+Replace this use of System.out by a logger.(è¥ÙÔ8®“»ÿä1
-L	java:S106"+Replace this use of System.out by a logger.(˜õÉÈıÿÿÿÿ8¯“»ÿä1
-G	java:S106#"+Replace this use of System.out by a logger.(¼Œı‚8¯“»ÿä1
-G	java:S106%"+Replace this use of System.out by a logger.(”€‡Ë8¯“»ÿä1
-L	java:S106-"+Replace this use of System.out by a logger.(²«ˆøÿÿÿÿ8°“»ÿä1
+java:S1118":Add a private constructor to hide the implicit public one.(àô–üÿÿÿÿ8ª“»ÿä1
+F	java:S106"+Replace this use of System.out by a logger.(Ÿ¾õJ8®“»ÿä1
+L	java:S106"+Replace this use of System.out by a logger.(‰”ı‘øÿÿÿÿ8®“»ÿä1
+G	java:S106"+Replace this use of System.out by a logger.(Æ°¸‘8®“»ÿä1
+E	java:S106"+Replace this use of System.out by a logger.(—‹8®“»ÿä1
+G	java:S106"+Replace this use of System.out by a logger.(è¥ÙÔ8®“»ÿä1
+L	java:S106"+Replace this use of System.out by a logger.(˜õÉÈıÿÿÿÿ8¯“»ÿä1
+G	java:S106,"+Replace this use of System.out by a logger.(¼Œı‚8¯“»ÿä1
+G	java:S106."+Replace this use of System.out by a logger.(”€‡Ë8¯“»ÿä1
+L	java:S1066"+Replace this use of System.out by a logger.(²«ˆøÿÿÿÿ8°“»ÿä1
 o
-java:S3776="RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(æ«¨Ä8²“»ÿä1
-G	java:S106>"+Replace this use of System.out by a logger.(…‘ªÖ8³“»ÿä1
-G	java:S106?"+Replace this use of System.out by a logger.(ŠŠ¥£8³“»ÿä1
-G	java:S106@"+Replace this use of System.out by a logger.(ÆˆŠ8³“»ÿä1
-L	java:S106A"+Replace this use of System.out by a logger.(†ïÌøÿÿÿÿ8³“»ÿä1
-L	java:S106I"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8´“»ÿä1
-L	java:S106V"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8µ“»ÿä1
-L	java:S106\"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8µ“»ÿä1
-L	java:S106i"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8¶“»ÿä1
-L	java:S106o"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8¶“»ÿä1
-L	java:S106|"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8·“»ÿä1
-G	java:S106"+Replace this use of System.out by a logger.(ï­™8·“»ÿä1
-M	java:S106Š"+Replace this use of System.out by a logger.(°šá–ûÿÿÿÿ8¸“»ÿä1
-M	java:S106"+Replace this use of System.out by a logger.(¤ô„€şÿÿÿÿ8¸“»ÿä1
+java:S3776M"RRefactor this method to reduce its Cognitive Complexity from 43 to the 15 allowed.(æ«¨Ä8²“»ÿä1
+G	java:S106N"+Replace this use of System.out by a logger.(…‘ªÖ8³“»ÿä1
+G	java:S106O"+Replace this use of System.out by a logger.(ŠŠ¥£8³“»ÿä1
+G	java:S106P"+Replace this use of System.out by a logger.(ÆˆŠ8³“»ÿä1
+L	java:S106Q"+Replace this use of System.out by a logger.(†ïÌøÿÿÿÿ8³“»ÿä1
+L	java:S106Y"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8´“»ÿä1
+L	java:S106f"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8µ“»ÿä1
+L	java:S106l"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8µ“»ÿä1
+L	java:S106y"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8¶“»ÿä1
+L	java:S106"+Replace this use of System.out by a logger.(îÛÄ‘ÿÿÿÿÿ8¶“»ÿä1
+M	java:S106Œ"+Replace this use of System.out by a logger.(›„›‘ÿÿÿÿÿ8·“»ÿä1
+H	java:S106"+Replace this use of System.out by a logger.(ï­™8·“»ÿä1
+M	java:S106¡"+Replace this use of System.out by a logger.(°šá–ûÿÿÿÿ8¸“»ÿä1
+M	java:S106§"+Replace this use of System.out by a logger.(¤ô„€şÿÿÿÿ8¸“»ÿä1
 p
-java:S3776›"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(İœß˜8¹“»ÿä1
-H	java:S106¤"+Replace this use of System.out by a logger.(®èåë8º“»ÿä1
-M	java:S106¯"+Replace this use of System.out by a logger.(¡òÂ­şÿÿÿÿ8¼“»ÿä1
-H	java:S106±"+Replace this use of System.out by a logger.(³™ğÉ8¼“»ÿä1
-M	java:S106¶"+Replace this use of System.out by a logger.(¨ãüÿÿÿÿ8¼“»ÿä1
+java:S3776¹"RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(İœß˜8¹“»ÿä1
+H	java:S106Â"+Replace this use of System.out by a logger.(®èåë8º“»ÿä1
+M	java:S106Í"+Replace this use of System.out by a logger.(¡òÂ­şÿÿÿÿ8¼“»ÿä1
+H	java:S106Ï"+Replace this use of System.out by a logger.(³™ğÉ8¼“»ÿä1
+M	java:S106Ô"+Replace this use of System.out by a logger.(¨ãüÿÿÿÿ8¼“»ÿä1
 ã
-java:S6541="ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 69 to 64, Complexity from 19 to 14, Nesting Level from 4 to 2, Number of Variables from 17 to 6.(æ«¨Ä8½“»ÿä1
+java:S6541M"ÅA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 69 to 64, Complexity from 19 to 14, Nesting Level from 4 to 2, Number of Variables from 17 to 6.(æ«¨Ä8½“»ÿä1

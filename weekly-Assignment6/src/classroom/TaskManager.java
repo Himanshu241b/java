@@ -6,8 +6,17 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * TaskManager class to manage the task related tasks
+ */
 public class TaskManager {
     static Scanner scanner = new Scanner(System.in);
+
+    /**
+     * Method to create a new task by admin
+     * @param taskId id of new task
+     * @return the new generated task
+     */
     public static Task createTask(int taskId){
 
         System.out.println("Enter task title:");
@@ -58,6 +67,13 @@ public class TaskManager {
         }
         return null;
     }
+
+    /**
+     * Method to add a new task to the tasklist of students enrolled in the course/class
+     * @param task task to assign
+     * @param studentsList students list that are in any class
+     * @param coursesList courses that are made by the admin
+     */
     public static void addTask(Task task, List<User> studentsList, List<Course> coursesList){
         System.out.println("select the class you want to add task to:");
         System.out.println("1. Java Course");
@@ -127,6 +143,13 @@ public class TaskManager {
                 System.out.println("Enter valid choice.");
         }
     }
+
+    /**
+     * Method to display all the tasks of a student
+     * @param student Current logged in student
+     * @param studentsList students list that are in any class
+     * @return returns false if the student is not enrolled in any of the course
+     */
     public static boolean displayAllTasksOfStudent(User student, List<User> studentsList) {
         boolean isStudentListed = false;
         for(User listedStudent : studentsList) {
@@ -152,6 +175,13 @@ public class TaskManager {
         }
         return true;
     }
+
+    /**
+     * Method to submit a task by the student
+     * @param student current logged in student
+     * @param submitTaskId id of the task to submit
+     * @param studentsList list of students who have enrolled in any of the courses
+     */
     public static void submitTask(User student, int submitTaskId, List<User> studentsList){
         boolean isStudentInACourse = false;
         for(User listedStudent: studentsList){
