@@ -1,0 +1,9 @@
+
+W
+java:S1854"5Remove this useless assignment to local variable "k".(€Ô¾Šøÿÿÿÿ8¼Ğ²å1
+L	java:S106"+Replace this use of System.out by a logger.(·å¯³øÿÿÿÿ8³™Ü±å1
+G	java:S106"+Replace this use of System.out by a logger.(¼¬Ê‘8ù¢Ï²å1
+L	java:S106"+Replace this use of System.out by a logger.(ÉÔ³şÿÿÿÿ8ù¢Ï²å1
+H
+java:S1481"&Remove this unused "k" local variable.(€Ô¾Šøÿÿÿÿ8ÀĞ²å1
+G	java:S106"+Replace this use of System.out by a logger.(ÆÌ¦Ö8ÀĞ²å1
