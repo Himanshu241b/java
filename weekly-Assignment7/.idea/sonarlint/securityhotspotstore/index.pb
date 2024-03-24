@@ -1,0 +1,23 @@
+
+O
+src/database/adminLoginFile.csv,f/9/f9980c21e383fe46b302418127d0c386c48f3f44
+R
+"src/database/patientsLoginFile.csv,1/9/197a64aea09696859b75a7eaaffca671120d271e
+O
+src/medicalmanagement/Main.java,d/5/d55a40f66a8a720b760ae4ea32c263f78d1d10ba
+O
+src/medicalmanagement/User.java,3/f/3f17f7a26fdde60cc59c06cff8a9127e3bee4001
+Y
+)src/medicalmanagement/InputValidator.java,c/a/ca1a88575ff37d18a26f7a277764ec5032e80f32
+W
+'src/medicalmanagement/LoginManager.java,f/1/f1ad41f43f158b7cdbf0ff955aacfd0f43b0d276
+Q
+!src/database/doctorsLoginFile.csv,b/6/b610fc5e49dbd499ff994953031bdcc7741cbf90
+R
+"src/medicalmanagement/Patient.java,5/7/57b09e23d3bb79bef0883059044b402eb9fd3942
+Q
+!src/medicalmanagement/Doctor.java,d/0/d0c6991ecff335ef8bfba39ada449b7c91b05bbe
+P
+ src/medicalmanagement/Admin.java,5/9/59763869158c4a08456e890d37d9afa2fa9cf362
+V
+&src/medicalmanagement/Appointment.java,5/f/5fded3c4429291f156ae8bc3aa86f282962e8f77

@@ -1,0 +1,49 @@
+
+u
+java:S1192"SDefine a constant instead of duplicating this literal "Enter valid email:" 4 times.(‚ïùåşÿÿÿÿ8„À‚€æ1
+{
+java:S1192f"YDefine a constant instead of duplicating this literal "database file not found." 4 times.(ÜôºŠøÿÿÿÿ8„À‚€æ1
+V
+java:S1118":Add a private constructor to hide the implicit public one.(€¡êi8ÙÁ‚€æ1
+L	java:S106"+Replace this use of System.out by a logger.(•ëš³üÿÿÿÿ8ÜÁ‚€æ1
+L	java:S106"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8İÁ‚€æ1
+G	java:S106"+Replace this use of System.out by a logger.(¼œäê8İÁ‚€æ1
+L	java:S106"+Replace this use of System.out by a logger.(İÊÊïúÿÿÿÿ8İÁ‚€æ1
+G	java:S106"+Replace this use of System.out by a logger.(ı—¡¢8İÁ‚€æ1
+L	java:S106"+Replace this use of System.out by a logger.(¼ğ¡Ñúÿÿÿÿ8İÁ‚€æ1
+L	java:S106#"+Replace this use of System.out by a logger.(¼Û‰øÿÿÿÿ8ŞÁ‚€æ1
+G	java:S106'"+Replace this use of System.out by a logger.(¡È¿É8ßÁ‚€æ1
+G	java:S106,"+Replace this use of System.out by a logger.(³±°8ßÁ‚€æ1
+L	java:S1063"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8àÁ‚€æ1
+L	java:S1067"+Replace this use of System.out by a logger.(•ĞÎøşÿÿÿÿ8àÁ‚€æ1
+G	java:S106:"+Replace this use of System.out by a logger.(ñû8àÁ‚€æ1
+G	java:S106<"+Replace this use of System.out by a logger.(÷¨ç³8àÁ‚€æ1
+L	java:S106>"+Replace this use of System.out by a logger.(¼ğ¡Ñúÿÿÿÿ8àÁ‚€æ1
+L	java:S106E"+Replace this use of System.out by a logger.(¼Û‰øÿÿÿÿ8áÁ‚€æ1
+L	java:S106I"+Replace this use of System.out by a logger.(›Şó¶şÿÿÿÿ8áÁ‚€æ1
+G	java:S106M"+Replace this use of System.out by a logger.(Äó„­8âÁ‚€æ1
+L	java:S106T"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8âÁ‚€æ1
+L	java:S106f"+Replace this use of System.out by a logger.(ÜôºŠøÿÿÿÿ8ãÁ‚€æ1
+L	java:S106o"+Replace this use of System.out by a logger.(ÜôºŠøÿÿÿÿ8äÁ‚€æ1
+L	java:S106u"+Replace this use of System.out by a logger.(ñÜÔáıÿÿÿÿ8äÁ‚€æ1
+G	java:S106w"+Replace this use of System.out by a logger.(î¡ÃŸ8äÁ‚€æ1
+L	java:S106{"+Replace this use of System.out by a logger.(›™Úêøÿÿÿÿ8åÁ‚€æ1
+M	java:S106‚"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8åÁ‚€æ1
+M	java:S106”"+Replace this use of System.out by a logger.(ÜôºŠøÿÿÿÿ8æÁ‚€æ1
+M	java:S106"+Replace this use of System.out by a logger.(ÜôºŠøÿÿÿÿ8çÁ‚€æ1
+H	java:S106£"+Replace this use of System.out by a logger.(ã‚ 8çÁ‚€æ1
+M	java:S106¥"+Replace this use of System.out by a logger.(ê‰ÄÑşÿÿÿÿ8çÁ‚€æ1
+o
+java:S2677©"LUse or store the value returned from "readLine" instead of throwing it away.(Òï´åıÿÿÿÿ8ğÁ‚€æ1
+M
+java:S1197¬"*Move the array designators [] to the type.(•üÉûÿÿÿÿ8ğÁ‚€æ1
+H	java:S106­"+Replace this use of System.out by a logger.(‡èú8ñÁ‚€æ1
+H	java:S106®"+Replace this use of System.out by a logger.(¯ğ×ò8ñÁ‚€æ1
+H	java:S106¯"+Replace this use of System.out by a logger.(á¢‹õ8ñÁ‚€æ1
+H	java:S106°"+Replace this use of System.out by a logger.(­ÿ÷Ò8ñÁ‚€æ1
+M	java:S106±"+Replace this use of System.out by a logger.(®ÚİÓşÿÿÿÿ8ñÁ‚€æ1
+H	java:S106¸"+Replace this use of System.out by a logger.(¿–É¤8ñÁ‚€æ1
+V
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8íõ§óæ1
+\
+java:S1128"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8îõ§óæ1

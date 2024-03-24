@@ -7,21 +7,17 @@ import java.awt.datatransfer.StringSelection;
 import java.util.*;
 
 public class Main{
-
-
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        int taskIdCount = 0;
-        final String studentLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment6/src/database/studentLoginFile.csv";
-        final String adminLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment6/src/database/adminLoginFile.csv";
-        List<User> studentList = new ArrayList<User>();
-        List<Course> coursesList = new ArrayList<Course>();
-        Map<Integer,List<String>> submittedTasksList = new HashMap<>();
-        User student = null;
+        final String patientLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment7/src/database/patientsLoginFile.csv";
+        final String adminLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment7/src/database/adminLoginFile.csv";
+        final String doctorLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment7/src/database/doctorsLoginFile.csv";User patient = null;
         User admin = null;
+        User doctor = null;
         do{
-            System.out.println("Press 1: To continue as a student.");
+            System.out.println("Press 1: To continue as a patient.");
             System.out.println("Press 2: To continue as an admin");
+            System.out.println("Press 3: To continue as a doctor");
             System.out.println("Press 0: To exit...");
 
             char choice = scanner.next().charAt(0);
@@ -30,15 +26,13 @@ public class Main{
                 case '1': // Student interface
                     do {
                         System.out.println("Press 1: To login.");
-                        System.out.println("Press 2: To join a course.");
-                        System.out.println("Press 3: To display all tasks.");
-                        System.out.println("Press 4: To submit a task.");
+                        System.out.println("Press 2: To display doctors details.");
                         System.out.println("Press 0: To logout.");
 
-                        char studentChoice = scanner.next().charAt(0);
-                        switch(studentChoice){
-                            case '1': // student login
-                                if(student == null) {
+                        char patientChoice = scanner.next().charAt(0);
+                        switch(patientChoice){
+                            case '1': // patient login
+                                if(patient == null) {
                                     String studentEmail;
                                     System.out.println("Enter your email: ");
                                     while (true) {
@@ -50,70 +44,33 @@ public class Main{
                                     }
                                     System.out.println("Enter your password");
                                     String password = scanner.next();
-                                    student = LoginManager.login(studentEmail, password, studentLoginFilePath);
+                                    patient = LoginManager.loginPatient(studentEmail, password, patientLoginFilePath);
                                 }else
                                     System.out.println("Already logged in. Logout First.");
                                 break;
-                            case '2': // join course
-                                if(student == null){
-                                System.out.println("Login first.");
-                                break;
-                                }
-                                System.out.println("Select a course:");
-                                System.out.println("1. Java Course");
-                                System.out.println("2. Python Course");
-                                System.out.println("3. Mern Course");
-                                int courseChoice = scanner.nextInt();
-                                Course courseToJoin = null;
-                                switch(courseChoice){
-                                    case 1:
-                                        courseToJoin = new JavaCourse("javaCourse");
-                                        break;
-                                    case 2:
-                                        courseToJoin = new PythonCourse("pythonCourse");
-                                        break;
-                                    case 3:
-                                        courseToJoin = new MernCourse("mernCourse");
-                                        break;
-
-                                    default:
-                                        System.out.println("Enter valid input");
-                                }
-                                CourseManager.joinCourse(coursesList , student, studentList, courseToJoin);
-                                break;
-                            case '3': // display all due tasks
-                                if(student == null){
+                            case '2': // display doctors list
+                                if(patient == null) {
                                     System.out.println("Login first.");
                                     break;
                                 }
-                                TaskManager.displayAllTasksOfStudent(student, studentList);
+                                Admin.displayDoctors(doctorLoginFilePath);
                                 break;
-                            case '4': // submit a task
-                                if(student == null){
-                                    System.out.println("Login first.");
-                                    break;
-                                }
-                                if(TaskManager.displayAllTasksOfStudent(student,studentList)) {
-                                    System.out.println("Enter the id of task to submit:");
-                                    int submitTaskId = scanner.nextInt();
-                                    TaskManager.submitTask(student, submitTaskId, studentList, submittedTasksList);
-                                }
-                                break;
-                            case '0':
-                                student = null;
+                            case '0': // patient logout
+                                patient = null;
                                 break;
                             default:
                                 System.out.println("Enter valid input");
                         }
                     }
-                    while(student != null);
+                    while(patient != null);
                     break;
                 case '2': // admin interface
                     do{
                         System.out.println("Press 1: To login.");
-                        System.out.println("Press 2: To make a course.");
-                        System.out.println("Press 3: To add a Task.");
-                        System.out.println("Press 4: To see submitted tasks");
+                        System.out.println("Press 2: To add a patient.");
+                        System.out.println("Press 3: To add a doctor.");
+                        System.out.println("Press 4: To delete a patient.");
+                        System.out.println("Press 5: To delete a doctor");
                         System.out.println("Press 0: To log out.");
 
                         char adminChoice = scanner.next().charAt(0);
@@ -132,60 +89,31 @@ public class Main{
                                     }
                                     System.out.println("Enter your password");
                                     String password = scanner.next();
-                                    admin = LoginManager.login(studentEmail, password, adminLoginFilePath);
+                                    admin = LoginManager.loginAdmin(studentEmail, password, adminLoginFilePath);
                                 }else
                                     System.out.println("Already logged in. Logout First.");
                                 break;
-                            case '2': // make a  course
-                                if(admin == null){
-                                    System.out.println("Login first.");
-                                    break;
-                                }
-                                System.out.println("Select from below courses:");
-                                System.out.println("Press 1 : For Java course.");
-                                System.out.println("Press 2 : For Python course.");
-                                System.out.println("Press 3 : For Mern course");
-
-                                char courseChoice = scanner.next().charAt(0);
-
-                                switch(courseChoice){
-                                    case '1':
-                                        CourseManager.createCourse(coursesList, new JavaCourse("javaCourse"));;
+                            case '2': // add a patient
+                                    if(admin == null) {
+                                        System.out.println("Login first.");
                                         break;
-                                    case '2':
-                                        CourseManager.createCourse(coursesList, new PythonCourse("pythonCourse"));;
-                                        break;
-                                    case '3':
-                                        CourseManager.createCourse(coursesList, new MernCourse("mernCourse"));;
-                                        break;
-                                    default:
-                                        System.out.println("Wrong choice selected");
-                                }
-                                break; // add new task
-                            case '3':
-                                if(admin == null){
-                                    System.out.println("Login first.");
-                                    break;
-                                }
-                                Task newTask = TaskManager.createTask(++taskIdCount);
-                                TaskManager.addTask(newTask, studentList, coursesList);
+                                    }
+                                    Admin.registerPatient(patientLoginFilePath);
                                 break;
-                            case '4': // display submitted tasks
-                                if(admin == null){
+                            case '3': // add a doctor
+                                if(admin == null) {
                                     System.out.println("Login first.");
                                     break;
                                 }
-                                try {
-                                    System.out.println("Enter task id to see submissions of the task.");
-                                    int taskIdToSeeSubmissions = scanner.nextInt();
-                                    TaskManager.showSubmissions(taskIdToSeeSubmissions, submittedTasksList);
-                                }
-                                catch(InputMismatchException inputMismatchException) {
-                                    System.out.println("Enter an integer value.");
-                                    scanner.nextLine();
-                                }
+                                Admin.registerDoctor(doctorLoginFilePath);
                                 break;
-                            case '0':
+                            case '4': // delete a patient
+                                Admin.deletePatient(patientLoginFilePath);
+                                break;
+                            case '5': // delete a doctor
+                                Admin.deleteDoctor(doctorLoginFilePath);
+                                break;
+                            case '0': // admin logout
                                 admin = null;
                                 break;
                             default:
@@ -193,13 +121,43 @@ public class Main{
                         }
                     }while(admin != null);
                     break;
+                case '3': // doctor interface
+                    do {
+                        System.out.println("Press 1: To login.");
+                        System.out.println("Press 0: To logout.");
+                        char doctorChoice = scanner.next().charAt(0);
+                        switch(doctorChoice) {
+                            case '1': // doctor login
+                                if(doctor == null) {
+                                    String doctorEmail;
+                                    System.out.println("Enter your email: ");
+                                    while (true) {
+                                        doctorEmail = scanner.next();
+                                        if (InputValidator.validateEmail(doctorEmail)) {
+                                            break;
+                                        }
+                                        System.out.println("Enter valid email:");
+                                    }
+                                    System.out.println("Enter your doctorPassword");
+                                    String doctorPassword = scanner.next();
+                                    doctor = LoginManager.loginDoctor(doctorEmail, doctorPassword, doctorLoginFilePath);
+                                }else
+                                    System.out.println("Already logged in. Logout First.");
+                                break;
+                            case '0': // doctor logout
+                                doctor = null;
+                                break;
+                            default:
+                                System.out.println("Enter valid choice");
+                        }
+                    }while(doctor != null);
+                    break;
                 case '0':
                     System.exit(0);
                     break;
                 default:
                     System.out.println("Enter a valid choice.");
             }
-
         }while(true);
     }
 }
