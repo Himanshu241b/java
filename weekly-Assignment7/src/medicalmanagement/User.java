@@ -1,7 +1,5 @@
 package medicalmanagement;
 
-import java.util.ArrayList;
-import java.util.List;
 
 class User {
     private String email;
