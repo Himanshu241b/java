@@ -1,19 +1,22 @@
 package classroom;
 
 //imports
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import com.sun.source.util.TaskListener;
+
+import java.awt.datatransfer.StringSelection;
+import java.util.*;
+
 public class Main{
 
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int taskIdCount = 0;
-        final String studentLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/Weekly-Assignment6/src/database/studentLoginFile.csv";
-        final String adminLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/Weekly-Assignment6/src/database/adminLoginFile.csv";
+        final String studentLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment6/src/database/studentLoginFile.csv";
+        final String adminLoginFilePath = "/home/himanshu/Desktop/Avisoft/java/weekly-Assignment6/src/database/adminLoginFile.csv";
         List<User> studentList = new ArrayList<User>();
         List<Course> coursesList = new ArrayList<Course>();
+        Map<Integer,List<String>> submittedTasksList = new HashMap<>();
         User student = null;
         User admin = null;
         do{
@@ -24,7 +27,7 @@ public class Main{
             char choice = scanner.next().charAt(0);
 
             switch(choice){
-                case '1':
+                case '1': // Student interface
                     do {
                         System.out.println("Press 1: To login.");
                         System.out.println("Press 2: To join a course.");
@@ -34,7 +37,7 @@ public class Main{
 
                         char studentChoice = scanner.next().charAt(0);
                         switch(studentChoice){
-                            case '1':
+                            case '1': // student login
                                 if(student == null) {
                                     String studentEmail;
                                     System.out.println("Enter your email: ");
@@ -51,7 +54,7 @@ public class Main{
                                 }else
                                     System.out.println("Already logged in. Logout First.");
                                 break;
-                            case '2':
+                            case '2': // join course
                                 if(student == null){
                                 System.out.println("Login first.");
                                 break;
@@ -78,14 +81,14 @@ public class Main{
                                 }
                                 CourseManager.joinCourse(coursesList , student, studentList, courseToJoin);
                                 break;
-                            case '3':
+                            case '3': // display all due tasks
                                 if(student == null){
                                     System.out.println("Login first.");
                                     break;
                                 }
                                 TaskManager.displayAllTasksOfStudent(student, studentList);
                                 break;
-                            case '4':
+                            case '4': // submit a task
                                 if(student == null){
                                     System.out.println("Login first.");
                                     break;
@@ -93,7 +96,7 @@ public class Main{
                                 if(TaskManager.displayAllTasksOfStudent(student,studentList)) {
                                     System.out.println("Enter the id of task to submit:");
                                     int submitTaskId = scanner.nextInt();
-                                    TaskManager.submitTask(student, submitTaskId, studentList);
+                                    TaskManager.submitTask(student, submitTaskId, studentList, submittedTasksList);
                                 }
                                 break;
                             case '0':
@@ -105,17 +108,18 @@ public class Main{
                     }
                     while(student != null);
                     break;
-                case '2':
+                case '2': // admin interface
                     do{
                         System.out.println("Press 1: To login.");
                         System.out.println("Press 2: To make a course.");
                         System.out.println("Press 3: To add a Task.");
+                        System.out.println("Press 4: To see submitted tasks");
                         System.out.println("Press 0: To log out.");
 
                         char adminChoice = scanner.next().charAt(0);
 
                         switch (adminChoice){
-                            case '1':
+                            case '1': // admin login
                                 if(admin == null){
                                     String studentEmail;
                                     System.out.println("Enter your email: ");
@@ -132,7 +136,7 @@ public class Main{
                                 }else
                                     System.out.println("Already logged in. Logout First.");
                                 break;
-                            case '2':
+                            case '2': // make a  course
                                 if(admin == null){
                                     System.out.println("Login first.");
                                     break;
@@ -157,7 +161,7 @@ public class Main{
                                     default:
                                         System.out.println("Wrong choice selected");
                                 }
-                                break;
+                                break; // add new task
                             case '3':
                                 if(admin == null){
                                     System.out.println("Login first.");
@@ -166,13 +170,27 @@ public class Main{
                                 Task newTask = TaskManager.createTask(++taskIdCount);
                                 TaskManager.addTask(newTask, studentList, coursesList);
                                 break;
+                            case '4': // display submitted tasks
+                                if(admin == null){
+                                    System.out.println("Login first.");
+                                    break;
+                                }
+                                try {
+                                    System.out.println("Enter task id to see submissions of the task.");
+                                    int taskIdToSeeSubmissions = scanner.nextInt();
+                                    TaskManager.showSubmissions(taskIdToSeeSubmissions, submittedTasksList);
+                                }
+                                catch(InputMismatchException inputMismatchException) {
+                                    System.out.println("Enter an integer value.");
+                                    scanner.nextLine();
+                                }
+                                break;
                             case '0':
                                 admin = null;
                                 break;
                             default:
                                 System.out.println("Enter valid choice");
                         }
-
                     }while(admin != null);
                     break;
                 case '0':

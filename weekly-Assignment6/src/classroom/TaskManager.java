@@ -3,8 +3,7 @@ package classroom;
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * TaskManager class to manage the task related tasks
@@ -20,24 +19,26 @@ public class TaskManager {
     public static Task createTask(int taskId){
 
         System.out.println("Enter task title:");
-        String taskTitle = scanner.next();
+        String taskTitle = scanner.nextLine();
+        scanner.nextLine();
         System.out.println("Enter task description:");
-        String taskDescription = scanner.next();
+        String taskDescription = scanner.nextLine();
+        scanner.nextLine();
 
         System.out.println("Enter task priority:");
         System.out.println("1. Low priority");
         System.out.println("2. Moderate priority");
         System.out.println("3. High priority");
-        int priority = scanner.nextInt();
+        int priority = scanner.next().charAt(0);
         Priority taskPriority = Priority.Low;
         switch(priority){
-            case 1:
+            case '1':
                 taskPriority = Priority.Low;
                 break;
-            case 2:
+            case '2':
                 taskPriority = Priority.Moderate;
                 break;
-            case 3:
+            case '3':
                 taskPriority = Priority.High;
                 break;
             default:
@@ -165,6 +166,7 @@ public class TaskManager {
             if(listedStudent.getEmail().equals(student.getEmail())){
                 if(listedStudent.getTasksList().isEmpty()){
                     System.out.println("NO tasks assisgned.");
+                    return false;
                 }
                 else {
                     for (Task task : listedStudent.getTasksList()) {
@@ -182,7 +184,7 @@ public class TaskManager {
      * @param submitTaskId id of the task to submit
      * @param studentsList list of students who have enrolled in any of the courses
      */
-    public static void submitTask(User student, int submitTaskId, List<User> studentsList){
+    public static void submitTask(User student, int submitTaskId, List<User> studentsList, Map<Integer, List<String>> submittedStudentsList){
         boolean isStudentInACourse = false;
         for(User listedStudent: studentsList){
             if(listedStudent.getEmail().equals(student.getEmail())){
@@ -201,9 +203,33 @@ public class TaskManager {
                         if (task.getTaskId() == submitTaskId) {
                             listedStudent.getTasksList().remove(task);
                             LocalDateTime currentDateTime = LocalDateTime.now();
+                            task.setTaskStatus(Status.Completed);
                             if (task.getTaskDueDate().isAfter(currentDateTime)) {
+                                if(!submittedStudentsList.containsKey(submitTaskId)) {
+                                    submittedStudentsList.put(submitTaskId, new ArrayList());
+                                    List<String> submittedStudents = submittedStudentsList.get(submitTaskId);
+                                    submittedStudents.add("Task " + task.getTaskId() + "\n submitted by: " +listedStudent.getName()+"\n with email: "+ listedStudent.getEmail()+"\n Task submitted on time.\n");
+                                    submittedStudentsList.replace(submitTaskId, submittedStudents);
+                                }
+                                else{
+
+                                    List<String> submittedStudents = submittedStudentsList.get(submitTaskId);
+                                    submittedStudents.add("Task " + task.getTaskId() + "\n submitted by: " +listedStudent.getName()+"\n with email: "+ listedStudent.getEmail()+"\n Task submitted on time.\n");
+                                    submittedStudentsList.replace(submitTaskId, submittedStudents);
+                                }
                                 System.out.println("Task submitted on time successfully.");
                             } else {
+                                if(!submittedStudentsList.containsKey(submitTaskId)) {
+                                    submittedStudentsList.put(submitTaskId, new ArrayList());
+                                    List<String> submittedStudents = submittedStudentsList.get(submitTaskId);
+                                    submittedStudents.add("Task " + task.getTaskId() + "\n submitted by: " +listedStudent.getName()+"\n with email: "+ listedStudent.getEmail()+"\n Late submission of task.\n");
+                                    submittedStudentsList.replace(submitTaskId, submittedStudents);
+                                }
+                                else{
+                                    List<String> submittedStudents = submittedStudentsList.get(submitTaskId);
+                                    submittedStudents.add("Task " + task.getTaskId() + "\n submitted by: " +listedStudent.getName()+"\n with email: "+ listedStudent.getEmail()+"\n Late submission of task.\n");
+                                    submittedStudentsList.replace(submitTaskId, submittedStudents);
+                                }
                                 System.out.println("Late submission of task.");
                             }
                             return;
@@ -219,6 +245,23 @@ public class TaskManager {
         catch (Exception exception){
             exception.printStackTrace();
         }
+    }
+
+    public static void showSubmissions(int taskIdToSeeSubmissions, Map<Integer, List<String>> submittedStudentsList){
+        if(submittedStudentsList.containsKey(taskIdToSeeSubmissions)) {
+            List<String> submittedStudentsListOfTask = submittedStudentsList.get(taskIdToSeeSubmissions);
+
+            Iterator<String> iterator = submittedStudentsListOfTask.iterator();
+
+            while (iterator.hasNext()) {
+                System.out.println(iterator.next());
+            }
+        }
+        else {
+            System.out.println("Task not found.");
+        }
+
+
     }
 
 }

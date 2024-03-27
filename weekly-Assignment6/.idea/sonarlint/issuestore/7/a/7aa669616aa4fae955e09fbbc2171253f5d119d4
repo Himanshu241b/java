@@ -1,64 +1,70 @@
 
 {
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(œú¤ıÿÿÿÿ8¿¤Ö¿ä1
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(œú¤ıÿÿÿÿ8½‡­¬å1
 v
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(·°¼³8À¤Ö¿ä1
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(·°¼³8¾‡­¬å1
 j
-java:S11928"MDefine a constant instead of duplicating this literal "Login first." 5 times.(çˆ°8À¤Ö¿ä1
+java:S1192;"MDefine a constant instead of duplicating this literal "Login first." 6 times.(çˆ°8¾‡­¬å1
 D
-java:S2189""Add an end condition to this loop.(ü§è½ùÿÿÿÿ8®Œ‘Ãä1
-o
-java:S3776
-"RRefactor this method to reduce its Cognitive Complexity from 95 to the 15 allowed.(Çµí‘8¹¥Ö¿ä1
+java:S2189""Add an end condition to this loop.(ü§è½ùÿÿÿÿ8§ˆ­¬å1
+p
+java:S3776"SRefactor this method to reduce its Cognitive Complexity from 105 to the 15 allowed.(Çµí‘8©ˆ­¬å1
 c
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(³¼ö•øÿÿÿÿ8¾¥Ö¿ä1
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ú‰¼óıÿÿÿÿ8¬ˆ­¬å1
 ^
-java:S1075"ARefactor your code to get this URI from a customizable parameter.(¿áâ‘8¾¥Ö¿ä1
-G	java:S106"+Replace this use of System.out by a logger.(ˆßü¡8À¥Ö¿ä1
-F	java:S106"+Replace this use of System.out by a logger.(õ¨D8À¥Ö¿ä1
-L	java:S106"+Replace this use of System.out by a logger.(Ì«Ùúÿÿÿÿ8À¥Ö¿ä1
-L	java:S106"+Replace this use of System.out by a logger.(Ô ·ÿÿÿÿÿ8Á¥Ö¿ä1
-G	java:S106"+Replace this use of System.out by a logger.(“ˆ®®8Á¥Ö¿ä1
-L	java:S106"+Replace this use of System.out by a logger.(Ùàò²ûÿÿÿÿ8Â¥Ö¿ä1
-G	java:S106 "+Replace this use of System.out by a logger.(¢Ğ¢˜8Â¥Ö¿ä1
-G	java:S106!"+Replace this use of System.out by a logger.(«ó8Â¥Ö¿ä1
-L	java:S106("+Replace this use of System.out by a logger.(–Ûúÿÿÿÿ8Ã¥Ö¿ä1
-L	java:S106."+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8Ã¥Ö¿ä1
-G	java:S1060"+Replace this use of System.out by a logger.(ÆÄÀç8Ã¥Ö¿ä1
-L	java:S1064"+Replace this use of System.out by a logger.(æéÃûÿÿÿÿ8Ã¥Ö¿ä1
-G	java:S1068"+Replace this use of System.out by a logger.(çˆ°8Ä¥Ö¿ä1
-G	java:S106;"+Replace this use of System.out by a logger.(ş·‡8Ä¥Ö¿ä1
-G	java:S106<"+Replace this use of System.out by a logger.(ŠŠ¥£8Ä¥Ö¿ä1
-G	java:S106="+Replace this use of System.out by a logger.(ÆˆŠ8Ä¥Ö¿ä1
-L	java:S106>"+Replace this use of System.out by a logger.(†ïÌøÿÿÿÿ8Ä¥Ö¿ä1
-L	java:S106M"+Replace this use of System.out by a logger.(Şë£øüÿÿÿÿ8Å¥Ö¿ä1
-G	java:S106S"+Replace this use of System.out by a logger.(çˆ°8Å¥Ö¿ä1
-G	java:S106Z"+Replace this use of System.out by a logger.(çˆ°8Å¥Ö¿ä1
-G	java:S106^"+Replace this use of System.out by a logger.(˜¶æ8Æ¥Ö¿ä1
-L	java:S106g"+Replace this use of System.out by a logger.(Şë£øüÿÿÿÿ8Æ¥Ö¿ä1
-L	java:S106n"+Replace this use of System.out by a logger.(Ô ·ÿÿÿÿÿ8Æ¥Ö¿ä1
-G	java:S106o"+Replace this use of System.out by a logger.(Í™‰ƒ8Æ¥Ö¿ä1
-L	java:S106p"+Replace this use of System.out by a logger.(ØË“Œùÿÿÿÿ8Æ¥Ö¿ä1
-G	java:S106q"+Replace this use of System.out by a logger.(«ó8Æ¥Ö¿ä1
-L	java:S106y"+Replace this use of System.out by a logger.(–Ûúÿÿÿÿ8Ç¥Ö¿ä1
-L	java:S106"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8Ç¥Ö¿ä1
-H	java:S106"+Replace this use of System.out by a logger.(ÆÄÀç8Ç¥Ö¿ä1
-M	java:S106…"+Replace this use of System.out by a logger.(æéÃûÿÿÿÿ8È¥Ö¿ä1
-H	java:S106‰"+Replace this use of System.out by a logger.(çˆ°8È¥Ö¿ä1
-H	java:S106Œ"+Replace this use of System.out by a logger.(¢ü‹ø8È¥Ö¿ä1
-H	java:S106"+Replace this use of System.out by a logger.(åáèí8È¥Ö¿ä1
-M	java:S106"+Replace this use of System.out by a logger.(éøÌñıÿÿÿÿ8È¥Ö¿ä1
-M	java:S106"+Replace this use of System.out by a logger.(Óš“şÿÿÿÿ8È¥Ö¿ä1
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(úï£˜8Åî¸¬å1
+G	java:S106"+Replace this use of System.out by a logger.(ˆßü¡8®ˆ­¬å1
+F	java:S106"+Replace this use of System.out by a logger.(õ¨D8®ˆ­¬å1
+L	java:S106"+Replace this use of System.out by a logger.(Ì«Ùúÿÿÿÿ8®ˆ­¬å1
+L	java:S106 "+Replace this use of System.out by a logger.(Ô ·ÿÿÿÿÿ8®ˆ­¬å1
+G	java:S106!"+Replace this use of System.out by a logger.(“ˆ®®8¯ˆ­¬å1
+L	java:S106""+Replace this use of System.out by a logger.(Ùàò²ûÿÿÿÿ8¯ˆ­¬å1
+G	java:S106#"+Replace this use of System.out by a logger.(¢Ğ¢˜8¯ˆ­¬å1
+G	java:S106$"+Replace this use of System.out by a logger.(«ó8¯ˆ­¬å1
+L	java:S106+"+Replace this use of System.out by a logger.(–Ûúÿÿÿÿ8°ˆ­¬å1
+L	java:S1061"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8°ˆ­¬å1
+G	java:S1063"+Replace this use of System.out by a logger.(ÆÄÀç8°ˆ­¬å1
+L	java:S1067"+Replace this use of System.out by a logger.(æéÃûÿÿÿÿ8°ˆ­¬å1
+G	java:S106;"+Replace this use of System.out by a logger.(çˆ°8°ˆ­¬å1
+G	java:S106>"+Replace this use of System.out by a logger.(ş·‡8°ˆ­¬å1
+G	java:S106?"+Replace this use of System.out by a logger.(ŠŠ¥£8°ˆ­¬å1
+G	java:S106@"+Replace this use of System.out by a logger.(ÆˆŠ8±ˆ­¬å1
+L	java:S106A"+Replace this use of System.out by a logger.(†ïÌøÿÿÿÿ8±ˆ­¬å1
+L	java:S106P"+Replace this use of System.out by a logger.(Şë£øüÿÿÿÿ8±ˆ­¬å1
+G	java:S106V"+Replace this use of System.out by a logger.(çˆ°8±ˆ­¬å1
+G	java:S106]"+Replace this use of System.out by a logger.(çˆ°8±ˆ­¬å1
+G	java:S106a"+Replace this use of System.out by a logger.(˜¶æ8²ˆ­¬å1
+L	java:S106j"+Replace this use of System.out by a logger.(Şë£øüÿÿÿÿ8²ˆ­¬å1
+L	java:S106q"+Replace this use of System.out by a logger.(Ô ·ÿÿÿÿÿ8²ˆ­¬å1
+G	java:S106r"+Replace this use of System.out by a logger.(Í™‰ƒ8²ˆ­¬å1
+L	java:S106s"+Replace this use of System.out by a logger.(ØË“Œùÿÿÿÿ8²ˆ­¬å1
+G	java:S106t"+Replace this use of System.out by a logger.(­ ó÷8²ˆ­¬å1
+G	java:S106u"+Replace this use of System.out by a logger.(«ó8²ˆ­¬å1
+L	java:S106}"+Replace this use of System.out by a logger.(–Ûúÿÿÿÿ8³ˆ­¬å1
+M	java:S106ƒ"+Replace this use of System.out by a logger.(‚ïùåşÿÿÿÿ8³ˆ­¬å1
+H	java:S106…"+Replace this use of System.out by a logger.(ÆÄÀç8³ˆ­¬å1
+M	java:S106‰"+Replace this use of System.out by a logger.(æéÃûÿÿÿÿ8³ˆ­¬å1
+H	java:S106"+Replace this use of System.out by a logger.(çˆ°8³ˆ­¬å1
+H	java:S106"+Replace this use of System.out by a logger.(¢ü‹ø8´ˆ­¬å1
+H	java:S106‘"+Replace this use of System.out by a logger.(åáèí8´ˆ­¬å1
+M	java:S106’"+Replace this use of System.out by a logger.(éøÌñıÿÿÿÿ8´ˆ­¬å1
+M	java:S106“"+Replace this use of System.out by a logger.(Óš“şÿÿÿÿ8´ˆ­¬å1
 :
-java:S1116•"Remove this empty statement.(ÆÂ„’8É¥Ö¿ä1
+java:S1116™"Remove this empty statement.(ÆÂ„’8´ˆ­¬å1
 :
-java:S1116˜"Remove this empty statement.(úÙéª8É¥Ö¿ä1
+java:S1116œ"Remove this empty statement.(úÙéª8µˆ­¬å1
 ?
-java:S1116›"Remove this empty statement.(¤îŠ­úÿÿÿÿ8É¥Ö¿ä1
-M	java:S106"+Replace this use of System.out by a logger.(Â¦ÿÿÿÿÿ8É¥Ö¿ä1
-H	java:S106£"+Replace this use of System.out by a logger.(çˆ°8Ê¥Ö¿ä1
-H	java:S106­"+Replace this use of System.out by a logger.(ÔˆûÌ8Ê¥Ö¿ä1
-M	java:S106¶"+Replace this use of System.out by a logger.(Ñû›õùÿÿÿÿ8Ê¥Ö¿ä1
+java:S1116Ÿ"Remove this empty statement.(¤îŠ­úÿÿÿÿ8µˆ­¬å1
+M	java:S106¢"+Replace this use of System.out by a logger.(Â¦ÿÿÿÿÿ8µˆ­¬å1
+H	java:S106§"+Replace this use of System.out by a logger.(çˆ°8µˆ­¬å1
+H	java:S106¯"+Replace this use of System.out by a logger.(çˆ°8µˆ­¬å1
+M	java:S106³"+Replace this use of System.out by a logger.(ÓˆÖÊûÿÿÿÿ8µˆ­¬å1
+M	java:S106¸"+Replace this use of System.out by a logger.(ÚïÎêşÿÿÿÿ8¶ˆ­¬å1
+H	java:S106À"+Replace this use of System.out by a logger.(ÔˆûÌ8¶ˆ­¬å1
+M	java:S106È"+Replace this use of System.out by a logger.(Ñû›õùÿÿÿÿ8¶ˆ­¬å1
+Z
+java:S1128"=Remove this unused import 'com.sun.source.util.TaskListener'.(õ×¾ë8¶ˆ­¬å1
+d
+java:S1128"BRemove this unused import 'java.awt.datatransfer.StringSelection'.(öœŒéıÿÿÿÿ8¶ˆ­¬å1
 ä
-java:S6541
-"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 167 to 64, Complexity from 34 to 14, Nesting Level from 7 to 2, Number of Variables from 21 to 6.(Çµí‘8Ë¥Ö¿ä1
+java:S6541"ÆA "Brain Method" was detected. Refactor it to reduce at least one of the following metrics: LOC from 184 to 64, Complexity from 36 to 14, Nesting Level from 7 to 2, Number of Variables from 24 to 6.(Çµí‘8·ˆ­¬å1
