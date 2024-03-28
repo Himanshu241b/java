@@ -1,37 +1,35 @@
 
 „
-java:S1192"gDefine a constant instead of duplicating this literal "Index out of bounds while reading file" 3 times.(·ûÃË8ó©Éşå1
+java:S1192"gDefine a constant instead of duplicating this literal "Index out of bounds while reading file" 3 times.(·ûÃË8ó©Éşå1
+u
+java:S1192"XDefine a constant instead of duplicating this literal "Database File not found" 3 times.(Ö·È½8ó©Éşå1
 t
-java:S1192"WDefine a constant instead of duplicating this literal "Logged In successfully" 3 times.(ÜìÇ‡8ó©Éşå1
+java:S1192"WDefine a constant instead of duplicating this literal "Logged In successfully" 3 times.(ÜìÇ‡8ó©Éşå1
 u
-java:S1192%"SDefine a constant instead of duplicating this literal "Account not found." 3 times.(…ûÕ£øÿÿÿÿ8ó©Éşå1
-u
-java:S1192"XDefine a constant instead of duplicating this literal "Database File not found" 3 times.(Ö·È½8ó©Éşå1
+java:S1192$"SDefine a constant instead of duplicating this literal "Account not found." 3 times.(…ûÕ£øÿÿÿÿ8ó©Éşå1
 W
-java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
 W
-java:S11410"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
+java:S1141/"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
 W
-java:S1141O"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
+java:S1141N"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
 V
-java:S1118	":Add a private constructor to hide the implicit public one.(¥İY8—ªÉşå1
+java:S1118":Add a private constructor to hide the implicit public one.(¥İY8—ªÉşå1
 h
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8™ªÉşå1
-G	java:S106"+Replace this use of System.out by a logger.(ÜìÇ‡8šªÉşå1
-G	java:S106"+Replace this use of System.out by a logger.(·ûÃË8›ªÉşå1
-G	java:S106"+Replace this use of System.out by a logger.(Ö·È½8›ªÉşå1
-L	java:S106%"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8›ªÉşå1
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8™ªÉşå1
+G	java:S106"+Replace this use of System.out by a logger.(ÜìÇ‡8šªÉşå1
+G	java:S106"+Replace this use of System.out by a logger.(·ûÃË8›ªÉşå1
+G	java:S106"+Replace this use of System.out by a logger.(Ö·È½8›ªÉşå1
+L	java:S106$"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8›ªÉşå1
 h
-java:S2677-"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8œªÉşå1
-G	java:S1062"+Replace this use of System.out by a logger.(ÜìÇ‡8ªÉşå1
-G	java:S1067"+Replace this use of System.out by a logger.(·ûÃË8ªÉşå1
-G	java:S106="+Replace this use of System.out by a logger.(Ö·È½8ªÉşå1
-L	java:S106D"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8ªÉşå1
+java:S2677,"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8œªÉşå1
+G	java:S1061"+Replace this use of System.out by a logger.(ÜìÇ‡8ªÉşå1
+G	java:S1066"+Replace this use of System.out by a logger.(·ûÃË8ªÉşå1
+G	java:S106<"+Replace this use of System.out by a logger.(Ö·È½8ªÉşå1
+L	java:S106C"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8ªÉşå1
 h
-java:S2677L"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8ŸªÉşå1
-G	java:S106Q"+Replace this use of System.out by a logger.(ÜìÇ‡8 ªÉşå1
-G	java:S106V"+Replace this use of System.out by a logger.(·ûÃË8 ªÉşå1
-G	java:S106\"+Replace this use of System.out by a logger.(Ö·È½8 ªÉşå1
-L	java:S106c"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8¡ªÉşå1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8å¾›†è1
+java:S2677K"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8ŸªÉşå1
+G	java:S106P"+Replace this use of System.out by a logger.(ÜìÇ‡8 ªÉşå1
+G	java:S106U"+Replace this use of System.out by a logger.(·ûÃË8 ªÉşå1
+G	java:S106["+Replace this use of System.out by a logger.(Ö·È½8 ªÉşå1
+L	java:S106b"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8¡ªÉşå1

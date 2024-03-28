@@ -1,14 +1,14 @@
 
-P
-java:S1118":Add a private constructor to hide the implicit public one.(Þïéð
-\
-java:S1126"AReplace this if-then-else statement by a single return statement.(—‡í¶úÿÿÿÿ
-R
+v
+java:S1118":Add a private constructor to hide the implicit public one.(ÞïéðJ$6de5ae4e-f3df-4488-8ba3-282f332e8f07
+‚
+java:S1126"AReplace this if-then-else statement by a single return statement.(—‡í¶úÿÿÿÿJ$daa1e543-64ad-4ee4-8eb8-f4dbb8f653a2
+x
 java:S6353
-"<Use concise character class syntax '\\d' instead of '[0-9]'.(Ž¢Ê„
-R
+"<Use concise character class syntax '\\d' instead of '[0-9]'.(Ž¢Ê„J$f9ff55fd-dd77-4486-8399-17a2145f908a
+x
 java:S6353
-"<Use concise character class syntax '\\d' instead of '[0-9]'.(Ž¢Ê„
-R
+"<Use concise character class syntax '\\d' instead of '[0-9]'.(Ž¢Ê„J$de2a6b38-6084-43a0-b06c-aba380447659
+x
 java:S6353
-"<Use concise character class syntax '\\d' instead of '[0-9]'.(Ž¢Ê„
+"<Use concise character class syntax '\\d' instead of '[0-9]'.(Ž¢Ê„J$08d6c75f-b929-410c-b191-f824cce07f6f
