@@ -3,10 +3,11 @@ package com.example.blogspring.users;
 import com.example.blogspring.users.dtos.CreateUserRequest;
 import com.example.blogspring.users.dtos.UserResponse;
 import com.example.blogspring.users.dtos.LoginUserRequest;
+import com.example.blogspring.common.dtos.ErrorResponse;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.net.URI;
 
 @RestController
@@ -37,7 +38,20 @@ public class UsersController {
     @ExceptionHandler({
             UserService.UserNotFoundException.class
     })
-    ResponseEntity<String> handleUserNotFoundException(UserService.UserNotFoundException){
-        return ResponseEntity.notFound().build();
+    ResponseEntity<ErrorResponse> handleUserNotFoundException(Exception exception){
+        String message;
+        HttpStatus status;
+        if(exception instanceof UserService.UserNotFoundException){
+            message = exception.getMessage();
+            status = HttpStatus.NOT_FOUND;
+        }
+        else{
+            message = "something went wrong";
+            status = HttpStatus.INTERNAL_SERVER_ERROR;
+        }
+        ErrorResponse errorResponse = ErrorResponse.builder()
+                .message(message)
+                .build();
+        return ResponseEntity.status(status).body(errorResponse);
     }
 }
