@@ -21,7 +21,7 @@ public class TaskService {
         task.setId(taskId);
         task.setTitle(title);
         task.setDescription(description);
-        task.setDeadline(deadlineFormatter.parse(deadline)); // Todo: validate it in format YYYY-MM-DD
+        task.setDeadline(deadlineFormatter.parse(deadline));
         task.setCompleted(false);
         taskList.add(task);
         ++taskId;
@@ -40,6 +40,8 @@ public class TaskService {
         }
         return null;
     }
+
+
 
     public TaskEntity updateTask(int id, String description, String deadline, Boolean completed) throws ParseException{
         TaskEntity task = getTaskById(id);

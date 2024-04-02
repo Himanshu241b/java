@@ -37,7 +37,7 @@ public class TasksController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") int id){
+    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") Integer id){
         var task = taskService.getTaskById(id);
         var notes = noteService.getNotesForTask(id);
         if(task == null){

@@ -43,7 +43,7 @@ public class FileUploadController {
         return "uploadForm";
     }
 
-    @GetMapping("/files/{filename:.+}")
+    @GetMapping("/files/{filename:.+}")  // /{filename:.+} specifies that the filename path variable can contain one or more characters, including dots (.), which is useful for filenames with extensions
     @ResponseBody
     public ResponseEntity<Resource> serveFile(@PathVariable String filename) {
 
