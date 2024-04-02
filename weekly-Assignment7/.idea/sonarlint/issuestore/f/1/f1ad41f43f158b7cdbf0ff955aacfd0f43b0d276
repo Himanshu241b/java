@@ -1,35 +1,35 @@
 
-„
-java:S1192"gDefine a constant instead of duplicating this literal "Index out of bounds while reading file" 3 times.(·ûÃË8ó©Éşå1
-u
-java:S1192"XDefine a constant instead of duplicating this literal "Database File not found" 3 times.(Ö·È½8ó©Éşå1
-t
-java:S1192"WDefine a constant instead of duplicating this literal "Logged In successfully" 3 times.(ÜìÇ‡8ó©Éşå1
-u
-java:S1192$"SDefine a constant instead of duplicating this literal "Account not found." 3 times.(…ûÕ£øÿÿÿÿ8ó©Éşå1
-W
-java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
-W
-java:S1141/"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
-W
-java:S1141N"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1
-V
-java:S1118":Add a private constructor to hide the implicit public one.(¥İY8—ªÉşå1
-h
-java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8™ªÉşå1
-G	java:S106"+Replace this use of System.out by a logger.(ÜìÇ‡8šªÉşå1
-G	java:S106"+Replace this use of System.out by a logger.(·ûÃË8›ªÉşå1
-G	java:S106"+Replace this use of System.out by a logger.(Ö·È½8›ªÉşå1
-L	java:S106$"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8›ªÉşå1
-h
-java:S2677,"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8œªÉşå1
-G	java:S1061"+Replace this use of System.out by a logger.(ÜìÇ‡8ªÉşå1
-G	java:S1066"+Replace this use of System.out by a logger.(·ûÃË8ªÉşå1
-G	java:S106<"+Replace this use of System.out by a logger.(Ö·È½8ªÉşå1
-L	java:S106C"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8ªÉşå1
-h
-java:S2677K"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8ŸªÉşå1
-G	java:S106P"+Replace this use of System.out by a logger.(ÜìÇ‡8 ªÉşå1
-G	java:S106U"+Replace this use of System.out by a logger.(·ûÃË8 ªÉşå1
-G	java:S106["+Replace this use of System.out by a logger.(Ö·È½8 ªÉşå1
-L	java:S106b"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8¡ªÉşå1
+ª
+java:S1192"gDefine a constant instead of duplicating this literal "Index out of bounds while reading file" 3 times.(·ûÃË8ó©Éşå1J$717f84aa-fd13-45ba-b25d-50c9672929a2
+›
+java:S1192"XDefine a constant instead of duplicating this literal "Database File not found" 3 times.(Ö·È½8ó©Éşå1J$61dc1883-6ad4-453f-8035-fa5bc1eabcc3
+š
+java:S1192"WDefine a constant instead of duplicating this literal "Logged In successfully" 3 times.(ÜìÇ‡8ó©Éşå1J$ef47c04c-d37a-4d34-a8f2-cad09f17b493
+›
+java:S1192$"SDefine a constant instead of duplicating this literal "Account not found." 3 times.(…ûÕ£øÿÿÿÿ8ó©Éşå1J$ebbfc5c2-2b3f-41ec-9b2d-a53560812af0
+}
+java:S1141"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1J$b6eb68ac-6aaa-4c2d-b583-ea3944cdd035
+}
+java:S1141/"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1J$e7456c9a-b519-45a9-a82c-8929623d672a
+}
+java:S1141N"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ8ô©Éşå1J$34b7e06c-48b5-4a1f-b273-8f55871cae0e
+|
+java:S1118":Add a private constructor to hide the implicit public one.(¥İY8—ªÉşå1J$23effe28-d5fe-4e1a-ab0d-d9229eea51e6
+
+java:S2677"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8™ªÉşå1J$de1832f1-b523-49fb-b827-8a520dcea2f4
+m	java:S106"+Replace this use of System.out by a logger.(ÜìÇ‡8šªÉşå1J$a1fac262-6ce3-46a7-9d0b-8b3d8eafcde7
+m	java:S106"+Replace this use of System.out by a logger.(·ûÃË8›ªÉşå1J$7cb20ff1-9a6d-4e52-9c0b-b69df2ce1371
+m	java:S106"+Replace this use of System.out by a logger.(Ö·È½8›ªÉşå1J$7c52de01-0957-4a25-a798-171e45990c69
+r	java:S106$"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8›ªÉşå1J$cb6de15e-86de-4a4e-9f2b-35b8e2f9be65
+
+java:S2677,"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8œªÉşå1J$dc52e05d-f0a3-41a0-a79e-bf279bb6d072
+m	java:S1061"+Replace this use of System.out by a logger.(ÜìÇ‡8ªÉşå1J$9353eec7-8fe4-4c18-b58f-25a6a1f72a9a
+m	java:S1066"+Replace this use of System.out by a logger.(·ûÃË8ªÉşå1J$2bf1e399-fcc0-431a-9a19-36db679e4522
+m	java:S106<"+Replace this use of System.out by a logger.(Ö·È½8ªÉşå1J$4520eee1-1191-4338-940a-44ba12fff6a2
+r	java:S106C"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8ªÉşå1J$7e85fd6b-2924-4e44-98e5-0ad01c894bc4
+
+java:S2677K"LUse or store the value returned from "readLine" instead of throwing it away.(¥œ·~8ŸªÉşå1J$5400db04-dc20-4410-a4f4-41feaf9e4247
+m	java:S106P"+Replace this use of System.out by a logger.(ÜìÇ‡8 ªÉşå1J$b060fdb4-546e-4508-9398-b7cf3fedb248
+m	java:S106U"+Replace this use of System.out by a logger.(·ûÃË8 ªÉşå1J$1c7f934c-18c7-47b2-90d3-e772436db755
+m	java:S106["+Replace this use of System.out by a logger.(Ö·È½8 ªÉşå1J$247af784-1348-44aa-96a4-adf7145f9db5
+r	java:S106b"+Replace this use of System.out by a logger.(…ûÕ£øÿÿÿÿ8¡ªÉşå1J$bc7a719d-b17c-4ee9-90b3-1eb920cc8666

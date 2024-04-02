@@ -1,9 +1,9 @@
 
-J
-java:S1185"(Remove this method to simply inherit it.(ú›Šøøÿÿÿÿ8»©º…æ1
-J
-java:S1185"(Remove this method to simply inherit it.(×Õ¥şıÿÿÿÿ8¼©º…æ1
-G	java:S106,"+Replace this use of System.out by a logger.(ï±Û8¾©º…æ1
-L	java:S106-"+Replace this use of System.out by a logger.(¬¹çÄşÿÿÿÿ8¿©º…æ1
-L	java:S106."+Replace this use of System.out by a logger.(¯Ö¨ìùÿÿÿÿ8¿©º…æ1
-F	java:S106/"+Replace this use of System.out by a logger.(‰¬¤U8¿©º…æ1
+p
+java:S1185"(Remove this method to simply inherit it.(ú›Šøøÿÿÿÿ8»©º…æ1J$955b0065-fe4e-4f15-bcf9-825235c4af6b
+p
+java:S1185"(Remove this method to simply inherit it.(×Õ¥şıÿÿÿÿ8¼©º…æ1J$4932e5f6-add4-4904-ab03-1285a5d7bf97
+m	java:S106,"+Replace this use of System.out by a logger.(ï±Û8¾©º…æ1J$4cf263d4-ca37-4de2-a5e0-fe7f3c85f874
+r	java:S106-"+Replace this use of System.out by a logger.(¬¹çÄşÿÿÿÿ8¿©º…æ1J$2dfc5e20-0ab8-426b-9819-6887ef775174
+r	java:S106."+Replace this use of System.out by a logger.(¯Ö¨ìùÿÿÿÿ8¿©º…æ1J$59e99e09-a7e0-4d52-ac97-a762a45bd48f
+l	java:S106/"+Replace this use of System.out by a logger.(‰¬¤U8¿©º…æ1J$6c01268a-0414-42c3-a83a-2e6995119af0
