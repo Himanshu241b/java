@@ -14,20 +14,20 @@ import java.util.List;
 @RestController
 @RequestMapping("/tasks/{taskId}/notes")
 public class NotesController {
-    private NoteService noteService;
-    @Autowired
+    private final NoteService noteService;
+
     NotesController(NoteService noteService) {
         this.noteService = noteService;
     }
     @GetMapping("")
-    public ResponseEntity<List<NoteEntity>> getNotes(@PathVariable("taskId") Integer taskId) {
+    public ResponseEntity<List<NoteEntity>> getNotes(@PathVariable("taskId") Long taskId) {
         var notes = noteService.getNotesForTask(taskId);
         return ResponseEntity.ok(notes);
     }
 
     @PostMapping("")
     public ResponseEntity<CreateNoteResponseDTO> addNote(
-            @PathVariable("taskId") Integer taskId,
+            @PathVariable("taskId") Long taskId,
             @RequestBody CreateNoteDTO createNoteDTO
     ){
         var note = noteService.addNoteForTask(taskId, createNoteDTO.getTitle(), createNoteDTO.getBody());

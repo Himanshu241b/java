@@ -11,6 +11,6 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CreateNoteResponseDTO {
-    private Integer taskId;
+    private Long taskId;
     private NoteEntity note;
 }

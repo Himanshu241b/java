@@ -8,7 +8,6 @@ import com.example.taskmanagerspring.entity.TaskEntity;
 import com.example.taskmanagerspring.service.NoteService;
 import com.example.taskmanagerspring.service.TaskService;
 import org.modelmapper.ModelMapper;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,12 +18,12 @@ import java.util.List;
 @RequestMapping("/tasks")
 public class TasksController {
 
-    private ModelMapper modelMapper = new ModelMapper();
+    private final ModelMapper modelMapper = new ModelMapper();
 
     private final NoteService noteService;
     private final TaskService taskService;
 
-    @Autowired
+
     TasksController(TaskService taskService, NoteService noteService) {
         this.taskService = taskService;
         this.noteService = noteService;
@@ -37,7 +36,7 @@ public class TasksController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") Integer id){
+    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") Long id){
         var task = taskService.getTaskById(id);
         var notes = noteService.getNotesForTask(id);
         if(task == null){
@@ -55,6 +54,15 @@ public class TasksController {
         return ResponseEntity.ok(newTask);
     }
 
+    @PatchMapping("/{id}")
+    public ResponseEntity<TaskEntity> updateTask(@PathVariable("id") Long id, @RequestBody UpdateTaskDTO updateTaskDTO) throws ParseException{
+        var task = taskService.updateTask(id, updateTaskDTO.getDescription(), updateTaskDTO.getDeadline(), updateTaskDTO.getCompleted());
+        if(task == null){
+            return ResponseEntity.notFound().build();
+        }
+        return ResponseEntity.ok(task);
+    }
+
     @ExceptionHandler(ParseException.class)
     public ResponseEntity<ErrorResponseDTO> handleErrors(Exception exception){
         if(exception instanceof ParseException){
@@ -62,14 +70,5 @@ public class TasksController {
         }
 
         return ResponseEntity.internalServerError().body(new ErrorResponseDTO("Internal Server error."));
-    }
-
-    @PatchMapping("/{id}")
-    public ResponseEntity<TaskEntity> updateTask(@PathVariable("id") Integer id, @RequestBody UpdateTaskDTO updateTaskDTO) throws ParseException{
-        var task = taskService.updateTask(id, updateTaskDTO.getDescription(), updateTaskDTO.getDeadline(), updateTaskDTO.getCompleted());
-        if(task == null){
-            return ResponseEntity.notFound().build();
-        }
-        return ResponseEntity.ok(task);
     }
 }

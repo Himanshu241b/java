@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class NoteService {
     private TaskService taskService;
-    private HashMap<Integer, TaskNotesHolder> taskNotesHolderMap = new HashMap<Integer, TaskNotesHolder>();
+    private HashMap<Long, TaskNotesHolder> taskNotesHolderMap = new HashMap<Long, TaskNotesHolder>();
     @Autowired
     NoteService(TaskService taskService) {
         this.taskService = taskService;
@@ -23,7 +23,7 @@ public class NoteService {
         protected List<NoteEntity> notes = new ArrayList<NoteEntity>();
     }
 
-    public List<NoteEntity> getNotesForTask(int taskId){
+    public List<NoteEntity> getNotesForTask(Long taskId){
         TaskEntity task = taskService.getTaskById(taskId);
         if(task == null){
             return null;
@@ -33,7 +33,7 @@ public class NoteService {
         return taskNotesHolderMap.get(taskId).notes;
     }
 
-    public NoteEntity addNoteForTask(int taskId, String title, String body){
+    public NoteEntity addNoteForTask(Long taskId, String title, String body){
         TaskEntity task = taskService.getTaskById(taskId);
         if(task == null)
             return null;
@@ -41,7 +41,6 @@ public class NoteService {
             taskNotesHolderMap.put(taskId, new TaskNotesHolder());
         TaskNotesHolder taskNotesHolder = taskNotesHolderMap.get(taskId);
         NoteEntity note = new NoteEntity();
-        note.setId(taskNotesHolder.noteId);
         note.setTitle(title);
         note.setBody(body);
         taskNotesHolder.notes.add(note);
