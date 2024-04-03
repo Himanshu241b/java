@@ -19,7 +19,5 @@ j
 :src/main/java/OutputFiles/ResultCSV2024-02-29_11-16-44.csv,f/d/fd5cd0a86e503821f20de401421e3ace194aa2eb
 U
 %src/main/java/InputFiles/expected.xml,2/5/255812d2698acd8d7689a6ed231d63b6d60fe0b4
-k
-;src/main/java/filecomparator/XmlFileDontExistException.java,7/f/7f731158803d275080efc512601ce6bc577c9618
 7
 pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec

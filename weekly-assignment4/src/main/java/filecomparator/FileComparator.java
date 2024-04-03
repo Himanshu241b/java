@@ -4,14 +4,14 @@ package filecomparator;
 import java.io.FileNotFoundException;
 import java.time.DateTimeException;
 import java.util.List;
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.ParserConfigurationException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-import org.xml.sax.SAXException;
-import java.io.File;
+//import javax.xml.parsers.DocumentBuilder;
+//import javax.xml.parsers.DocumentBuilderFactory;
+//import javax.xml.parsers.ParserConfigurationException;
+//import org.w3c.dom.Document;
+//import org.w3c.dom.Node;
+//import org.w3c.dom.NodeList;
+//import org.xml.sax.SAXException;
+//import java.io.File;
 import java.io.IOException;
 import java.io.FileWriter;
 import java.time.LocalDateTime;
@@ -217,97 +217,98 @@ public class FileComparator {
             ioException.printStackTrace();
         }
     }
-
-    /**
-     * method to compare two xml files
-     * @param actualXmlPath path of the actual xml file
-     * @param expectedXmlPath   path of the expected xml file
-     */
-    public void compareXml(String actualXmlPath, String expectedXmlPath) throws XmlFileDontExistException{
-        try {
-            // Parse the first XML file
-            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            File actualXmlFile = new File(actualXmlPath);
-            if (!actualXmlFile.exists() || !actualXmlFile.isFile()) {
-                throw new XmlFileDontExistException("File " + actualXmlPath + " does not exist.");
-            }
-            System.out.println(actualXmlFile.toString());
-            Document actualXmlDocument = builder.parse(actualXmlFile);
-            System.out.println("**********" + actualXmlDocument.toString());
-
-            // Parse the second XML file
-            File expectedXmlFile = new File(expectedXmlPath);
-            if (!expectedXmlFile.exists() || !expectedXmlFile.isFile()) {
-                throw new XmlFileDontExistException("File " + actualXmlPath + " does not exist.");
-            }
-            Document expectedXmlDocument = builder.parse(expectedXmlFile);
-
-            // Compare the documents
-            compareNodes(actualXmlDocument.getDocumentElement(), expectedXmlDocument.getDocumentElement());
-
-        } catch (ParserConfigurationException | SAXException | IOException e) {
-            e.printStackTrace();
-        }
-
     }
 
-    /**
-     *  method that compares the nodes recursively
-     * @param actualXmlNode Node of actual xml file to compare against node of expected xml file
-     * @param expectedXmlNode Node of expected xml file to compare against node of actual xml file
-     */
-    private static void compareNodes(Node actualXmlNode, Node expectedXmlNode) {
-        try {
-            if (!actualXmlNode.getNodeName().equals(expectedXmlNode.getNodeName())) {
-                System.out.println("Different node name: " + actualXmlNode.getNodeName() + " vs " + expectedXmlNode.getNodeName());
-            }
-
-            // Compare attributes
-            if (!actualXmlNode.getNodeValue().equals(expectedXmlNode.getNodeValue())) {
-                System.out.println("Different node value: " + actualXmlNode.getNodeValue() + " vs " + expectedXmlNode.getNodeValue());
-            }
-        }
-        catch(NullPointerException nullPointerException){
-            nullPointerException.printStackTrace();
-        }
-
-        // Compare child nodes
-        NodeList childrenOfActualXmlNode = actualXmlNode.getChildNodes();
-        NodeList childrenOfExpectedXmlNode = expectedXmlNode.getChildNodes();
-
-        for (int childOfActualXmlNodeIterator = 0; childOfActualXmlNodeIterator < childrenOfActualXmlNode.getLength(); childOfActualXmlNodeIterator++) {
-            Node childNodeOfActualXmlNode = childrenOfActualXmlNode.item(childOfActualXmlNodeIterator);
-            boolean found = false;
-            for (int childOfExpectedXmlNodeIterator = 0; childOfExpectedXmlNodeIterator < childrenOfExpectedXmlNode.getLength(); childOfExpectedXmlNodeIterator++) {
-                Node childNodeOfExpectedXmlNode = childrenOfExpectedXmlNode.item(childOfExpectedXmlNodeIterator);
-                if (childNodeOfActualXmlNode.getNodeType() == Node.ELEMENT_NODE && childNodeOfExpectedXmlNode.getNodeType() == Node.ELEMENT_NODE &&
-                        childNodeOfActualXmlNode.getNodeName().equals(childNodeOfExpectedXmlNode.getNodeName())) {
-                    compareNodes(childNodeOfActualXmlNode, childNodeOfExpectedXmlNode); // Recursively compare child nodes
-                    found = true;
-                    break;
-                }
-            }
-            if (!found) {
-                System.out.println("Extra node in file1.xml: " + childNodeOfActualXmlNode.getNodeName());
-            }
-        }
-
-        for (int i = 0; i < childrenOfExpectedXmlNode.getLength(); i++) {
-            Node child2 = childrenOfExpectedXmlNode.item(i);
-            boolean found = false;
-            for (int j = 0; j < childrenOfActualXmlNode.getLength(); j++) {
-                Node child1 = childrenOfActualXmlNode.item(j);
-                if (child2.getNodeType() == Node.ELEMENT_NODE && child1.getNodeType() == Node.ELEMENT_NODE &&
-                        child2.getNodeName().equals(child1.getNodeName())) {
-                    found = true;
-                    break;
-                }
-            }
-            if (!found) {
-                System.out.println("Extra node in file2.xml: " + child2.getNodeName());
-            }
-        }
-    }
-}
-
+//    /**
+//     * method to compare two xml files
+//     * @param actualXmlPath path of the actual xml file
+//     * @param expectedXmlPath   path of the expected xml file
+//     */
+//    public void compareXml(String actualXmlPath, String expectedXmlPath) throws XmlFileDontExistException{
+//        try {
+//            // Parse the first XML file
+//            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//            DocumentBuilder builder = factory.newDocumentBuilder();
+//            File actualXmlFile = new File(actualXmlPath);
+//            if (!actualXmlFile.exists() || !actualXmlFile.isFile()) {
+//                throw new XmlFileDontExistException("File " + actualXmlPath + " does not exist.");
+//            }
+//            System.out.println(actualXmlFile.toString());
+//            Document actualXmlDocument = builder.parse(actualXmlFile);
+//            System.out.println("**********" + actualXmlDocument.toString());
+//
+//            // Parse the second XML file
+//            File expectedXmlFile = new File(expectedXmlPath);
+//            if (!expectedXmlFile.exists() || !expectedXmlFile.isFile()) {
+//                throw new XmlFileDontExistException("File " + actualXmlPath + " does not exist.");
+//            }
+//            Document expectedXmlDocument = builder.parse(expectedXmlFile);
+//
+//            // Compare the documents
+//            compareNodes(actualXmlDocument.getDocumentElement(), expectedXmlDocument.getDocumentElement());
+//
+//        } catch (ParserConfigurationException | SAXException | IOException e) {
+//            e.printStackTrace();
+//        }
+//
+//    }
+//
+//    /**
+//     *  method that compares the nodes recursively
+//     * @param actualXmlNode Node of actual xml file to compare against node of expected xml file
+//     * @param expectedXmlNode Node of expected xml file to compare against node of actual xml file
+//     */
+//    private static void compareNodes(Node actualXmlNode, Node expectedXmlNode) {
+//        try {
+//            if (!actualXmlNode.getNodeName().equals(expectedXmlNode.getNodeName())) {
+//                System.out.println("Different node name: " + actualXmlNode.getNodeName() + " vs " + expectedXmlNode.getNodeName());
+//            }
+//
+//            // Compare attributes
+//            if (!actualXmlNode.getNodeValue().equals(expectedXmlNode.getNodeValue())) {
+//                System.out.println("Different node value: " + actualXmlNode.getNodeValue() + " vs " + expectedXmlNode.getNodeValue());
+//            }
+//        }
+//        catch(NullPointerException nullPointerException){
+//            nullPointerException.printStackTrace();
+//        }
+//
+//        // Compare child nodes
+//        NodeList childrenOfActualXmlNode = actualXmlNode.getChildNodes();
+//        NodeList childrenOfExpectedXmlNode = expectedXmlNode.getChildNodes();
+//
+//        for (int childOfActualXmlNodeIterator = 0; childOfActualXmlNodeIterator < childrenOfActualXmlNode.getLength(); childOfActualXmlNodeIterator++) {
+//            Node childNodeOfActualXmlNode = childrenOfActualXmlNode.item(childOfActualXmlNodeIterator);
+//            boolean found = false;
+//            for (int childOfExpectedXmlNodeIterator = 0; childOfExpectedXmlNodeIterator < childrenOfExpectedXmlNode.getLength(); childOfExpectedXmlNodeIterator++) {
+//                Node childNodeOfExpectedXmlNode = childrenOfExpectedXmlNode.item(childOfExpectedXmlNodeIterator);
+//                if (childNodeOfActualXmlNode.getNodeType() == Node.ELEMENT_NODE && childNodeOfExpectedXmlNode.getNodeType() == Node.ELEMENT_NODE &&
+//                        childNodeOfActualXmlNode.getNodeName().equals(childNodeOfExpectedXmlNode.getNodeName())) {
+//                    compareNodes(childNodeOfActualXmlNode, childNodeOfExpectedXmlNode); // Recursively compare child nodes
+//                    found = true;
+//                    break;
+//                }
+//            }
+//            if (!found) {
+//                System.out.println("Extra node in file1.xml: " + childNodeOfActualXmlNode.getNodeName());
+//            }
+//        }
+//
+//        for (int i = 0; i < childrenOfExpectedXmlNode.getLength(); i++) {
+//            Node child2 = childrenOfExpectedXmlNode.item(i);
+//            boolean found = false;
+//            for (int j = 0; j < childrenOfActualXmlNode.getLength(); j++) {
+//                Node child1 = childrenOfActualXmlNode.item(j);
+//                if (child2.getNodeType() == Node.ELEMENT_NODE && child1.getNodeType() == Node.ELEMENT_NODE &&
+//                        child2.getNodeName().equals(child1.getNodeName())) {
+//                    found = true;
+//                    break;
+//                }
+//            }
+//            if (!found) {
+//                System.out.println("Extra node in file2.xml: " + child2.getNodeName());
+//            }
+//        }
+//    }
+//}
+//

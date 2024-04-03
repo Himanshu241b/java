@@ -1,22 +1,16 @@
 
-S
-java:S1141³"5Extract this nested try block into a separate method.(ºÃ¿›8Ê¾ãÄß1
-G	java:S106+"+Replace this use of System.out by a logger.(¼ÿÚ8ÜÁãÄß1
-G	java:S106]"+Replace this use of System.out by a logger.(õº³È8ŞÁãÄß1
-G	java:S106^"+Replace this use of System.out by a logger.(á²Â«8ŞÁãÄß1
-L	java:S106_"+Replace this use of System.out by a logger.(£¼ªùÿÿÿÿ8ßÁãÄß1
-L	java:S106c"+Replace this use of System.out by a logger.(œÊğşşÿÿÿÿ8ßÁãÄß1
-F	java:S106f"+Replace this use of System.out by a logger.(æ‹ı8ßÁãÄß1
-t
-java:S3776u"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Û¿‰æúÿÿÿÿ8ßÁãÄß1
-p
-java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ãûîß8âÁãÄß1
-H	java:S106Õ"+Replace this use of System.out by a logger.(Ì£ØÍ8åÁãÄß1
-M	java:S106ë"+Replace this use of System.out by a logger.(à¹×ƒşÿÿÿÿ8èÁãÄß1
-M	java:S106í"+Replace this use of System.out by a logger.(ÅÀ›´ûÿÿÿÿ8èÁãÄß1
-p
-java:S3776„"RRefactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.(îœ¯ç8éÁãÄß1
-M	java:S106‡"+Replace this use of System.out by a logger.(º»Ôâıÿÿÿÿ8ëÁãÄß1
-M	java:S106Œ"+Replace this use of System.out by a logger.(ä¢³ìüÿÿÿÿ8ëÁãÄß1
-H	java:S106¤"+Replace this use of System.out by a logger.(ÊÃ”¥8ìÁãÄß1
-H	java:S106´"+Replace this use of System.out by a logger.(í„¸Ï8íÁãÄß1
+y
+java:S1141³"5Extract this nested try block into a separate method.(ºÃ¿›8Ê¾ãÄß1J$3a59fd81-8054-40b5-bc76-0e39b91bdc43
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(û¡ôÊÿÿÿÿÿ8Ó ë“ê1J$b860ceb3-210e-42ee-a636-03abb0f1ac06
+m	java:S106+"+Replace this use of System.out by a logger.(¼ÿÚ8ÜÁãÄß1J$03c0212b-de88-4e5f-b2b5-3efa140d1d92
+m	java:S106]"+Replace this use of System.out by a logger.(õº³È8ŞÁãÄß1J$4a381489-1f38-4f2a-b47a-e1138c1cf26a
+m	java:S106^"+Replace this use of System.out by a logger.(á²Â«8ŞÁãÄß1J$d3f982f5-ab38-457a-9a3f-d9359a12ec4f
+r	java:S106_"+Replace this use of System.out by a logger.(£¼ªùÿÿÿÿ8ßÁãÄß1J$c89b11d8-b7a3-49f6-86be-4d02a59a6f28
+r	java:S106c"+Replace this use of System.out by a logger.(œÊğşşÿÿÿÿ8ßÁãÄß1J$210ace2c-9d6b-46f6-8b59-f3702d01407e
+l	java:S106f"+Replace this use of System.out by a logger.(æ‹ı8ßÁãÄß1J$e8c23ead-0836-4bc3-b592-21213451e10a
+š
+java:S3776u"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Û¿‰æúÿÿÿÿ8ßÁãÄß1J$fa7f1091-0747-4dc8-8896-a6dd74a509f5
+–
+java:S3776©"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(Ãûîß8âÁãÄß1J$da5559f4-de3e-45c0-a6da-1b361bea1cb7
+n	java:S106Õ"+Replace this use of System.out by a logger.(Ì£ØÍ8åÁãÄß1J$18f94dd0-5899-4762-8c5d-a909d215423b
+„	java:S125ã"<This block of commented-out lines of code should be removed.(ĞäĞ§ÿÿÿÿÿ8œ¡ë“ê1J$28c8fc22-2b47-4f75-b6ca-d03ff259d4c6
