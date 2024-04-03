@@ -1,0 +1,12 @@
+
+ 
+java:S1319"eThe type of "board" should be an interface such as "List" rather than the implementation "ArrayList".(¶©—J$752154dc-15cb-4140-9e06-6cae7b3cd635
+¡
+java:S1319:"eThe type of "board" should be an interface such as "List" rather than the implementation "ArrayList".(«Â·ËJ$8c019efd-f6f8-49c5-a5b9-7360a176f6a6
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(í£ô8Ë§ìšê1
+
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.(¶©—J$901efacf-b7dc-48e8-b53e-461f694e0e48
+z
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(£ç¼ýJ$fa7a18ae-ee08-4469-91d2-2f4f7cfc38fa
+k	java:S106="+Replace this use of System.out by a logger.(ÛÕýÆýÿÿÿÿJ$73969e22-2d14-451b-8754-8fdcc2c63d0b
+k	java:S106?"+Replace this use of System.out by a logger.(ªÓ¼áþÿÿÿÿJ$549fd753-588d-45be-b493-0c23811841cf

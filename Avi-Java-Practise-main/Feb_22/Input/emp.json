@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "salary": 60000,
+    "department": "Engineering"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "salary": 70000,
+    "department": "Marketing"
+  },
+  {
+    "id": 3,
+    "name": "Michael Johnson",
+    "salary": 80000,
+    "department": "Finance"
+  },
+  {
+    "id": 4,
+    "name": "Emily Brown",
+    "salary": 55000,
+    "department": "HR"
+  },
+  {
+    "id": 5,
+    "name": "David Lee",
+    "salary": 75000,
+    "department": "Engineering"
+  },
+  {
+    "id": 6,
+    "name": "Sarah Williams",
+    "salary": 65000,
+    "department": "Marketing"
+  },
+  {
+    "id": 7,
+    "name": "Daniel Martinez",
+    "salary": 70000,
+    "department": "Finance"
+  },
+  {
+    "id": 8,
+    "name": "Jessica Taylor",
+    "salary": 60000,
+    "department": "HR"
+  },
+  {
+    "id": 9,
+    "name": "Christopher Wilson",
+    "salary": 85000,
+    "department": "Engineering"
+  },
+  {
+    "id": 10,
+    "name": "Amanda Clark",
+    "salary": 70000,
+    "department": "Marketing"
+  }
+]

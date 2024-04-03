@@ -2,6 +2,7 @@ package com.example.taskmanagerspring.service;
 
 import com.example.taskmanagerspring.entity.TaskEntity;
 import com.example.taskmanagerspring.repository.TasksRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +10,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class TaskService {
@@ -36,24 +38,32 @@ public class TaskService {
         return tasksRepository.findAll();
     }
 
-    public TaskEntity getTaskById(Long id){
-        return tasksRepository.getById(id);
+    public TaskEntity getTaskById(Long id) throws EntityNotFoundException{
+        var task = tasksRepository.getById(id);
+        if(task == null){
+            throw new EntityNotFoundException("Task with id " + id + "not found");
+        }
+        return task;
     }
 
 
 
-    public TaskEntity updateTask(Long id, String description, String deadline, Boolean completed) throws ParseException{
-        TaskEntity task = getTaskById(id);
-        if(task == null)
-            return null;
-        if(description != null)
-            task.setDescription(description);
-        if(deadline != null)
-            task.setDeadline(deadlineFormatter.parse(deadline));
-        if(completed != null)
-            task.setCompleted(completed);
+    public TaskEntity updateTask(Long id, String description, String deadline, Boolean completed) throws EntityNotFoundException, ParseException {
+            TaskEntity task = tasksRepository.getById(id);
+            if(task == null){
+                throw new EntityNotFoundException("Task with id " + id + " not found");
+            }
+            if (description != null)
+                task.setDescription(description);
+            if (deadline != null)
+                task.setDeadline(deadlineFormatter.parse(deadline));
+            if (completed != null)
+                task.setCompleted(completed);
 
-        return tasksRepository.save(task);
+            return tasksRepository.save(task);
+
     }
+
+
 }
 

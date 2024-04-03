@@ -7,7 +7,9 @@ import com.example.taskmanagerspring.dto.UpdateTaskDTO;
 import com.example.taskmanagerspring.entity.TaskEntity;
 import com.example.taskmanagerspring.service.NoteService;
 import com.example.taskmanagerspring.service.TaskService;
+import jakarta.persistence.EntityNotFoundException;
 import org.modelmapper.ModelMapper;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -36,12 +38,10 @@ public class TasksController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") Long id){
+    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") Long id) throws EntityNotFoundException{
         var task = taskService.getTaskById(id);
         var notes = noteService.getNotesForTask(id);
-        if(task == null){
-            return ResponseEntity.notFound().build();
-        }
+
         var taskResponse = modelMapper.map(task, TaskResponseDTO.class);
         taskResponse.setNotes(notes);
         return ResponseEntity.ok(taskResponse);
@@ -55,20 +55,35 @@ public class TasksController {
     }
 
     @PatchMapping("/{id}")
-    public ResponseEntity<TaskEntity> updateTask(@PathVariable("id") Long id, @RequestBody UpdateTaskDTO updateTaskDTO) throws ParseException{
+    public ResponseEntity<TaskEntity> updateTask(@PathVariable("id") Long id, @RequestBody UpdateTaskDTO updateTaskDTO) throws EntityNotFoundException, ParseException{
         var task = taskService.updateTask(id, updateTaskDTO.getDescription(), updateTaskDTO.getDeadline(), updateTaskDTO.getCompleted());
-        if(task == null){
-            return ResponseEntity.notFound().build();
-        }
         return ResponseEntity.ok(task);
     }
 
-    @ExceptionHandler(ParseException.class)
+    @ExceptionHandler(
+            {ParseException.class
+            , EntityNotFoundException.class
+            }
+    )
     public ResponseEntity<ErrorResponseDTO> handleErrors(Exception exception){
-        if(exception instanceof ParseException){
-            return ResponseEntity.badRequest().body(new ErrorResponseDTO("Invalid date format."));
+            String message;
+            HttpStatus status;
+            if(exception instanceof EntityNotFoundException){
+                message = exception.getMessage();
+                status = HttpStatus.NOT_FOUND;
+            }
+            else if(exception instanceof ParseException) {
+                message = exception.getMessage();
+                status = HttpStatus.BAD_REQUEST;
+            }
+            else{
+                message = "something went wrong";
+                status = HttpStatus.INTERNAL_SERVER_ERROR;
+            }
+            ErrorResponseDTO errorResponse = ErrorResponseDTO.builder()
+                    .message(message)
+                    .build();
+            return ResponseEntity.status(status).body(errorResponse);
         }
-
-        return ResponseEntity.internalServerError().body(new ErrorResponseDTO("Internal Server error."));
     }
-}
+

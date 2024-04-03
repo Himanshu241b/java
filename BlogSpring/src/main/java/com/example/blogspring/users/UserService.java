@@ -38,11 +38,10 @@ public class UserService {
 
     public static class UserNotFoundException extends IllegalArgumentException{
         public UserNotFoundException(String username){
-            super("User with name"+ username+ " not found");
+            super("User with name "+ username+ " not found");
         }
         public UserNotFoundException(Long userId){
-            super("User with id"+ userId+ " not found");
-
+            super("User with id "+ userId+ " not found");
         }
     }
 }

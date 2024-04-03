@@ -17,6 +17,6 @@ public class NoteEntity {
     private String body;
 
     @ManyToOne
-    @JoinColumn(name = "task_id")
+    @JoinColumn(name = "taskId")
     private TaskEntity taskEntity;
 }
