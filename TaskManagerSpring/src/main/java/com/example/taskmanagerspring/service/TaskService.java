@@ -3,14 +3,13 @@ package com.example.taskmanagerspring.service;
 import com.example.taskmanagerspring.entity.TaskEntity;
 import com.example.taskmanagerspring.repository.TasksRepository;
 import jakarta.persistence.EntityNotFoundException;
-import org.springframework.scheduling.config.Task;
 import org.springframework.stereotype.Service;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+
 
 @Service
 public class TaskService {

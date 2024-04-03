@@ -11,6 +11,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CreateNoteResponseDTO {
-    private Long taskId;
-    private NoteEntity note;
+    private Long id;
+    private String title;
+    private String body;
+
 }

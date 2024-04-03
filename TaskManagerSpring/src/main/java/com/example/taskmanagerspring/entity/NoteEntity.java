@@ -1,5 +1,6 @@
 package com.example.taskmanagerspring.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,6 +18,7 @@ public class NoteEntity {
     private String body;
 
     @ManyToOne
-    @JoinColumn(name = "taskId")
+    @JsonIgnoreProperties(value = {"applications", "hibernateLazyInitializer"})
+    @JoinColumn(name = "taskId", referencedColumnName = "id")
     private TaskEntity taskEntity;
 }
