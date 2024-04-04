@@ -1,0 +1,16 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³İåÊ8×è½Îê1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(å€Õ©ûÿÿÿÿ8Øè½Îê1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œ½ÌÄıÿÿÿÿ8Øè½Îê1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Û‰ñüÿÿÿÿ8Ùè½Îê1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Û‰ñüÿÿÿÿ8Ùè½Îê1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼Û‰ñüÿÿÿÿ8Ùè½Îê1
+V
+java:S1220""Move this file to a named package.J$afd1cbf1-f355-49c3-9857-6ee0b4569bb2
+G	java:S106"+Replace this use of System.out by a logger.(ãÏÑÜ8Íì½Îê1
+G	java:S106
+"+Replace this use of System.out by a logger.(Ÿàû8Îì½Îê1
+L	java:S106"+Replace this use of System.out by a logger.(ĞÊÍŠşÿÿÿÿ8Ïì½Îê1
+L	java:S106"+Replace this use of System.out by a logger.(‚û˜˜ıÿÿÿÿ8Òì½Îê1
+<
+java:S1659"Declare "n" on a separate line.(ÔÁŒ¢8Öì½Îê1
