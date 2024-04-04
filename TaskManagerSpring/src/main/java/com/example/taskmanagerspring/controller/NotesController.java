@@ -29,7 +29,7 @@ public class NotesController {
         List<NoteDTO> noteDTOs = notes.stream()
                 .map(note -> {
                     NoteDTO noteDTO = new NoteDTO();
-                    noteDTO.setId(note.getId());
+                    noteDTO.setId(note.getNoteId());
                     noteDTO.setTitle(note.getTitle());
                     noteDTO.setBody(note.getBody());
                     return noteDTO;
@@ -47,7 +47,7 @@ public class NotesController {
     ) throws EntityNotFoundException{
         NoteEntity newNote = noteService.addNoteForTask(taskId, createNoteDTO);
         CreateNoteResponseDTO createNoteResponseDTO = new CreateNoteResponseDTO();
-        createNoteResponseDTO.setId(newNote.getId());
+        createNoteResponseDTO.setId(newNote.getNoteId());
         createNoteResponseDTO.setBody(newNote.getBody());
         createNoteResponseDTO.setTitle(newNote.getTitle());
         return ResponseEntity.ok(createNoteResponseDTO);

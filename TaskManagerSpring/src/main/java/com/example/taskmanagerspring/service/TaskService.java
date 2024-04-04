@@ -1,13 +1,19 @@
 package com.example.taskmanagerspring.service;
 
+import com.example.taskmanagerspring.dto.CreateTaskDTO;
+import com.example.taskmanagerspring.dto.UpdateTaskDTO;
 import com.example.taskmanagerspring.entity.TaskEntity;
+import com.example.taskmanagerspring.entity.UserEntity;
 import com.example.taskmanagerspring.repository.TasksRepository;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 
@@ -19,50 +25,51 @@ public class TaskService {
     public TaskService(TasksRepository tasksRepository) {
         this.tasksRepository = tasksRepository;
     }
-    private List<TaskEntity> taskList = new ArrayList<TaskEntity>();
-    private int taskId = 1;
+
     private final SimpleDateFormat deadlineFormatter = new SimpleDateFormat("yyyy-MM-dd");
 
-    public TaskEntity addTask(String title, String description, String deadline) throws ParseException{
+    public TaskEntity addTask(CreateTaskDTO createTaskDTO, UserEntity user) throws ParseException{
         TaskEntity newTask = new TaskEntity();
-        newTask.setTitle(title);
-        newTask.setDescription(description);
-        newTask.setDeadline(deadlineFormatter.parse(deadline));
+        newTask.setTitle(createTaskDTO.getTitle());
+        newTask.setDescription(createTaskDTO.getDescription());
+        newTask.setDeadline(deadlineFormatter.parse(createTaskDTO.getDeadline()));
+        newTask.setUserEntity(user);
         newTask.setCompleted(false);
 
         return tasksRepository.save(newTask);
     }
 
-    public List<TaskEntity> getTasks(){
-        return tasksRepository.findAll();
+    public List<TaskEntity> getTasks(Long userId){
+        List<TaskEntity> userTasksList = tasksRepository.findAllByUserId(userId);
+        return userTasksList;
     }
 
-    public TaskEntity getTaskById(Long id) throws EntityNotFoundException{
-        var task = tasksRepository.getById(id);
-        if(task == null){
-            throw new EntityNotFoundException("Task with id " + id + "not found");
+
+    public TaskEntity getTaskByIdForUser(Long taskId, Long userId) throws EntityNotFoundException{
+
+        TaskEntity userTaskById = tasksRepository.findTaskByIdForUser(taskId, userId);
+        if(userTaskById == null)
+        {
+            throw new EntityNotFoundException("Task with id " + taskId + " not found");
         }
-        return task;
+        else{
+            return userTaskById;
+        }
     }
 
-
-
-    public TaskEntity updateTask(Long id, String description, String deadline, Boolean completed) throws EntityNotFoundException, ParseException {
-            TaskEntity task = tasksRepository.getById(id);
+    public TaskEntity updateTask(Long taskId, Long userId, UpdateTaskDTO updateTaskDTO) throws EntityNotFoundException, ParseException {
+            TaskEntity task = tasksRepository.findTaskByIdForUser(taskId, userId);
             if(task == null){
-                throw new EntityNotFoundException("Task with id " + id + " not found");
+                throw new EntityNotFoundException("Task with id " + taskId + " not found");
             }
-            if (description != null)
-                task.setDescription(description);
-            if (deadline != null)
-                task.setDeadline(deadlineFormatter.parse(deadline));
-            if (completed != null)
-                task.setCompleted(completed);
+            if (updateTaskDTO.getDescription() != null)
+                task.setDescription(updateTaskDTO.getDescription());
+            if (updateTaskDTO.getDeadline() != null)
+                task.setDeadline(deadlineFormatter.parse(updateTaskDTO.getDeadline()));
+            if (updateTaskDTO.getCompleted() != null)
+                task.setCompleted(updateTaskDTO.getCompleted());
 
             return tasksRepository.save(task);
-
     }
-
-
 }
 

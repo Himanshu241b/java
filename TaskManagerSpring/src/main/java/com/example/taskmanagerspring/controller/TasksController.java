@@ -1,63 +1,107 @@
 package com.example.taskmanagerspring.controller;
 
-import com.example.taskmanagerspring.dto.CreateTaskDTO;
-import com.example.taskmanagerspring.dto.ErrorResponseDTO;
-import com.example.taskmanagerspring.dto.TaskResponseDTO;
-import com.example.taskmanagerspring.dto.UpdateTaskDTO;
+import com.example.taskmanagerspring.dto.*;
 import com.example.taskmanagerspring.entity.TaskEntity;
+import com.example.taskmanagerspring.entity.UserEntity;
 import com.example.taskmanagerspring.service.NoteService;
 import com.example.taskmanagerspring.service.TaskService;
+import com.example.taskmanagerspring.service.UserService;
 import jakarta.persistence.EntityNotFoundException;
 import org.modelmapper.ModelMapper;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.text.ParseException;
+import java.util.Base64;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("/tasks")
+@RequestMapping("users/{userIdEncoded}/tasks")
 public class TasksController {
 
     private final ModelMapper modelMapper = new ModelMapper();
 
-    private final NoteService noteService;
     private final TaskService taskService;
+    private final UserService userService;
 
 
-    TasksController(TaskService taskService, NoteService noteService) {
+    TasksController(TaskService taskService, NoteService noteService, UserService userService) {
         this.taskService = taskService;
-        this.noteService = noteService;
+        this.userService = userService;
     }
     @GetMapping("")
-    public ResponseEntity<List<TaskEntity>> getTasks(){
-        var tasks = taskService.getTasks();
+    public ResponseEntity<List<UserTasksDTO>> getTasksOfUser(@PathVariable("userIdEncoded") String userIdEncoded) throws EntityNotFoundException{
+        // Decode the Base64-encoded string
+        byte[] decodedBytes = Base64.getDecoder().decode(userIdEncoded);
+        String decodedUserIdString = new String(decodedBytes);
 
-        return ResponseEntity.ok(tasks);
+        // Parse the decoded string to a Long
+        Long userIdDecoded = Long.parseLong(decodedUserIdString);
+
+
+        var userTasks = taskService.getTasks(userIdDecoded);
+
+        List<UserTasksDTO> userTasksList = userTasks.stream()
+                .map(task -> {
+                    UserTasksDTO userTasksDTO = modelMapper.map(task, UserTasksDTO.class);
+                    return userTasksDTO;
+                })
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(userTasksList);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<TaskResponseDTO> getTaskById(@PathVariable("id") Long id) throws EntityNotFoundException{
-        var task = taskService.getTaskById(id);
-        var notes = noteService.getNotesForTask(id);
+    @GetMapping("/{taskId}")
+    public ResponseEntity<TaskResponseDTO> getTaskByIdForUser(@PathVariable("taskId") Long taskId, @PathVariable("userIdEncoded") String userIdEncoded) throws EntityNotFoundException, UnsupportedEncodingException{
 
-        var taskResponse = modelMapper.map(task, TaskResponseDTO.class);
-        taskResponse.setNotes(notes);
-        return ResponseEntity.ok(taskResponse);
+        // Decode the Base64-encoded string
+        byte[] decodedBytes = Base64.getDecoder().decode(userIdEncoded);
+        String decodedUserIdString = new String(decodedBytes);
+
+        // Parse the decoded string to a Long
+        Long userIdDecoded = Long.parseLong(decodedUserIdString);
+
+        TaskEntity userTaskById = taskService.getTaskByIdForUser(taskId, userIdDecoded);
+
+        TaskResponseDTO taskResponseDTO = modelMapper.map(userTaskById, TaskResponseDTO.class);
+
+        return ResponseEntity.ok(taskResponseDTO);
     }
 
     @PostMapping("")
-    public ResponseEntity<TaskEntity> addTask(@RequestBody CreateTaskDTO createTaskDTO) throws ParseException{
-        TaskEntity newTask = taskService.addTask(createTaskDTO.getTitle(), createTaskDTO.getDescription(), createTaskDTO.getDeadline());
+    public ResponseEntity<CreateTaskResponseDTO> addTask(@RequestBody CreateTaskDTO createTaskDTO, @PathVariable("userIdEncoded") String userIdEncoded) throws ParseException, UnsupportedEncodingException{
+        // Decode the Base64-encoded string
+        byte[] decodedBytes = Base64.getDecoder().decode(userIdEncoded);
+        String decodedUserIdString = new String(decodedBytes);
 
-        return ResponseEntity.ok(newTask);
+        // Parse the decoded string to a Long
+        Long userIdDecoded = Long.parseLong(decodedUserIdString);
+
+        UserEntity user = userService.getUserById(userIdDecoded);
+
+        TaskEntity newTask = taskService.addTask(createTaskDTO, user);
+
+        CreateTaskResponseDTO createTaskResponseDTO = modelMapper.map(newTask, CreateTaskResponseDTO.class);
+
+        return ResponseEntity.ok(createTaskResponseDTO);
     }
 
-    @PatchMapping("/{id}")
-    public ResponseEntity<TaskEntity> updateTask(@PathVariable("id") Long id, @RequestBody UpdateTaskDTO updateTaskDTO) throws EntityNotFoundException, ParseException{
-        var task = taskService.updateTask(id, updateTaskDTO.getDescription(), updateTaskDTO.getDeadline(), updateTaskDTO.getCompleted());
-        return ResponseEntity.ok(task);
+    @PatchMapping("/{taskId}")
+    public ResponseEntity<UpdateTaskResponseDTO> updateTask(@PathVariable("taskId") Long taskId, @PathVariable("userIdEncoded") String userIdEncoded, @RequestBody UpdateTaskDTO updateTaskDTO) throws EntityNotFoundException, ParseException, UnsupportedEncodingException{
+
+        // Decode the Base64-encoded string
+        byte[] decodedBytes = Base64.getDecoder().decode(userIdEncoded);
+        String decodedUserIdString = new String(decodedBytes);
+
+        // Parse the decoded string to a Long
+        Long userIdDecoded = Long.parseLong(decodedUserIdString);
+
+        TaskEntity updatedTask = taskService.updateTask(taskId, userIdDecoded, updateTaskDTO);
+        UpdateTaskResponseDTO updatedTaskResponseDTO = modelMapper.map(updatedTask, UpdateTaskResponseDTO.class);
+        return ResponseEntity.ok(updatedTaskResponseDTO);
     }
 
     @ExceptionHandler(

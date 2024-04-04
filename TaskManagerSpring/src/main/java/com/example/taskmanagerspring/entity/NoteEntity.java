@@ -11,7 +11,7 @@ public class NoteEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false)
-    private Long id;
+    private Long noteId;
 
     private String title;
 
@@ -19,6 +19,6 @@ public class NoteEntity {
 
     @ManyToOne
     @JsonIgnoreProperties(value = {"applications", "hibernateLazyInitializer"})
-    @JoinColumn(name = "taskId", referencedColumnName = "id")
+    @JoinColumn(name = "taskId", referencedColumnName = "taskId")
     private TaskEntity taskEntity;
 }
