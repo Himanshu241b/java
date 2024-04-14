@@ -1,0 +1,13 @@
+
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΌΫ‰ρόÿÿÿÿ8‰χ–σκ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΌΫ‰ρόÿÿÿÿ8‰χ–σκ1
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΌΫ‰ρόÿÿÿÿ8χ–σκ1
+m	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³έεΚ8χ–σκ1
+r	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ε€Υ©ϋÿÿÿÿ8χ–σκ1
+r	java:S1174"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ΜΔύÿÿÿÿ8‹χ–σκ1
+]
+java:S1220""Move this file to a named package.8µ–σκ1J$175b9622-aa90-4680-9a53-86d9f26a21f6
+G	java:S106-"+Replace this use of System.out by a logger.(γΟΡά8αω–σκ1
+G	java:S1060"+Replace this use of System.out by a logger.(ΰϋ8γω–σκ1
+L	java:S1063"+Replace this use of System.out by a logger.(ΠΚΝώÿÿÿÿ8δω–σκ1
+L	java:S1067"+Replace this use of System.out by a logger.(‚ϋύÿÿÿÿ8εω–σκ1

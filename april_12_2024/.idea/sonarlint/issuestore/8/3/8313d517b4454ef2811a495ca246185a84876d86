@@ -1,0 +1,11 @@
+
+¸
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(à©¥íúÿÿÿÿ8Ô—§Ží1J$5b5d56d5-aba0-4a7c-89dc-96f9edb7a7bb
+©
+java:S1319"aThe type of "B" should be an interface such as "List" rather than the implementation "ArrayList".(à©¥íúÿÿÿÿ8Õ—§Ží1J$048ec6e3-8ee3-4890-bf2e-0444363931ee
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à©¥íúÿÿÿÿ8Ö—§Ží1J$cf89225a-cb0f-45a0-83a5-96c4f2a7b2ba
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à©¥íúÿÿÿÿ8Ö—§Ží1J$6007c3c0-a4b4-4c8e-9968-6757889906fc
+V
+java:S1220""Move this file to a named package.J$d9924b0b-86e6-4dea-8654-56000e48a729
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8óÙ§Ží1

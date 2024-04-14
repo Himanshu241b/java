@@ -1,0 +1,18 @@
+server:
+  port: 5555
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/task_manager
+    username: root
+    password: Himanshu@2002
+  jpa:
+    properties:
+      hibernate:
+      enable_lazy_load_no_trans: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+

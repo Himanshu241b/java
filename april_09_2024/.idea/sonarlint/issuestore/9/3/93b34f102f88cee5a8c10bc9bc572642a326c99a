@@ -1,0 +1,12 @@
+
+¸
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(È«Œşÿÿÿÿ8ÄŒì1J$c6bf2451-1c5f-439c-a388-1fabf2614789
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(È«Œşÿÿÿÿ8ÄŒì1J$9216b1fb-dd70-4930-a80a-6b3b4649c016
+“	java:S117."QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ‰½’8ÄŒì1J$85fbf30d-27fc-49be-8810-90ad15b09f2a
+˜	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ı–Ãÿÿÿÿÿ8ÄŒì1J$83570568-5fa5-4390-93c0-bc224f0097ff
+V
+java:S1220""Move this file to a named package.J$e8cce8ac-35db-43eb-9106-7b55cf91f8a8
+š
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(È«Œşÿÿÿÿ8–ÄŒì1J$5f1ca22a-c25f-4b6a-afb8-5b638aeec44d
+m	java:S1060"+Replace this use of System.out by a logger.(Èİ†8ŸÄŒì1J$ef535697-e6d6-4d66-a428-27f7ce13587d
+r	java:S1064"+Replace this use of System.out by a logger.(¢üàœüÿÿÿÿ8 ÄŒì1J$ececba35-6a41-4330-a438-76acd872cd78

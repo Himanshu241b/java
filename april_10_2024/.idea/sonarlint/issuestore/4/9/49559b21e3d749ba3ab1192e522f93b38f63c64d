@@ -1,0 +1,12 @@
+
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ú‡Ë˜8ç†ÎÀì1
+m	java:S1172"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò—Ü8è†ÎÀì1
+V
+java:S1220""Move this file to a named package.J$209ba377-2122-46fa-ba29-0fde3babbb38
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(ú‡Ë˜8…‰ÎÀì1
+E
+java:S1659"#Declare "black" on a separate line.(¶âíÒùÿÿÿÿ8Š‰ÎÀì1
+L	java:S106-"+Replace this use of System.out by a logger.(Ïø©¶øÿÿÿÿ8ª‰ÎÀì1
+L	java:S1061"+Replace this use of System.out by a logger.(Ğ¼™³üÿÿÿÿ8«‰ÎÀì1
+L	java:S1065"+Replace this use of System.out by a logger.(ÇáÄÆÿÿÿÿÿ8¬‰ÎÀì1
