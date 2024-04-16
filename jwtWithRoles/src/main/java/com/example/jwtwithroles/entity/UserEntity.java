@@ -1,4 +1,4 @@
-package com.example.taskmanagerspring.entity;
+package com.example.jwtwithroles.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -30,10 +30,9 @@ public class UserEntity {
     @NonNull
     private String password;
 
-    @OneToMany(mappedBy = "user")
-    private List<TaskSubmissionEntity> submissions;
 
-    @ManyToMany(mappedBy = "joinedUsers")
-    private List<ClassroomEntity> joinedClassrooms;
-
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "users_role", joinColumns = @JoinColumn(name = "userId", referencedColumnName = "userId"),
+            inverseJoinColumns = @JoinColumn(name = "roleId", referencedColumnName = "roleId") )
+    Set<Role> roles = new HashSet<Role>();
 }

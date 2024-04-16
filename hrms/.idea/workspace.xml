@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="294f685a-4678-40c0-8fe3-92c327772db0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/controller/Security.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/controller/UsersController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/dto/CreateUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/dto/ErrorResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/dto/LoginUserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/dto/UserResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/entity/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/entity/UserEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/repository/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/repository/UsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/security/JWTAuthentication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/security/JWTAuthenticationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/security/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/security/JWTAuthenticationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/service/JWTService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jwtWithRoles/src/main/java/com/example/jwtwithroles/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRMS_ER.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../HRMS_ER.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HRMS_ER_Diagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../HRMS_ER_Diagram.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/JwtWithRoleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/config/JwtFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/config/JwtGeneratorValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/controller/RestAppController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/model/UserDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/service/DefaultUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/java/com/jwt/implementation/service/DefaultUserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/main/resources/application.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JWTRoleBasedAuthentication-main/src/test/java/com/jwt/implementation/JwtWithRoleApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/controller/TaskSubmissionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/controller/TaskSubmissionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/entity/TaskSubmissionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/entity/TaskSubmissionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/service/TaskSubmissionEntityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../TaskManagerSpring/src/main/java/com/example/taskmanagerspring/service/TaskSubmissionEntityService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2fAnjskzMmERMaWp5LzrqMPV0wV" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="openDirectoriesWithSingleClick" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/himanshu/Desktop/Avisoft/hrms"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="294f685a-4678-40c0-8fe3-92c327772db0" name="Changes" comment="" />
+      <created>1713252887349</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713252887349</updated>
+    </task>
+    <servers />
+  </component>
+</project>
