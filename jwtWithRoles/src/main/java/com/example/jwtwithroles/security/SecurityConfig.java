@@ -34,10 +34,7 @@ public class SecurityConfig {
         http
                 .csrf(csrfSpec -> csrfSpec.disable())
                 .authorizeHttpRequests(authorize -> authorize
-                        .requestMatchers("/security/admin/**").permitAll()
-                        .requestMatchers("/security/superadmin/**").permitAll()
-                        .requestMatchers("/users/**")
-                        .permitAll()
+                        .requestMatchers("/**").permitAll()
                 )
                 .httpBasic(Customizer.withDefaults())
                 .formLogin(Customizer.withDefaults());

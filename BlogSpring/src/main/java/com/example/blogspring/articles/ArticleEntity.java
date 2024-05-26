@@ -37,11 +37,12 @@ public class ArticleEntity {
 
     @CreatedDate
     private Date createdAt;
+    
+
+    private Date updatedAt;
 
     @ManyToOne
     @JoinColumn(name = "authorId", nullable = false)
     private UserEntity author;
-
-    //Todo: Add tags
 
 }

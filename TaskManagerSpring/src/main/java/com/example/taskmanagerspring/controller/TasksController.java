@@ -21,15 +21,16 @@ import java.util.stream.Collectors;
 
 public class TasksController {
 
-    private final ModelMapper modelMapper = new ModelMapper();
+    private final ModelMapper modelMapper;
 
     private final TaskService taskService;
 
 
-    TasksController(TaskService taskService) {
+    TasksController(TaskService taskService, ModelMapper modelMapper) {
+        this.modelMapper = modelMapper;
         this.taskService = taskService;
-
     }
+
     @GetMapping("/{classroomId}")
     public ResponseEntity<List<ClassTaskDTO>> getTasksOfClass(@PathVariable("classroomId") Long classId) throws EntityNotFoundException{
 

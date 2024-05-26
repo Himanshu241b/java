@@ -6,6 +6,8 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.core.annotation.Order;
 import org.springframework.test.context.ActiveProfiles;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @DataJpaTest
 @ActiveProfiles("test")
 public class UsersRepositoryTests {
@@ -19,7 +21,8 @@ public class UsersRepositoryTests {
                 .username("himanshu")
                 .email("himanshu.chaudhary@avisoft.io")
                 .build();
-        usersRepository.save(user);
+        var savedUser = usersRepository.save(user);
+        assertEquals(savedUser.getUsername(), user.getUsername());
     }
 
     //every test runs on a fresh database instance so we need to add the user againg in can_find_users method
